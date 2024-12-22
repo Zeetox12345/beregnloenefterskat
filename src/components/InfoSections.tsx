@@ -1,119 +1,132 @@
 export const InfoSections = () => {
   return (
-    <div className="container mx-auto px-4 py-12 space-y-12">
-      <div className="bg-white rounded-lg shadow-lg p-6">
-        <h1 className="text-3xl font-semibold mb-6 text-primary">
-          Få styr på din økonomi med beregnloenefterskat.dk – nemt og overskueligt
-        </h1>
+    <div className="container mx-auto px-4 py-12">
+      <div className="bg-white rounded-lg shadow-lg p-6 md:p-8">
+        <h2 className="text-2xl font-semibold mb-6 text-primary">
+          Guide: Sådan bruger du beregneren til at finde ud af, hvad du får udbetalt efter skat
+        </h2>
         
         <div className="prose prose-lg max-w-none text-gray-700">
-          <p className="mb-6">
-            Har du nogensinde stået med lønsedlen i hånden og tænkt: "Hvor meget får jeg egentlig udbetalt efter skat?" eller "Hvordan beregner jeg min løn efter skat på en hurtig og nem måde?" Du er langt fra den eneste. For rigtig mange danskere kan det virke både uoverskueligt og tidskrævende at regne sig frem til den reelle nettoløn, og derfor er det godt at have en brugervenlig ressource lige ved hånden. Det er netop formålet med beregnloenefterskat.dk – en nem og intuitiv måde at beregn løn efter skat på, uanset om du er fastansat, selvstændig eller måske modtager førtidspension efter skat.
-          </p>
-
-          <h2 className="text-2xl font-semibold mt-8 mb-4">
-            Hvorfor er løn efter skat så vigtig?
-          </h2>
-          <p className="mb-6">
-            Når man modtager løn, skal der betales skat, arbejdsmarkedsbidrag og eventuelle andre afgifter. Det beløb, der står tilbage på kontoen sidst på måneden, er din løn efter skat. Den reelle nettoløn er afgørende at kende, da den giver dig et klart billede af, hvor mange penge du kan råde over til dagligdagsudgifter, husleje, opsparing og fornøjelser. Hvis du ikke har styr på din løn efter skat, kan det være svært at lægge et realistisk budget – og så risikerer du, at økonomien kommer til at halte sidst på måneden.
-          </p>
-
-          <h2 className="text-2xl font-semibold mt-8 mb-4">
-            Hvad kan beregnloenefterskat.dk hjælpe dig med?
-          </h2>
           <p className="mb-4">
-            beregnloenefterskat.dk er udviklet med henblik på at gøre det både simpelt og overskueligt at beregne, hvor meget du får udbetalt efter skat. På hjemmesiden indtaster du dine grundlæggende oplysninger om bruttoløn, eventuelle fradrag, samt andre relevante data. Herefter får du lynhurtigt et estimat på, hvad din månedsløn efter skat lander på. Det er især en stor hjælp, hvis du for eksempel:
-          </p>
-          <ul className="list-disc pl-6 mb-6">
-            <li className="mb-2">Har fået nyt job og gerne vil have et overblik over, hvor meget din nye løn reelt giver dig hver måned.</li>
-            <li className="mb-2">Har fået ændret dine fradrag og er nysgerrig efter at vide, hvordan det påvirker din løn efter skat.</li>
-            <li className="mb-2">Har forskellige lønkilder (for eksempel honorarer, bijob eller freelanceopgaver) og vil se, hvad der samlet set ender på din konto.</li>
-            <li>Overvejer at gå på førtidspension efter skat eller allerede er på førtidspension og har brug for at se, hvordan indtægter og skatteforhold hænger sammen.</li>
-          </ul>
-
-          <h2 className="text-2xl font-semibold mt-8 mb-4">
-            Fordelen ved at kende sin nettoløn
-          </h2>
-          <p className="mb-6">
-            Mange tænker: "Hvad får jeg udbetalt efter skat?" – men svaret kan variere fra person til person, selv hvis bruttolønnen er ens. Det skyldes blandt andet, at vi har individuelle fradrag, forskellig skatteprocent og varierende arbejdsgiverbidrag. Netop derfor er det en god idé at bruge beregnloenefterskat.dk, så du ikke sidder med en generel tommelfingerregel, men i stedet får et personligt estimat af din nettoløn. På den måde får du det bedst mulige grundlag for at tilrettelægge din privatøkonomi.
+            Denne beregner hjælper dig med at finde ud af, hvad du får udbetalt efter skat.
+            For at beregningen bliver korrekt, er det vigtigt, at du bruger de rigtige tal.
+            Her får du en gennemgang af, hvordan du både udfylder beregneren og finder de nødvendige oplysninger.
           </p>
 
-          <h2 className="text-2xl font-semibold mt-8 mb-4">
-            Sådan bruger du beregnloenefterskat.dk
-          </h2>
-          <ol className="list-decimal pl-6 mb-6">
-            <li className="mb-2">Gå ind på siden: Start med at åbne beregnloenefterskat.dk. Her bliver du mødt af en enkel og brugervenlig side.</li>
-            <li className="mb-2">Indtast dine oplysninger: Indtast din bruttoløn, dine eventuelle fradrag samt andre nødvendige informationer, som systemet beder om.</li>
-            <li className="mb-2">Klik på "beregn": Dernæst vil hjemmesiden udregne din forventede udbetaling efter skat.</li>
-            <li>Se dit resultat: Inden for få sekunder får du et klart overblik over din nettoløn, og du kan bruge tallet til at lægge et mere præcist budget.</li>
-          </ol>
+          <div className="space-y-8">
+            <section>
+              <h3 className="text-xl font-semibold mb-3">1. Løn før skat (kr.)</h3>
+              <p>Dette felt er din bruttoløn, altså din løn før der trækkes skat, arbejdsmarkedsbidrag (AM-bidrag), og pension.</p>
+              <p className="font-medium mt-2">Sådan finder du din bruttoløn:</p>
+              <ul className="list-disc pl-6 mt-2">
+                <li>Tjek din lønseddel, hvor bruttolønnen normalt står øverst som "Månedsløn" eller "Bruttoløn".</li>
+                <li>Hvis du ikke har din lønseddel ved hånden, kan du spørge din arbejdsgiver eller HR-afdeling.</li>
+              </ul>
+              <p className="mt-2"><strong>Eksempel:</strong><br />
+              Hvis din månedlige bruttoløn er 35.000 kr., indtaster du "35000".</p>
+            </section>
 
-          <h2 className="text-2xl font-semibold mt-8 mb-4">
-            Hvornår er det særlig vigtigt at beregne løn efter skat?
-          </h2>
-          <ul className="list-disc pl-6 mb-6">
-            <li className="mb-2">Nyt job: Hvis du skifter arbejde, er det oplagt at bruge beregnloenefterskat.dk til at se, hvordan din nye ansættelse påvirker din privatøkonomi.</li>
-            <li className="mb-2">Job ved siden af førtidspension: Har du førtidspension efter skat og arbejder samtidig på nedsat tid, kan du hurtigt danne dig et overblik over, hvor meget du får i samlede indtægter.</li>
-            <li className="mb-2">Skattefradrag og restskat: Hvis dine skattefradrag ikke stemmer overens med virkeligheden, kan du få en restskat. Derfor er det en god idé løbende at bruge beregneren for at tjekke, om alt er korrekt.</li>
-            <li>Boliglån og andre store beslutninger: Skal du optage boliglån eller tage en anden stor beslutning, hjælper kendskabet til din løn efter skat med at afgøre, hvor meget du kan afdrage hver måned.</li>
-          </ul>
+            <section>
+              <h3 className="text-xl font-semibold mb-3">2. Fradrag (kr.)</h3>
+              <p>Fradraget er det beløb, du kan trække fra, før din skat bliver beregnet.</p>
+              <p className="font-medium mt-2">Sådan finder du dit fradrag:</p>
+              <ul className="list-disc pl-6 mt-2">
+                <li>Log ind på Skat.dk og se din forskudsopgørelse. Her finder du dit årlige personfradrag, som du kan dele med 12 for at få det månedlige fradrag.</li>
+                <li>Hvis du har andre fradrag, fx kørselsfradrag eller fagforeningskontingent, skal du lægge disse til det månedlige beløb.</li>
+              </ul>
+              <p className="mt-2"><strong>Eksempel:</strong></p>
+              <ul className="list-disc pl-6">
+                <li>Dit årlige personfradrag er fx 48.000 kr.</li>
+                <li>Del 48.000 kr. med 12 måneder: 48.000 ÷ 12 = 4.000 kr.</li>
+                <li>Hvis du har andre fradrag, lægger du dem til de 4.000 kr.</li>
+              </ul>
+            </section>
 
-          <h2 className="text-2xl font-semibold mt-8 mb-4">
-            Hvad får jeg udbetalt efter skat på førtidspension?
-          </h2>
-          <p className="mb-6">
-            For dem, der modtager førtidspension, er det ofte vigtigt at vide, hvordan pensionen er skruet sammen, og hvad man har til rådighed, når skatten er betalt. Når du modtager førtidspension efter skat, består den ofte af flere elementer, herunder grundbeløb, pensionstillæg og eventuelle personlige tillæg. Alle disse komponenter kan påvirkes af dine øvrige indtægter, bopælsforhold og civilstand. Hvis du har et arbejde ved siden af, kan du med beregnloenefterskat.dk danne et estimat af, hvad du har til rådighed, så du undgår at havne i en situation, hvor du pludselig får restskat eller modtager for høje ydelser.
-          </p>
+            <section>
+              <h3 className="text-xl font-semibold mb-3">3. Trækprocent (%)</h3>
+              <p>Trækprocenten viser, hvor stor en del af din løn der bliver trukket til skat.</p>
+              <p className="font-medium mt-2">Sådan finder du din trækprocent:</p>
+              <ul className="list-disc pl-6 mt-2">
+                <li>Log ind på Skat.dk og kig på din forskudsopgørelse. Her kan du finde din trækprocent under overskriften "Skatteprocent".</li>
+                <li>Hvis du ikke ved, hvor du skal kigge, kan du bruge Skats chatfunktion eller spørge din arbejdsgiver.</li>
+              </ul>
+              <p className="mt-2"><strong>Eksempel:</strong><br />
+              Hvis din trækprocent er 39 %, indtaster du "39".</p>
+            </section>
 
-          <h2 className="text-2xl font-semibold mt-8 mb-4">
-            Gode råd til en sund privatøkonomi
-          </h2>
-          <ul className="list-disc pl-6 mb-6">
-            <li className="mb-2">Hav styr på forskudsopgørelsen: Dine oplysninger hos Skattestyrelsen bør opdateres løbende. Juster din forskudsopgørelse, hvis du får nyt job, ændrer fradrag eller for eksempel modtager mere i bonus end forventet.</li>
-            <li className="mb-2">Læg et realistisk budget: Når du ved, hvor meget du har udbetalt efter skat, er det lettere at budgettere. Fordel beløbet på faste udgifter, opsparing og forbrug, så du altid har en plan for pengene.</li>
-            <li className="mb-2">Undersøg fradrag: Der findes mange forskellige fradrag, alt efter om du pendler langt til arbejde, har fagforeningskontingent eller bruger håndværkere i hjemmet. Tjek, hvilke du er berettiget til, og få flere penge til rådighed.</li>
-            <li>Tænk på fremtiden: Uanset om du er i job, er på førtidspension efter skat eller er under uddannelse, er det en god idé at overveje opsparing. Selv et mindre månedligt beløb kan gøre en forskel på længere sigt.</li>
-          </ul>
+            <section>
+              <h3 className="text-xl font-semibold mb-3">4. Egen pensionsindbetaling (%)</h3>
+              <p>Her angiver du den procentdel af din løn, som du selv betaler til pension.</p>
+              <p className="font-medium mt-2">Sådan finder du din pensionsprocent:</p>
+              <ul className="list-disc pl-6 mt-2">
+                <li>Tjek din lønseddel, hvor pensionsindbetalingerne normalt står som en procentdel af din løn eller som et beløb.</li>
+                <li>Hvis din arbejdsgiver også indbetaler til pension, står dette som regel separat. Du skal kun indtaste din egen andel.</li>
+              </ul>
+              <p className="mt-2"><strong>Eksempel:</strong></p>
+              <ul className="list-disc pl-6">
+                <li>Din lønseddel viser, at du indbetaler 5 % af din bruttoløn til pension.</li>
+                <li>Hvis din løn er 35.000 kr., svarer 5 % til 1.750 kr.</li>
+              </ul>
+            </section>
 
-          <h2 className="text-2xl font-semibold mt-8 mb-4">
-            Afrunding
-          </h2>
-          <p className="mb-6">
-            At vide, hvor meget du får udbetalt efter skat, handler ikke kun om at tilfredsstille nysgerrigheden. Det giver ro i maven, når du ikke længere bliver overrasket over, hvor mange penge der står på kontoen den sidste hverdag i måneden. Du kan bedre lægge budget, tilpasse udgifterne og drømme om alt fra nye oplevelser til større investeringer i bolig eller bil.
-          </p>
-          <p>
-            Med beregnloenefterskat.dk får du et værdifuldt redskab, der gør det let at beregn løn efter skat, uanset om du står midt i et jobskifte, er selvstændig eller gerne vil vide mere om førtidspension efter skat. Siden er skabt for at hjælpe dig med at få et overskueligt blik på din økonomi, så du kan træffe de helt rigtige beslutninger. Prøv beregneren i dag, og tag et skridt mod en tryggere og mere gennemsigtig privatøkonomi.
-          </p>
-        </div>
-      </div>
+            <section>
+              <h3 className="text-xl font-semibold mb-3">5. Fri telefon, computer eller internet</h3>
+              <p>Hvis du har frynsegoder som fri telefon, computer eller internet, skal du slå denne knap til.</p>
+              <p className="font-medium mt-2">Sådan finder du ud af, om du har frynsegoder:</p>
+              <ul className="list-disc pl-6 mt-2">
+                <li>Tjek din ansættelseskontrakt eller spørg din arbejdsgiver.</li>
+                <li>Hvis du har fri telefon, internet eller en arbejdsgiverbetalt computer, bliver dette normalt oplyst i din kontrakt eller på lønsedlen.</li>
+              </ul>
+              <p className="mt-2"><strong>Eksempel:</strong></p>
+              <ul className="list-disc pl-6">
+                <li>Hvis du har fri telefon, bliver du beskattet af ca. 250 kr. om måneden.</li>
+                <li>Slå knappen til for at inkludere denne beskatning i beregningen.</li>
+              </ul>
+            </section>
 
-      <div className="bg-white rounded-lg shadow-lg p-6">
-        <h2 className="text-2xl font-semibold mb-6 text-primary">
-          Sådan fungerer beregneren
-        </h2>
-        <div className="space-y-4 text-gray-700">
-          <p>
-            Vores beregner hjælper dig med at estimere din månedlige nettoløn efter skat. 
-            Her er hvordan den virker:
-          </p>
-          <ul className="list-disc pl-5 space-y-2">
-            <li>
-              <strong>Løn før skat:</strong> Start med at indtaste din bruttoløn - det er det beløb, du har aftalt med din arbejdsgiver.
-            </li>
-            <li>
-              <strong>Fradrag:</strong> Indtast dine månedlige fradrag, som reducerer din skattepligtige indkomst.
-            </li>
-            <li>
-              <strong>Trækprocent:</strong> Din personlige trækprocent fra dit skattekort bestemmer, hvor meget skat der skal betales.
-            </li>
-            <li>
-              <strong>Pension:</strong> Hvis du indbetaler til pension, kan du angive procentsatsen her.
-            </li>
-          </ul>
-          <p className="mt-4">
-            Beregneren tager højde for alle disse faktorer og giver dig et præcist estimat af din 
-            månedlige udbetaling efter skat. Dette hjælper dig med at planlægge din økonomi mere effektivt.
-          </p>
+            <section>
+              <h3 className="text-xl font-semibold mb-3">6. Beregn (BEREGN-knappen)</h3>
+              <p>Når du har udfyldt alle felter, klikker du på "BEREGN".</p>
+              <p>Beregneren viser, hvad din løn efter skat bliver.</p>
+              <p>Det beløb, du ser som resultat, er din nettoløn – det, der bliver overført til din bankkonto.</p>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-3">7. Nulstil (NULSTIL-knappen)</h3>
+              <p>Hvis du vil starte forfra med nye tal, klikker du på "NULSTIL".</p>
+              <p>Alle felter bliver tømt, og du kan indtaste nye oplysninger.</p>
+            </section>
+
+            <section className="bg-gray-50 p-6 rounded-lg mt-8">
+              <h3 className="text-xl font-semibold mb-4">Eksempel på, hvordan du udfylder beregneren</h3>
+              <p className="mb-4">Lad os sige:</p>
+              <ul className="list-disc pl-6 mb-4">
+                <li>Din bruttoløn er 35.000 kr.</li>
+                <li>Dit månedlige fradrag er 4.000 kr.</li>
+                <li>Din trækprocent er 39 %.</li>
+                <li>Du betaler 5 % af din løn til pension.</li>
+                <li>Du har fri telefon.</li>
+              </ul>
+              
+              <p className="font-medium mb-2">Beregningstrin:</p>
+              <ol className="list-decimal pl-6 space-y-2">
+                <li>Skattepligtig indkomst:<br />
+                Bruttoløn (35.000 kr.) - Fradrag (4.000 kr.) = 31.000 kr.</li>
+                <li>Arbejdsmarkedsbidrag (AM-bidrag):<br />
+                31.000 kr. x 8 % = 2.480 kr.</li>
+                <li>Indkomst efter AM-bidrag:<br />
+                31.000 kr. - 2.480 kr. = 28.520 kr.</li>
+                <li>Skat (trækprocent):<br />
+                28.520 kr. x 39 % = 11.122,80 kr.</li>
+                <li>Pension:<br />
+                35.000 kr. x 5 % = 1.750 kr.</li>
+                <li>Beskatning af frynsegoder (fri telefon):<br />
+                Der lægges ca. 250 kr. til din skattepligtige indkomst.</li>
+                <li>Nettoløn:<br />
+                Bruttoløn (35.000 kr.) - (AM-bidrag + skat + pension + frynsegodebeskatning) = ca. 19.647 kr.</li>
+              </ol>
+            </section>
+          </div>
         </div>
       </div>
     </div>
