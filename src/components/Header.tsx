@@ -8,7 +8,7 @@ export const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Calculator className="h-6 w-6 text-primary" />
-            <span className="ml-2 text-xl font-semibold text-primary">LønBeregner</span>
+            <span className="ml-2 text-xl font-semibold text-primary">beregnloenefterskat.dk</span>
           </div>
           
           <nav className="hidden md:flex space-x-8">
