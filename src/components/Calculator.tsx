@@ -5,9 +5,13 @@ import { Label } from "@/components/ui/label";
 import { Switch } from "@/components/ui/switch";
 import { useToast } from "@/hooks/use-toast";
 
-export const Calculator = () => {
+interface CalculatorProps {
+  defaultSalary?: number;
+}
+
+export const Calculator = ({ defaultSalary }: CalculatorProps) => {
   const { toast } = useToast();
-  const [salary, setSalary] = useState("");
+  const [salary, setSalary] = useState(defaultSalary ? String(defaultSalary) : "");
   const [deduction, setDeduction] = useState("");
   const [taxRate, setTaxRate] = useState("");
   const [pension, setPension] = useState("");
