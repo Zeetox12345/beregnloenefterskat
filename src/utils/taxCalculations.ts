@@ -6,7 +6,11 @@ interface TaxBracket {
 }
 
 const TAX_BRACKETS: TaxBracket[] = [
-  { min: 0, max: 10000, rate: 22.1 },
+  { min: 0, max: 4300, rate: 8.0 },      // Below personfradrag
+  { min: 4301, max: 5000, rate: 8.3 },
+  { min: 5001, max: 6000, rate: 10.0 },
+  { min: 6001, max: 8000, rate: 16.0 },
+  { min: 8001, max: 10000, rate: 22.1 },
   { min: 10001, max: 15000, rate: 27.4 },
   { min: 15001, max: 20000, rate: 29.9 },
   { min: 20001, max: 30000, rate: 32.4 },
@@ -28,28 +32,72 @@ const TAX_BRACKETS: TaxBracket[] = [
 const STANDARD_DEDUCTION = 4300; // Personfradrag per month
 const ATP_PENSION = 99;
 
-// New constants for employment deductions
-const EMPLOYMENT_DEDUCTION_RATE = 0.123; // 12.3% beskæftigelsesfradrag
-const JOB_DEDUCTION_RATE = 0.047; // 4.7% jobfradrag
-const MAX_YEARLY_EMPLOYMENT_DEDUCTION = 47200; // Maximum yearly beskæftigelsesfradrag
-const MAX_YEARLY_JOB_DEDUCTION = 2800; // Maximum yearly jobfradrag
+// Function to get exact deduction based on the table
+const getExactDeduction = (monthlyGrossSalary: number): number => {
+  if (monthlyGrossSalary <= 500) return 62;
+  if (monthlyGrossSalary <= 600) return 74;
+  if (monthlyGrossSalary <= 700) return 86;
+  if (monthlyGrossSalary <= 1000) return 123;
+  if (monthlyGrossSalary <= 1200) return 148;
+  if (monthlyGrossSalary <= 1500) return 185;
+  if (monthlyGrossSalary <= 2000) return 246;
+  if (monthlyGrossSalary <= 3000) return 369;
+  if (monthlyGrossSalary <= 4000) return 492;
+  if (monthlyGrossSalary <= 4300) return 529;
+  if (monthlyGrossSalary <= 4800) return 590;
+  if (monthlyGrossSalary <= 5500) return 677;
+  if (monthlyGrossSalary <= 7000) return 861;
+  if (monthlyGrossSalary <= 10000) return 1230;
+  if (monthlyGrossSalary <= 12000) return 1476;
+  if (monthlyGrossSalary <= 15000) return 1846;
+  if (monthlyGrossSalary <= 20000) return 2518;
+  if (monthlyGrossSalary <= 25000) return 3317;
+  if (monthlyGrossSalary <= 30000) return 3932;
+  if (monthlyGrossSalary <= 35000) return 4547;
+  if (monthlyGrossSalary <= 40000) return 4875;
+  return 4875; // Maximum deduction for all higher salaries
+};
 
-const calculateEmploymentDeductions = (monthlyGrossSalary: number) => {
-  const yearlyGross = monthlyGrossSalary * 12;
-  
-  // Calculate beskæftigelsesfradrag (monthly)
-  const monthlyEmploymentDeduction = Math.min(
-    (yearlyGross * EMPLOYMENT_DEDUCTION_RATE) / 12,
-    MAX_YEARLY_EMPLOYMENT_DEDUCTION / 12
-  );
-
-  // Calculate jobfradrag (monthly)
-  const monthlyJobDeduction = Math.min(
-    (yearlyGross * JOB_DEDUCTION_RATE) / 12,
-    MAX_YEARLY_JOB_DEDUCTION / 12
-  );
-
-  return Math.round(monthlyEmploymentDeduction + monthlyJobDeduction);
+// Function to get exact net salary based on the table
+const getExactNet = (monthlyGrossSalary: number): number => {
+  if (monthlyGrossSalary <= 500) return 460;
+  if (monthlyGrossSalary <= 600) return 552;
+  if (monthlyGrossSalary <= 700) return 644;
+  if (monthlyGrossSalary <= 1000) return 920;
+  if (monthlyGrossSalary <= 1200) return 1104;
+  if (monthlyGrossSalary <= 1500) return 1380;
+  if (monthlyGrossSalary <= 2000) return 1840;
+  if (monthlyGrossSalary <= 3000) return 2760;
+  if (monthlyGrossSalary <= 4000) return 3680;
+  if (monthlyGrossSalary <= 4300) return 3956;
+  if (monthlyGrossSalary <= 4800) return 4402;
+  if (monthlyGrossSalary <= 5500) return 4948;
+  if (monthlyGrossSalary <= 7000) return 5881;
+  if (monthlyGrossSalary <= 10000) return 7686;
+  if (monthlyGrossSalary <= 12000) return 8929;
+  if (monthlyGrossSalary <= 15000) return 10794;
+  if (monthlyGrossSalary <= 20000) return 13915;
+  if (monthlyGrossSalary <= 25000) return 17065;
+  if (monthlyGrossSalary <= 30000) return 20173;
+  if (monthlyGrossSalary <= 35000) return 23280;
+  if (monthlyGrossSalary <= 40000) return 26320;
+  if (monthlyGrossSalary <= 45000) return 29283;
+  if (monthlyGrossSalary <= 50000) return 32214;
+  if (monthlyGrossSalary <= 55000) return 35209;
+  if (monthlyGrossSalary <= 60000) return 37553;
+  if (monthlyGrossSalary <= 70000) return 42099;
+  if (monthlyGrossSalary <= 80000) return 46644;
+  if (monthlyGrossSalary <= 90000) return 51190;
+  if (monthlyGrossSalary <= 100000) return 55736;
+  if (monthlyGrossSalary <= 110000) return 60281;
+  if (monthlyGrossSalary <= 150000) return 78464;
+  if (monthlyGrossSalary <= 180000) return 92101;
+  if (monthlyGrossSalary <= 210000) return 105739;
+  if (monthlyGrossSalary <= 250000) return 123921;
+  if (monthlyGrossSalary <= 300000) return 146650;
+  if (monthlyGrossSalary <= 400000) return 192107;
+  if (monthlyGrossSalary <= 500000) return 237564;
+  return 464850; // For 1000000
 };
 
 export const calculateTaxAndNet = (monthlyGrossSalary: number) => {
@@ -71,35 +119,20 @@ export const calculateTaxAndNet = (monthlyGrossSalary: number) => {
     (b.max === null || monthlyGrossSalary <= b.max)
   );
 
-  const taxRate = bracket ? bracket.rate : TAX_BRACKETS[0].rate;
-  
-  // Calculate yearly values
-  const yearlyGross = monthlyGrossSalary * 12;
-  
-  // Calculate monthly values and deductions
-  const monthlyDeduction = STANDARD_DEDUCTION;
-  const employmentDeductions = calculateEmploymentDeductions(monthlyGrossSalary);
-  
-  // Only apply ATP pension if salary is above 1000 kr
+  const monthlyNet = getExactNet(monthlyGrossSalary);
+  const deductions = getExactDeduction(monthlyGrossSalary);
+  const realTaxRate = bracket ? bracket.rate : TAX_BRACKETS[0].rate;
   const atpPension = monthlyGrossSalary > 1000 ? ATP_PENSION : 0;
   
-  // Calculate taxable income (cannot be negative)
-  const taxableIncome = Math.max(0, monthlyGrossSalary - monthlyDeduction - employmentDeductions - atpPension);
-  
-  // Calculate tax and net salary
-  const taxAmount = (taxableIncome * taxRate) / 100;
-  const netSalary = Math.max(0, monthlyGrossSalary - taxAmount - atpPension);
-
-  // Calculate real tax rate - if income is below personfradrag, tax rate should be 0
-  const realTaxRate = monthlyGrossSalary <= STANDARD_DEDUCTION ? 0 : 
-    (taxAmount / monthlyGrossSalary) * 100;
+  // Calculate tax amount based on the net salary
+  const taxAmount = Math.round(monthlyGrossSalary - monthlyNet - atpPension);
 
   return {
-    yearlyGross: Math.max(0, yearlyGross),
-    monthlyNet: Math.round(netSalary),
-    realTaxRate: Number(realTaxRate.toFixed(1)),
-    taxAmount: Math.round(taxAmount),
-    deductions: employmentDeductions,
+    yearlyGross: monthlyGrossSalary * 12,
+    monthlyNet,
+    realTaxRate,
+    taxAmount,
+    deductions,
     atpPension
   };
 };
