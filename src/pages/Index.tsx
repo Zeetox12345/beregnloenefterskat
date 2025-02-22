@@ -6,10 +6,12 @@ import { InfoSections } from "@/components/InfoSections";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-b from-secondary/20 to-white">
+    <div className="min-h-screen flex flex-col">
       <Header />
       <main className="flex-1">
-        <Calculator />
+        <div className="pt-4">
+          <Calculator />
+        </div>
         <InfoSections />
       </main>
       <Footer />
