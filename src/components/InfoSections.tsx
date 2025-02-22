@@ -10,103 +10,81 @@ export const InfoSections = () => {
         <div className="prose prose-lg max-w-none text-gray-700">
           <p className="mb-4">
             Denne beregner hjælper dig med at få et overblik over din løn efter skat.
-            Herunder finder du en detaljeret gennemgang af, hvordan beregningerne fungerer,
-            og hvad de forskellige tal betyder.
+            Herunder finder du en detaljeret gennemgang af det progressive skattesystem
+            og hvordan din skat beregnes trin for trin.
           </p>
 
           <div className="space-y-8">
             <section>
-              <h3 className="text-xl font-semibold mb-3">1. Indtastning af løn</h3>
-              <p>I feltet øverst indtaster du din månedsløn før skat (bruttoløn). Dette er det beløb, der står på din lønseddel før nogen form for fradrag eller skat.</p>
+              <h3 className="text-xl font-semibold mb-3">1. AM-bidrag (Arbejdsmarkedsbidrag)</h3>
+              <p>Det første der fratrækkes din løn er AM-bidraget på 8%. Dette bidrag beregnes af din bruttoløn inden andre fradrag.</p>
             </section>
 
             <section>
-              <h3 className="text-xl font-semibold mb-3">2. Personfradrag</h3>
-              <p>Personfradraget er på 4.300 kr. om måneden (51.600 kr. årligt). Dette er et grundlæggende fradrag, som alle skatteydere har ret til.</p>
+              <h3 className="text-xl font-semibold mb-3">2. Andre fradrag</h3>
+              <p>Efter AM-bidrag fratrækkes der et månedligt fradrag på 4.875 kr. Dette beløb er skattefrit, hvilket betyder at du ikke betaler skat af de første 4.875 kr af din indkomst efter AM-bidrag.</p>
             </section>
 
             <section>
-              <h3 className="text-xl font-semibold mb-3">3. Andre fradrag (Beskæftigelsesfradrag og Jobfradrag)</h3>
-              <p>Andre fradrag består primært af:</p>
+              <h3 className="text-xl font-semibold mb-3">3. Almindelig indkomstskat</h3>
+              <p>For indkomst over fradraget og under topskattegrænsen betales en samlet skatteprocent på cirka 39%. Dette inkluderer:</p>
               <ul className="list-disc pl-6 mt-2">
-                <li>Beskæftigelsesfradrag: Dette fradrag stiger med din indkomst og har et maksimum på 4.600 kr. pr. måned.</li>
-                <li>Jobfradrag: Et ekstra fradrag der også stiger med indkomsten.</li>
-                <li>Eksempler på månedlige fradrag:
-                  <ul className="list-disc pl-6 mt-1">
-                    <li>Ved 15.000 kr/md: 1.846 kr</li>
-                    <li>Ved 25.000 kr/md: 3.317 kr</li>
-                    <li>Ved 35.000 kr/md: 4.547 kr</li>
-                    <li>Ved 40.000 kr/md og derover: 4.875 kr</li>
-                  </ul>
-                </li>
+                <li>Kommuneskat</li>
+                <li>Sundhedsbidrag</li>
+                <li>Bundskat</li>
               </ul>
             </section>
 
             <section>
-              <h3 className="text-xl font-semibold mb-3">4. ATP Pension</h3>
-              <p>ATP er en lovpligtig pensionsordning:</p>
+              <h3 className="text-xl font-semibold mb-3">4. Topskat</h3>
+              <p>Hvis din månedlige indkomst efter AM-bidrag overstiger 50.000 kr, skal du betale topskat. Dette betyder:</p>
               <ul className="list-disc pl-6 mt-2">
-                <li>Fast månedligt beløb på 99 kr. for fuldtidsansatte</li>
-                <li>Betales kun hvis din månedsløn er over 3.000 kr.</li>
+                <li>15% ekstra skat på den del af indkomsten, der ligger over topskattegrænsen</li>
+                <li>Dette kommer oveni den almindelige indkomstskat på 39%</li>
+                <li>Den samlede marginalskat kan således blive op til 54% for indkomst over topskattegrænsen</li>
               </ul>
             </section>
 
             <section>
-              <h3 className="text-xl font-semibold mb-3">5. Matematiske beregninger</h3>
-              <div className="bg-gray-50 p-4 rounded-lg space-y-4">
-                <p className="font-semibold">Grundlæggende formler:</p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Skattepligtig indkomst = Bruttoløn - Personfradrag - Andre fradrag</li>
-                  <li>ATP-bidrag = 99 kr. (hvis løn {">"} 3.000 kr.), ellers 0 kr.</li>
-                  <li>Månedlig skat = Skattepligtig indkomst × Skatteprocent</li>
-                  <li>Udbetalt løn = Bruttoløn - ATP - Månedlig skat</li>
-                </ul>
-                
-                <p className="font-semibold mt-4">Eksempel med 35.000 kr./md:</p>
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Bruttoløn: 35.000 kr.</li>
-                  <li>Personfradrag: 4.300 kr.</li>
-                  <li>Andre fradrag: 4.547 kr.</li>
-                  <li>ATP: 99 kr.</li>
-                  <li>Skattepligtig indkomst: 35.000 - 4.300 - 4.547 = 26.153 kr.</li>
-                  <li>Skatteprocent: 33,2%</li>
-                  <li>Skat: 11.621 kr.</li>
-                  <li>Udbetalt: 35.000 - 99 - 11.621 = 23.280 kr.</li>
-                </ul>
+              <h3 className="text-xl font-semibold mb-3">5. ATP (Arbejdsmarkedets Tillægspension)</h3>
+              <p>ATP er et fast pensionsbidrag:</p>
+              <ul className="list-disc pl-6 mt-2">
+                <li>99 kr. per måned for fuldtidsansatte</li>
+                <li>Betales kun hvis månedslønnen er over 3.000 kr</li>
+                <li>ATP-bidraget trækkes fra efter alle skatter er beregnet</li>
+              </ul>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-3">6. Beregningseksempel</h3>
+              <div className="bg-gray-50 p-4 rounded-lg">
+                <p className="font-semibold">For en månedsløn på 35.000 kr:</p>
+                <ol className="list-decimal pl-6 space-y-2 mt-2">
+                  <li>AM-bidrag: 35.000 × 8% = 2.800 kr</li>
+                  <li>Efter AM-bidrag: 35.000 - 2.800 = 32.200 kr</li>
+                  <li>Fradrag: 4.875 kr</li>
+                  <li>Skattepligtig indkomst: 32.200 - 4.875 = 27.325 kr</li>
+                  <li>Skat (39% af 27.325): 10.657 kr</li>
+                  <li>ATP-bidrag: 99 kr</li>
+                  <li>Udbetalt: 35.000 - 2.800 - 10.657 - 99 = 21.444 kr</li>
+                </ol>
               </div>
             </section>
 
             <section>
-              <h3 className="text-xl font-semibold mb-3">6. Skatteprocenter og progressive trin</h3>
-              <p>Skatten stiger progressivt med indkomsten. Her er nogle eksempler på reelle skatteprocenter:</p>
-              <ul className="list-disc pl-6 mt-2">
-                <li>0-4.300 kr/md: 8,0%</li>
-                <li>4.301-5.000 kr/md: 8,3%</li>
-                <li>10.001-15.000 kr/md: 27,4%</li>
-                <li>30.001-35.000 kr/md: 33,2%</li>
-                <li>50.001-55.000 kr/md: 35,8%</li>
-                <li>Over 80.000 kr/md: 44,2% og højere</li>
-              </ul>
-            </section>
-
-            <section>
-              <h3 className="text-xl font-semibold mb-3">7. Skat i alt</h3>
-              <p>Den samlede månedlige skat vises i nederste højre hjørne og inkluderer:</p>
-              <ul className="list-disc pl-6 mt-2">
-                <li>Kommuneskat</li>
-                <li>Bundskat</li>
-                <li>Evt. topskat (ved højere indkomster)</li>
-                <li>AM-bidrag (Arbejdsmarkedsbidrag)</li>
-              </ul>
-            </section>
-
-            <section>
-              <h3 className="text-xl font-semibold mb-3">Bemærkninger</h3>
+              <h3 className="text-xl font-semibold mb-3">7. Bemærkninger</h3>
               <ul className="list-disc pl-6 mt-2">
                 <li>Beregningen er baseret på 2025-satser</li>
                 <li>Der er taget udgangspunkt i Københavns kommunes skattesatser</li>
                 <li>Kirkeskat er ikke medregnet</li>
-                <li>Der er ikke taget højde for særlige fradrag som fx befordring, fagforening, etc.</li>
+                <li>Der er ikke taget højde for særlige fradrag som fx:
+                  <ul className="list-disc pl-6 mt-1">
+                    <li>Befordring</li>
+                    <li>Fagforeningskontingent</li>
+                    <li>Pensionsindbetalinger</li>
+                    <li>Renteudgifter</li>
+                  </ul>
+                </li>
               </ul>
             </section>
           </div>
