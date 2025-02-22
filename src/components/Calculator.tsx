@@ -1,142 +1,108 @@
-import { useState } from "react";
-import { Button } from "@/components/ui/button";
+
+import { useState, useEffect } from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Switch } from "@/components/ui/switch";
 import { useToast } from "@/hooks/use-toast";
+import { calculateTaxAndNet } from "@/utils/taxCalculations";
 
 export const Calculator = () => {
   const { toast } = useToast();
   const [salary, setSalary] = useState("");
-  const [deduction, setDeduction] = useState("");
-  const [taxRate, setTaxRate] = useState("");
-  const [pension, setPension] = useState("");
-  const [benefits, setBenefits] = useState(false);
-  const [netSalary, setNetSalary] = useState<number | null>(null);
+  const [calculationResult, setCalculationResult] = useState<{
+    monthlyNet: number;
+    realTaxRate: number;
+    yearlyGross: number;
+    taxAmount: number;
+    deductions: number;
+    atpPension: number;
+  } | null>(null);
 
-  const calculateSalary = () => {
-    if (!salary || !taxRate) {
-      toast({
-        title: "Manglende information",
-        description: "Udfyld venligst løn og trækprocent",
-        variant: "destructive",
-      });
-      return;
+  useEffect(() => {
+    if (salary && !isNaN(Number(salary))) {
+      const result = calculateTaxAndNet(Number(salary));
+      setCalculationResult(result);
+    } else {
+      setCalculationResult(null);
     }
-
-    const grossSalary = Number(salary);
-    const deductions = Number(deduction) || 0;
-    const taxRateNum = Number(taxRate);
-    const pensionRate = Number(pension) || 0;
-
-    const pensionAmount = (grossSalary * pensionRate) / 100;
-    const taxableIncome = grossSalary - deductions - pensionAmount;
-    const tax = (taxableIncome * taxRateNum) / 100;
-    
-    const calculatedNetSalary = taxableIncome - tax;
-    
-    setNetSalary(Math.round(calculatedNetSalary));
-    
-    toast({
-      title: "Beregning udført",
-      description: "Din nettoløn er blevet beregnet",
-    });
-  };
-
-  const resetCalculator = () => {
-    setSalary("");
-    setDeduction("");
-    setTaxRate("");
-    setPension("");
-    setBenefits(false);
-    setNetSalary(null);
-    
-    toast({
-      title: "Nulstillet",
-      description: "Alle felter er blevet nulstillet",
-    });
-  };
+  }, [salary]);
 
   return (
     <div className="container mx-auto px-4 py-12">
-      <div className="max-w-xl mx-auto bg-white rounded-lg shadow-lg p-6 md:p-8">
-        <div className="space-y-6">
-          <div className="space-y-2">
-            <Label htmlFor="salary">Løn før skat (kr.)</Label>
-            <Input
-              id="salary"
-              type="number"
-              value={salary}
-              onChange={(e) => setSalary(e.target.value)}
-              placeholder="F.eks. 35000"
-            />
-          </div>
-
-          <div className="space-y-2">
-            <Label htmlFor="deduction">Fradrag (kr.)</Label>
-            <Input
-              id="deduction"
-              type="number"
-              value={deduction}
-              onChange={(e) => setDeduction(e.target.value)}
-              placeholder="F.eks. 4000"
-            />
-          </div>
-
-          <div className="space-y-2">
-            <Label htmlFor="taxRate">Trækprocent (%)</Label>
-            <Input
-              id="taxRate"
-              type="number"
-              value={taxRate}
-              onChange={(e) => setTaxRate(e.target.value)}
-              placeholder="F.eks. 39"
-            />
-          </div>
-
-          <div className="space-y-2">
-            <Label htmlFor="pension">Egen pensionsindbetaling (%)</Label>
-            <Input
-              id="pension"
-              type="number"
-              value={pension}
-              onChange={(e) => setPension(e.target.value)}
-              placeholder="F.eks. 5"
-            />
-          </div>
-
-          <div className="flex items-center space-x-2">
-            <Switch
-              id="benefits"
-              checked={benefits}
-              onCheckedChange={setBenefits}
-            />
-            <Label htmlFor="benefits">Fri telefon, computer eller internet</Label>
-          </div>
-
-          <div className="flex space-x-4">
-            <Button onClick={calculateSalary} className="flex-1">
-              BEREGN
-            </Button>
-            <Button
-              onClick={resetCalculator}
-              variant="outline"
-              className="flex-1"
-            >
-              Nulstil
-            </Button>
-          </div>
-
-          {netSalary !== null && (
-            <div className="mt-6 p-4 bg-muted rounded-lg">
-              <h3 className="text-lg font-semibold text-center mb-2">
-                Din forventede nettoløn
-              </h3>
-              <p className="text-2xl font-bold text-primary text-center">
-                {netSalary.toLocaleString("da-DK")} kr. pr. måned
-              </p>
+      <div className="max-w-2xl mx-auto">
+        <div className="bg-white rounded-lg shadow-lg p-6 md:p-8">
+          <h2 className="text-2xl font-semibold text-center mb-6">
+            Lønberegner - 2025
+          </h2>
+          
+          <div className="space-y-6">
+            <div>
+              <Label htmlFor="salary" className="text-lg mb-2 block">
+                Indtast månedsløn og udregn hvor meget du vil få udbetalt efter skat og pension*
+              </Label>
+              <Input
+                id="salary"
+                type="number"
+                value={salary}
+                onChange={(e) => setSalary(e.target.value)}
+                placeholder="F.eks. 35000"
+                className="text-2xl h-14 text-right"
+              />
+              <span className="text-right block mt-1 text-sm text-gray-500">kr</span>
             </div>
-          )}
+
+            {calculationResult && (
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-8">
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h3 className="text-sm font-medium text-gray-600">Års løn</h3>
+                  <p className="text-lg font-semibold mt-1">
+                    {calculationResult.yearlyGross.toLocaleString("da-DK")} kr
+                  </p>
+                  <span className="text-xs text-gray-500">Per year</span>
+                </div>
+
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h3 className="text-sm font-medium text-gray-600">ATP (pension)</h3>
+                  <p className="text-lg font-semibold mt-1">
+                    {calculationResult.atpPension} kr
+                  </p>
+                  <span className="text-xs text-gray-500">Per month</span>
+                </div>
+
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h3 className="text-sm font-medium text-gray-600">Personfradrag</h3>
+                  <p className="text-lg font-semibold mt-1">4.300 kr</p>
+                  <span className="text-xs text-gray-500">Per month</span>
+                </div>
+
+                <div className="bg-gray-50 p-4 rounded-lg">
+                  <h3 className="text-sm font-medium text-gray-600">Andre fradrag</h3>
+                  <p className="text-lg font-semibold mt-1">
+                    {calculationResult.deductions.toLocaleString("da-DK")} kr
+                  </p>
+                  <span className="text-xs text-gray-500">Per month</span>
+                </div>
+
+                <div className="bg-gray-50 p-4 rounded-lg col-span-2 md:col-span-1">
+                  <h3 className="text-sm font-medium text-gray-600">Reel skatteprocent</h3>
+                  <p className="text-lg font-semibold mt-1 text-orange-600">
+                    {calculationResult.realTaxRate.toFixed(1)}%
+                  </p>
+                </div>
+
+                <div className="bg-primary p-4 rounded-lg col-span-2 md:col-span-1">
+                  <h3 className="text-sm font-medium text-white">Udbetalt</h3>
+                  <p className="text-2xl font-bold mt-1 text-white">
+                    {calculationResult.monthlyNet.toLocaleString("da-DK")} kr
+                  </p>
+                  <span className="text-xs text-white/80">Per month</span>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
+        
+        <div className="mt-4 text-sm text-gray-500 text-center">
+          *Udregningen tager udgangspunkt i kommuneskatten i Københavns kommune uden kirkeskat.
         </div>
       </div>
     </div>
