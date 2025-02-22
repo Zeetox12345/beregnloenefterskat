@@ -29,6 +29,18 @@ const STANDARD_DEDUCTION = 4300;
 const ATP_PENSION = 99;
 
 export const calculateTaxAndNet = (monthlyGrossSalary: number) => {
+  // Handle negative or zero salary
+  if (monthlyGrossSalary <= 0) {
+    return {
+      yearlyGross: 0,
+      monthlyNet: 0,
+      realTaxRate: 0,
+      taxAmount: 0,
+      deductions: 0,
+      atpPension: 0
+    };
+  }
+
   // Find applicable tax bracket
   const bracket = TAX_BRACKETS.find(
     (b) => monthlyGrossSalary >= b.min && 
@@ -42,19 +54,24 @@ export const calculateTaxAndNet = (monthlyGrossSalary: number) => {
   
   // Calculate monthly values
   const monthlyDeduction = STANDARD_DEDUCTION;
-  const otherDeductions = monthlyGrossSalary * 0.13; // Approximate other deductions based on salary
-  const taxableIncome = monthlyGrossSalary - monthlyDeduction - otherDeductions - ATP_PENSION;
+  const otherDeductions = Math.min(monthlyGrossSalary * 0.13, monthlyGrossSalary); // Cap deductions at salary amount
+  
+  // Only apply ATP pension if salary is above a certain threshold (e.g., 1000 kr)
+  const atpPension = monthlyGrossSalary > 1000 ? ATP_PENSION : 0;
+  
+  // Calculate taxable income (cannot be negative)
+  const taxableIncome = Math.max(0, monthlyGrossSalary - monthlyDeduction - otherDeductions - atpPension);
   
   // Calculate tax and net salary
   const taxAmount = (taxableIncome * taxRate) / 100;
-  const netSalary = monthlyGrossSalary - taxAmount - ATP_PENSION;
+  const netSalary = Math.max(0, monthlyGrossSalary - taxAmount - atpPension);
 
   return {
-    yearlyGross,
+    yearlyGross: Math.max(0, yearlyGross),
     monthlyNet: Math.round(netSalary),
-    realTaxRate: taxRate,
+    realTaxRate: monthlyGrossSalary > 0 ? taxRate : 0,
     taxAmount: Math.round(taxAmount),
     deductions: Math.round(monthlyDeduction + otherDeductions),
-    atpPension: ATP_PENSION
+    atpPension
   };
 };
