@@ -102,7 +102,7 @@ export const Calculator = () => {
                 <span className="text-xs text-gray-500">Per month</span>
               </div>
 
-              <div className="bg-gray-50 p-3 rounded-lg col-span-2 md:col-span-1">
+              <div className="bg-gray-50 p-3 rounded-lg">
                 <h3 className="text-sm font-medium text-gray-600">Reel skatteprocent</h3>
                 <p className="text-lg font-semibold mt-1 text-orange-600">
                   {calculationResult ? 
@@ -110,6 +110,17 @@ export const Calculator = () => {
                     "-%"
                   }
                 </p>
+              </div>
+
+              <div className="bg-gray-50 p-3 rounded-lg">
+                <h3 className="text-sm font-medium text-gray-600">Skat i alt</h3>
+                <p className="text-lg font-semibold mt-1">
+                  {calculationResult ? 
+                    `${calculationResult.taxAmount.toLocaleString("da-DK")} kr` :
+                    "- kr"
+                  }
+                </p>
+                <span className="text-xs text-gray-500">Per month</span>
               </div>
             </div>
           </div>
