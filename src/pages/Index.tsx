@@ -2,7 +2,6 @@
 import { Calculator } from "@/components/Calculator";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
 import { InfoSections } from "@/components/InfoSections";
 
 const Index = () => {
@@ -11,7 +10,6 @@ const Index = () => {
       <Header />
       <main className="flex-1">
         <Calculator />
-        <Hero />
         <InfoSections />
       </main>
       <Footer />
