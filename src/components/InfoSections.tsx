@@ -60,13 +60,15 @@ export const InfoSections = () => {
               <div className="bg-gray-50 p-4 rounded-lg">
                 <p className="font-semibold">For en månedsløn på 35.000 kr:</p>
                 <ol className="list-decimal pl-6 space-y-2 mt-2">
-                  <li>AM-bidrag: 35.000 × 8% = 2.800 kr</li>
+                  <li>AM-bidrag (8%): 35.000 × 0,08 = 2.800 kr</li>
                   <li>Efter AM-bidrag: 35.000 - 2.800 = 32.200 kr</li>
-                  <li>Fradrag: 4.547 kr</li>
-                  <li>Skattepligtig indkomst: 32.200 - 4.547 = 27.653 kr</li>
-                  <li>Skat (39% af 27.653): 10.785 kr</li>
+                  <li>Personfradrag: 4.300 kr</li>
+                  <li>Andre fradrag: 4.547 kr</li>
+                  <li>Samlet fradrag: 4.300 + 4.547 = 8.847 kr</li>
+                  <li>Skattepligtig indkomst: 32.200 - 8.847 = 23.353 kr</li>
+                  <li>Skat (39% af 23.353): 9.108 kr</li>
                   <li>ATP-bidrag: 99 kr</li>
-                  <li>Udbetalt: 35.000 - 2.800 - 10.785 - 99 = 21.316 kr</li>
+                  <li>Udbetalt: 35.000 - 2.800 - 9.108 - 99 = 22.993 kr</li>
                 </ol>
               </div>
             </section>
