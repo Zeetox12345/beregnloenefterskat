@@ -35,17 +35,6 @@ export const Calculator = () => {
           </h2>
           
           <div className="space-y-6">
-            {/* Main result section moved to top */}
-            <div className="bg-primary p-6 rounded-lg">
-              <h3 className="text-sm font-medium text-white/90">Udbetalt per måned</h3>
-              <p className="text-4xl md:text-5xl font-bold mt-2 text-white">
-                {calculationResult ? 
-                  `${calculationResult.monthlyNet.toLocaleString("da-DK")} kr` : 
-                  "- kr"
-                }
-              </p>
-            </div>
-
             <div>
               <Label htmlFor="salary" className="text-lg mb-2 block">
                 Indtast månedsløn og udregn hvor meget du vil få udbetalt efter skat og pension*
@@ -59,6 +48,17 @@ export const Calculator = () => {
                 className="text-2xl h-14 text-right"
               />
               <span className="text-right block mt-1 text-sm text-gray-500">kr</span>
+            </div>
+
+            {/* Main result section */}
+            <div className="bg-primary p-6 rounded-lg">
+              <h3 className="text-sm font-medium text-white/90">Udbetalt per måned</h3>
+              <p className="text-4xl md:text-5xl font-bold mt-2 text-white">
+                {calculationResult ? 
+                  `${calculationResult.monthlyNet.toLocaleString("da-DK")} kr` : 
+                  "- kr"
+                }
+              </p>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
