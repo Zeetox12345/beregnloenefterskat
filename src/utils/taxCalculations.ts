@@ -25,8 +25,32 @@ const TAX_BRACKETS: TaxBracket[] = [
   { min: 300001, max: null, rate: 51.1 },
 ];
 
-const STANDARD_DEDUCTION = 4300;
+const STANDARD_DEDUCTION = 4300; // Personfradrag per month
 const ATP_PENSION = 99;
+
+// New constants for employment deductions
+const EMPLOYMENT_DEDUCTION_RATE = 0.123; // 12.3% beskæftigelsesfradrag
+const JOB_DEDUCTION_RATE = 0.047; // 4.7% jobfradrag
+const MAX_YEARLY_EMPLOYMENT_DEDUCTION = 47200; // Maximum yearly beskæftigelsesfradrag
+const MAX_YEARLY_JOB_DEDUCTION = 2800; // Maximum yearly jobfradrag
+
+const calculateEmploymentDeductions = (monthlyGrossSalary: number) => {
+  const yearlyGross = monthlyGrossSalary * 12;
+  
+  // Calculate beskæftigelsesfradrag (monthly)
+  const monthlyEmploymentDeduction = Math.min(
+    (yearlyGross * EMPLOYMENT_DEDUCTION_RATE) / 12,
+    MAX_YEARLY_EMPLOYMENT_DEDUCTION / 12
+  );
+
+  // Calculate jobfradrag (monthly)
+  const monthlyJobDeduction = Math.min(
+    (yearlyGross * JOB_DEDUCTION_RATE) / 12,
+    MAX_YEARLY_JOB_DEDUCTION / 12
+  );
+
+  return Math.round(monthlyEmploymentDeduction + monthlyJobDeduction);
+};
 
 export const calculateTaxAndNet = (monthlyGrossSalary: number) => {
   // Handle negative or zero salary
@@ -52,26 +76,30 @@ export const calculateTaxAndNet = (monthlyGrossSalary: number) => {
   // Calculate yearly values
   const yearlyGross = monthlyGrossSalary * 12;
   
-  // Calculate monthly values
+  // Calculate monthly values and deductions
   const monthlyDeduction = STANDARD_DEDUCTION;
-  const otherDeductions = Math.min(monthlyGrossSalary * 0.13, monthlyGrossSalary); // Cap deductions at salary amount
+  const employmentDeductions = calculateEmploymentDeductions(monthlyGrossSalary);
   
-  // Only apply ATP pension if salary is above a certain threshold (e.g., 1000 kr)
+  // Only apply ATP pension if salary is above 1000 kr
   const atpPension = monthlyGrossSalary > 1000 ? ATP_PENSION : 0;
   
   // Calculate taxable income (cannot be negative)
-  const taxableIncome = Math.max(0, monthlyGrossSalary - monthlyDeduction - otherDeductions - atpPension);
+  const taxableIncome = Math.max(0, monthlyGrossSalary - monthlyDeduction - employmentDeductions - atpPension);
   
   // Calculate tax and net salary
   const taxAmount = (taxableIncome * taxRate) / 100;
   const netSalary = Math.max(0, monthlyGrossSalary - taxAmount - atpPension);
 
+  // Calculate real tax rate - if income is below personfradrag, tax rate should be 0
+  const realTaxRate = monthlyGrossSalary <= STANDARD_DEDUCTION ? 0 : 
+    (taxAmount / monthlyGrossSalary) * 100;
+
   return {
     yearlyGross: Math.max(0, yearlyGross),
     monthlyNet: Math.round(netSalary),
-    realTaxRate: monthlyGrossSalary > 0 ? taxRate : 0,
+    realTaxRate: Number(realTaxRate.toFixed(1)),
     taxAmount: Math.round(taxAmount),
-    deductions: Math.round(monthlyDeduction + otherDeductions),
+    deductions: employmentDeductions,
     atpPension
   };
 };
