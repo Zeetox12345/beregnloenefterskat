@@ -22,7 +22,7 @@ export const InfoSections = () => {
 
             <section>
               <h3 className="text-xl font-semibold mb-3">2. Personfradrag</h3>
-              <p>Personfradraget er på 4.300 kr. om måneden (51.600 kr. årligt). Dette er et grundlæggende fradrag, som alle skatteydere har ret til. Det betyder, at de første 4.300 kr. du tjener om måneden, er fritaget for indkomstskat.</p>
+              <p>Personfradraget er på 4.300 kr. om måneden (51.600 kr. årligt). Dette er et grundlæggende fradrag, som alle skatteydere har ret til.</p>
             </section>
 
             <section>
@@ -47,12 +47,37 @@ export const InfoSections = () => {
               <p>ATP er en lovpligtig pensionsordning:</p>
               <ul className="list-disc pl-6 mt-2">
                 <li>Fast månedligt beløb på 99 kr. for fuldtidsansatte</li>
-                <li>Betales kun hvis din månedsløn er over 1.000 kr.</li>
+                <li>Betales kun hvis din månedsløn er over 3.000 kr.</li>
               </ul>
             </section>
 
             <section>
-              <h3 className="text-xl font-semibold mb-3">5. Skatteprocenter og progressive trin</h3>
+              <h3 className="text-xl font-semibold mb-3">5. Matematiske beregninger</h3>
+              <div className="bg-gray-50 p-4 rounded-lg space-y-4">
+                <p className="font-semibold">Grundlæggende formler:</p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>Skattepligtig indkomst = Bruttoløn - Personfradrag - Andre fradrag</li>
+                  <li>ATP-bidrag = 99 kr. (hvis løn {">"} 3.000 kr.), ellers 0 kr.</li>
+                  <li>Månedlig skat = Skattepligtig indkomst × Skatteprocent</li>
+                  <li>Udbetalt løn = Bruttoløn - ATP - Månedlig skat</li>
+                </ul>
+                
+                <p className="font-semibold mt-4">Eksempel med 35.000 kr./md:</p>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>Bruttoløn: 35.000 kr.</li>
+                  <li>Personfradrag: 4.300 kr.</li>
+                  <li>Andre fradrag: 4.547 kr.</li>
+                  <li>ATP: 99 kr.</li>
+                  <li>Skattepligtig indkomst: 35.000 - 4.300 - 4.547 = 26.153 kr.</li>
+                  <li>Skatteprocent: 33,2%</li>
+                  <li>Skat: 11.621 kr.</li>
+                  <li>Udbetalt: 35.000 - 99 - 11.621 = 23.280 kr.</li>
+                </ul>
+              </div>
+            </section>
+
+            <section>
+              <h3 className="text-xl font-semibold mb-3">6. Skatteprocenter og progressive trin</h3>
               <p>Skatten stiger progressivt med indkomsten. Her er nogle eksempler på reelle skatteprocenter:</p>
               <ul className="list-disc pl-6 mt-2">
                 <li>0-4.300 kr/md: 8,0%</li>
@@ -65,17 +90,6 @@ export const InfoSections = () => {
             </section>
 
             <section>
-              <h3 className="text-xl font-semibold mb-3">6. Udbetalt løn (nettoløn)</h3>
-              <p>Din udbetaling beregnes sådan:</p>
-              <ol className="list-decimal pl-6 space-y-2">
-                <li>Start med bruttolønnen (din indtastede månedsløn)</li>
-                <li>Træk ATP fra (99 kr. hvis løn > 1.000 kr.)</li>
-                <li>Fratræk skat baseret på din indkomst efter fradrag</li>
-                <li>Resultatet er din månedlige udbetaling</li>
-              </ol>
-            </section>
-
-            <section>
               <h3 className="text-xl font-semibold mb-3">7. Skat i alt</h3>
               <p>Den samlede månedlige skat vises i nederste højre hjørne og inkluderer:</p>
               <ul className="list-disc pl-6 mt-2">
@@ -84,20 +98,6 @@ export const InfoSections = () => {
                 <li>Evt. topskat (ved højere indkomster)</li>
                 <li>AM-bidrag (Arbejdsmarkedsbidrag)</li>
               </ul>
-            </section>
-
-            <section className="bg-gray-50 p-6 rounded-lg mt-8">
-              <h3 className="text-xl font-semibold mb-4">Eksempel på beregning</h3>
-              <p>Lad os tage et eksempel med en månedsløn på 35.000 kr.:</p>
-              <ol className="list-decimal pl-6 space-y-2">
-                <li>Bruttoløn: 35.000 kr.</li>
-                <li>ATP-bidrag: 99 kr.</li>
-                <li>Personfradrag: 4.300 kr.</li>
-                <li>Andre fradrag: 4.547 kr.</li>
-                <li>Skatteprocent: 33,2%</li>
-                <li>Skat i alt: 11.621 kr.</li>
-                <li>Udbetalt: 23.280 kr.</li>
-              </ol>
             </section>
 
             <section>

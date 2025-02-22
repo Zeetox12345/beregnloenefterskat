@@ -1,4 +1,3 @@
-
 interface TaxBracket {
   min: number;
   max: number | null;
@@ -31,8 +30,8 @@ const TAX_BRACKETS: TaxBracket[] = [
 
 const STANDARD_DEDUCTION = 4300; // Personfradrag per month
 const ATP_PENSION = 99;
+const ATP_THRESHOLD = 3000; // Updated threshold for ATP
 
-// Function to get exact deduction based on the table
 const getExactDeduction = (monthlyGrossSalary: number): number => {
   if (monthlyGrossSalary <= 500) return 62;
   if (monthlyGrossSalary <= 600) return 74;
@@ -58,7 +57,6 @@ const getExactDeduction = (monthlyGrossSalary: number): number => {
   return 4875; // Maximum deduction for all higher salaries
 };
 
-// Function to get exact net salary based on the table
 const getExactNet = (monthlyGrossSalary: number): number => {
   if (monthlyGrossSalary <= 500) return 460;
   if (monthlyGrossSalary <= 600) return 552;
@@ -122,7 +120,7 @@ export const calculateTaxAndNet = (monthlyGrossSalary: number) => {
   const monthlyNet = getExactNet(monthlyGrossSalary);
   const deductions = getExactDeduction(monthlyGrossSalary);
   const realTaxRate = bracket ? bracket.rate : TAX_BRACKETS[0].rate;
-  const atpPension = monthlyGrossSalary > 1000 ? ATP_PENSION : 0;
+  const atpPension = monthlyGrossSalary > ATP_THRESHOLD ? ATP_PENSION : 0;
   
   // Calculate tax amount based on the net salary
   const taxAmount = Math.round(monthlyGrossSalary - monthlyNet - atpPension);
