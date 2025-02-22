@@ -1,3 +1,4 @@
+
 import { Calculator } from "@/components/Calculator";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -8,9 +9,11 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-secondary/20 to-white">
       <Header />
-      <Hero />
-      <Calculator />
-      <InfoSections />
+      <main className="flex-1">
+        <Calculator />
+        <Hero />
+        <InfoSections />
+      </main>
       <Footer />
     </div>
   );
