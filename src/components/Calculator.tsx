@@ -27,7 +27,7 @@ export const Calculator = () => {
   }, [salary]);
 
   return (
-    <div className="container mx-auto px-4 pt-2 pb-4 md:py-8">
+    <div className="container mx-auto px-4 pb-4">
       <div className="max-w-2xl mx-auto">
         <div className="bg-white rounded-lg shadow-lg p-4 md:p-6">
           <h2 className="text-xl md:text-2xl font-semibold text-center mb-3">
