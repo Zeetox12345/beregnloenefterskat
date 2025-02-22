@@ -36,6 +36,7 @@ const TOP_TAX_RATE = 0.15;       // top-skat 15%
 const TOP_THRESHOLD = 50000;     // ~50k monthly
 const ATP_PENSION = 99;          // ATP pension contribution
 const ATP_THRESHOLD = 3000;      // Minimum salary for ATP
+const PERSONFRADRAG = 4300;      // Monthly personfradrag
 
 const getAndreFradrag = (monthlyWage: number): number => {
   for (let i = 0; i < FRADRAG_BRACKETS.length; i++) {
@@ -63,43 +64,41 @@ export const calculateTaxAndNet = (monthlyGrossSalary: number) => {
   const atpPension = monthlyGrossSalary > ATP_THRESHOLD ? ATP_PENSION : 0;
 
   // 2. Subtract AM-bidrag (8%)
-  const postAMB = monthlyGrossSalary * (1 - AM_RATE);
+  const amBidrag = monthlyGrossSalary * AM_RATE;
+  const postAMB = monthlyGrossSalary - amBidrag;
 
   // 3. Get progressive "andre fradrag"
   const personalAllowance = getAndreFradrag(monthlyGrossSalary);
+  
+  // 4. Calculate total tax deductions including personfradrag
+  const totalDeductions = PERSONFRADRAG + personalAllowance;
 
-  // 4. Calculate net income using progressive tax system
-  let monthlyNet = 0;
-  if (postAMB <= personalAllowance) {
-    // If below personal allowance, only AM-bidrag is deducted
-    monthlyNet = postAMB;
+  // 5. Calculate taxable income
+  let taxableIncome = Math.max(0, postAMB - totalDeductions);
+
+  // 6. Calculate tax on taxable income
+  let taxOnIncome = 0;
+  if (postAMB <= TOP_THRESHOLD) {
+    // Not over top-tax threshold
+    taxOnIncome = taxableIncome * BASE_TAX_RATE;
   } else {
-    // Calculate taxable amount above personal allowance
-    const taxableAboveAllowance = postAMB - personalAllowance;
-    const thresholdSpan = TOP_THRESHOLD - personalAllowance;
-
-    if (taxableAboveAllowance <= thresholdSpan) {
-      // Not over top-tax threshold
-      monthlyNet = postAMB - (BASE_TAX_RATE * taxableAboveAllowance);
-    } else {
-      // Over top-tax threshold
-      const overTop = taxableAboveAllowance - thresholdSpan;
-      const afterBaseTaxToThreshold = postAMB - BASE_TAX_RATE * thresholdSpan;
-      monthlyNet = afterBaseTaxToThreshold - ((BASE_TAX_RATE + TOP_TAX_RATE) * overTop);
-    }
+    // Over top-tax threshold
+    const baseIncome = TOP_THRESHOLD - totalDeductions;
+    const topIncome = postAMB - TOP_THRESHOLD;
+    taxOnIncome = (baseIncome * BASE_TAX_RATE) + (topIncome * (BASE_TAX_RATE + TOP_TAX_RATE));
   }
 
-  // Subtract ATP from net income
-  monthlyNet -= atpPension;
+  // 7. Calculate monthly net income
+  const monthlyNet = monthlyGrossSalary - amBidrag - taxOnIncome - atpPension;
 
-  // Calculate real tax rate
-  const totalTax = monthlyGrossSalary - monthlyNet - atpPension;
+  // 8. Calculate real tax rate (including AM-bidrag but not ATP)
+  const totalTax = amBidrag + taxOnIncome;
   const realTaxRate = (totalTax / monthlyGrossSalary) * 100;
 
   return {
     yearlyGross: monthlyGrossSalary * 12,
-    monthlyNet: Math.round(monthlyNet), // Round to nearest whole number
-    realTaxRate: Math.round(realTaxRate * 10) / 10, // Round to 1 decimal
+    monthlyNet: Math.round(monthlyNet),
+    realTaxRate: Math.round(realTaxRate * 10) / 10,
     taxAmount: Math.round(totalTax),
     deductions: personalAllowance,
     atpPension
