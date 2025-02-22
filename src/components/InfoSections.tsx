@@ -22,7 +22,7 @@ export const InfoSections = () => {
 
             <section>
               <h3 className="text-xl font-semibold mb-3">2. Andre fradrag</h3>
-              <p>Efter AM-bidrag fratrækkes der et månedligt fradrag på 4.875 kr. Dette beløb er skattefrit, hvilket betyder at du ikke betaler skat af de første 4.875 kr af din indkomst efter AM-bidrag.</p>
+              <p>Efter AM-bidrag fratrækkes der et månedligt fradrag på 4.547 kr ved en indkomst på 35.000 kr. Dette beløb er skattefrit, hvilket betyder at du ikke betaler skat af de første 4.547 kr af din indkomst efter AM-bidrag.</p>
             </section>
 
             <section>
@@ -62,11 +62,11 @@ export const InfoSections = () => {
                 <ol className="list-decimal pl-6 space-y-2 mt-2">
                   <li>AM-bidrag: 35.000 × 8% = 2.800 kr</li>
                   <li>Efter AM-bidrag: 35.000 - 2.800 = 32.200 kr</li>
-                  <li>Fradrag: 4.875 kr</li>
-                  <li>Skattepligtig indkomst: 32.200 - 4.875 = 27.325 kr</li>
-                  <li>Skat (39% af 27.325): 10.657 kr</li>
+                  <li>Fradrag: 4.547 kr</li>
+                  <li>Skattepligtig indkomst: 32.200 - 4.547 = 27.653 kr</li>
+                  <li>Skat (39% af 27.653): 10.785 kr</li>
                   <li>ATP-bidrag: 99 kr</li>
-                  <li>Udbetalt: 35.000 - 2.800 - 10.657 - 99 = 21.444 kr</li>
+                  <li>Udbetalt: 35.000 - 2.800 - 10.785 - 99 = 21.316 kr</li>
                 </ol>
               </div>
             </section>
