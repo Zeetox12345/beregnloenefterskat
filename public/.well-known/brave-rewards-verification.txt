@@ -1,0 +1,3 @@
+This is a placeholder for the Brave rewards verification file.
+You would normally place your verification token from Google Search Console here.
+Please replace this with your actual verification token from Google Search Console. 

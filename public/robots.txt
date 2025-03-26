@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Allow Google to index all assets including favicon
+User-agent: Googlebot
+Allow: /
+Allow: /*.ico$
+Allow: /*.png$
+
+Sitemap: https://beregnloenefterskat.dk/sitemap.xml 
