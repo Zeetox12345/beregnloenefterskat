@@ -1,4 +1,4 @@
-import { Calculator, ChevronDown, Search } from "lucide-react";
+import { Calculator, ChevronDown } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import {
@@ -10,12 +10,9 @@ import {
   DropdownMenuSeparator,
   DropdownMenuGroup,
 } from "@/components/ui/dropdown-menu";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
 
 export const Header = () => {
   const navigate = useNavigate();
-  const [customSalary, setCustomSalary] = useState("");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   // Organize salary options into groups
@@ -24,15 +21,6 @@ export const Header = () => {
     "Mellem indkomst": [40000, 45000, 50000, 55000],
     "Høj indkomst": [60000, 65000, 70000, 75000],
     "Top indkomst": [80000, 85000, 90000, 95000, 100000]
-  };
-
-  const handleCustomSalarySubmit = () => {
-    const salary = parseInt(customSalary.replace(/\D/g, ""));
-    if (!isNaN(salary) && salary > 0) {
-      navigate(`/lonn/${salary}`);
-      setIsDropdownOpen(false);
-      setCustomSalary("");
-    }
   };
 
   return (
@@ -61,36 +49,6 @@ export const Header = () => {
               </DropdownMenuTrigger>
               
               <DropdownMenuContent align="end" className="w-72 max-h-[70vh] overflow-y-auto">
-                <div className="p-3 border-b">
-                  <div className="flex items-center space-x-2">
-                    <div className="relative w-full">
-                      <Search className="absolute left-2 top-1/2 transform -translate-y-1/2 h-4 w-4 text-gray-400" />
-                      <Input
-                        type="text"
-                        placeholder="Indtast løn..."
-                        value={customSalary}
-                        onChange={(e) => setCustomSalary(e.target.value)}
-                        className="h-9 pl-8"
-                        onKeyDown={(e) => {
-                          if (e.key === 'Enter') {
-                            handleCustomSalarySubmit();
-                          }
-                        }}
-                      />
-                    </div>
-                    <Button 
-                      size="sm" 
-                      onClick={handleCustomSalarySubmit}
-                      className="h-9"
-                    >
-                      Gå
-                    </Button>
-                  </div>
-                  <p className="text-xs text-gray-500 mt-1">
-                    Indtast din ønskede månedsløn
-                  </p>
-                </div>
-                
                 {Object.entries(salaryGroups).map(([groupName, salaries], index) => (
                   <div key={groupName}>
                     <DropdownMenuLabel className="text-primary font-semibold pt-2">
