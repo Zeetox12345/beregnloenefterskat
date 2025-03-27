@@ -1,13 +1,16 @@
-
 import { useState, useEffect } from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { calculateTaxAndNet } from "@/utils/taxCalculations";
 
-export const Calculator = () => {
+interface CalculatorProps {
+  initialSalary?: string;
+}
+
+export const Calculator = ({ initialSalary = "" }: CalculatorProps) => {
   const { toast } = useToast();
-  const [salary, setSalary] = useState("");
+  const [salary, setSalary] = useState(initialSalary);
   const [calculationResult, setCalculationResult] = useState<{
     monthlyNet: number;
     realTaxRate: number;
@@ -16,6 +19,13 @@ export const Calculator = () => {
     deductions: number;
     atpPension: number;
   } | null>(null);
+
+  useEffect(() => {
+    // Set initial salary when prop changes
+    if (initialSalary) {
+      setSalary(initialSalary);
+    }
+  }, [initialSalary]);
 
   useEffect(() => {
     if (salary && !isNaN(Number(salary))) {
