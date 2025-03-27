@@ -3,7 +3,7 @@
   <!-- Main page -->
   <url>
     <loc>https://beregnloenefterskat.dk/</loc>
-    <lastmod>2023-06-30</lastmod>
+    <lastmod>2024-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,111 +11,131 @@
   <!-- Salary subpages -->
   <!-- Low income range -->
   <url>
-    <loc>https://beregnloenefterskat.dk/lonn/20000</loc>
-    <lastmod>2023-06-30</lastmod>
+    <loc>https://beregnloenefterskat.dk/loen/20000</loc>
+    <lastmod>2024-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beregnloenefterskat.dk/lonn/25000</loc>
-    <lastmod>2023-06-30</lastmod>
+    <loc>https://beregnloenefterskat.dk/loen/25000</loc>
+    <lastmod>2024-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beregnloenefterskat.dk/lonn/30000</loc>
-    <lastmod>2023-06-30</lastmod>
+    <loc>https://beregnloenefterskat.dk/loen/30000</loc>
+    <lastmod>2024-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beregnloenefterskat.dk/lonn/35000</loc>
-    <lastmod>2023-06-30</lastmod>
+    <loc>https://beregnloenefterskat.dk/loen/35000</loc>
+    <lastmod>2024-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Medium income range -->
   <url>
-    <loc>https://beregnloenefterskat.dk/lonn/40000</loc>
-    <lastmod>2023-06-30</lastmod>
+    <loc>https://beregnloenefterskat.dk/loen/40000</loc>
+    <lastmod>2024-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beregnloenefterskat.dk/lonn/45000</loc>
-    <lastmod>2023-06-30</lastmod>
+    <loc>https://beregnloenefterskat.dk/loen/45000</loc>
+    <lastmod>2024-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beregnloenefterskat.dk/lonn/50000</loc>
-    <lastmod>2023-06-30</lastmod>
+    <loc>https://beregnloenefterskat.dk/loen/50000</loc>
+    <lastmod>2024-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beregnloenefterskat.dk/lonn/55000</loc>
-    <lastmod>2023-06-30</lastmod>
+    <loc>https://beregnloenefterskat.dk/loen/55000</loc>
+    <lastmod>2024-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- High income range -->
   <url>
-    <loc>https://beregnloenefterskat.dk/lonn/60000</loc>
-    <lastmod>2023-06-30</lastmod>
+    <loc>https://beregnloenefterskat.dk/loen/60000</loc>
+    <lastmod>2024-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beregnloenefterskat.dk/lonn/65000</loc>
-    <lastmod>2023-06-30</lastmod>
+    <loc>https://beregnloenefterskat.dk/loen/65000</loc>
+    <lastmod>2024-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beregnloenefterskat.dk/lonn/70000</loc>
-    <lastmod>2023-06-30</lastmod>
+    <loc>https://beregnloenefterskat.dk/loen/70000</loc>
+    <lastmod>2024-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://beregnloenefterskat.dk/lonn/75000</loc>
-    <lastmod>2023-06-30</lastmod>
+    <loc>https://beregnloenefterskat.dk/loen/75000</loc>
+    <lastmod>2024-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
   <!-- Top income range -->
   <url>
-    <loc>https://beregnloenefterskat.dk/lonn/80000</loc>
-    <lastmod>2023-06-30</lastmod>
+    <loc>https://beregnloenefterskat.dk/loen/80000</loc>
+    <lastmod>2024-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://beregnloenefterskat.dk/lonn/85000</loc>
-    <lastmod>2023-06-30</lastmod>
+    <loc>https://beregnloenefterskat.dk/loen/85000</loc>
+    <lastmod>2024-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://beregnloenefterskat.dk/lonn/90000</loc>
-    <lastmod>2023-06-30</lastmod>
+    <loc>https://beregnloenefterskat.dk/loen/90000</loc>
+    <lastmod>2024-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://beregnloenefterskat.dk/lonn/95000</loc>
-    <lastmod>2023-06-30</lastmod>
+    <loc>https://beregnloenefterskat.dk/loen/95000</loc>
+    <lastmod>2024-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://beregnloenefterskat.dk/lonn/100000</loc>
-    <lastmod>2023-06-30</lastmod>
+    <loc>https://beregnloenefterskat.dk/loen/100000</loc>
+    <lastmod>2024-03-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  
+  <!-- Additional common salaries -->
+  <url>
+    <loc>https://beregnloenefterskat.dk/loen/15000</loc>
+    <lastmod>2024-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://beregnloenefterskat.dk/loen/120000</loc>
+    <lastmod>2024-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://beregnloenefterskat.dk/loen/150000</loc>
+    <lastmod>2024-03-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset> 

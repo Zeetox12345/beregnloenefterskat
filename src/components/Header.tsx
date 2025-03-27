@@ -59,7 +59,7 @@ export const Header = () => {
                         {salaries.map((salary) => (
                           <DropdownMenuItem key={salary} asChild>
                             <Link 
-                              to={`/lonn/${salary}`}
+                              to={`/loen/${salary}`}
                               className="cursor-pointer w-full"
                               onClick={() => setIsDropdownOpen(false)}
                             >
