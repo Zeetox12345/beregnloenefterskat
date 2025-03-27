@@ -7,4 +7,4 @@ Allow: /
 Allow: /*.ico$
 Allow: /*.png$
 
-Sitemap: https://beregnloenefterskat.dk/sitemap.xml 
+Sitemap: https://beregnloenefterskat.dk/page-sitemap.xml 
