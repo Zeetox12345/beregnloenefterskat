@@ -1,4 +1,4 @@
-import { Calculator, ChevronDown } from "lucide-react";
+import { Calculator, ChevronDown, BookOpen } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import {
@@ -41,7 +41,12 @@ export const Header = () => {
           </div>
           
           {/* Right side dropdown on desktop, below logo on mobile */}
-          <div className="col-span-3 md:col-span-1 flex justify-center md:justify-end mt-3 md:mt-0">
+          <div className="col-span-3 md:col-span-1 flex justify-center md:justify-end mt-3 md:mt-0 space-x-4">
+            <Link to="/blog" className="flex items-center space-x-2 px-4 py-2 rounded-md bg-primary text-white hover:bg-primary/90 transition-colors">
+              <BookOpen className="h-4 w-4" />
+              <span>Blog</span>
+            </Link>
+            
             <DropdownMenu open={isDropdownOpen} onOpenChange={setIsDropdownOpen}>
               <DropdownMenuTrigger className="flex items-center space-x-2 px-4 py-2 rounded-md bg-primary text-white hover:bg-primary/90 transition-colors">
                 <span>Løn efter skat</span>
