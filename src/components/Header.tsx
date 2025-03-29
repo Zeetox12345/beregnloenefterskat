@@ -33,9 +33,12 @@ export const Header = () => {
           {/* Centered logo and title */}
           <div className="flex justify-center col-span-3 md:col-span-1">
             <Link to="/" className="flex items-center space-x-3 hover:underline">
-              <Calculator className="h-6 w-6 md:h-8 md:w-8 text-primary" />
-              <span className="text-xl md:text-2xl font-bold text-primary font-sans">
-                beregnloenefterskat.dk
+              <div className="relative flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110 group">
+                <Calculator className="h-5 w-5 md:h-6 md:w-6 text-white transform transition-all duration-300 group-hover:rotate-12" />
+                <div className="absolute inset-0 rounded-lg bg-white opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+              </div>
+              <span className="text-lg md:text-xl lg:text-2xl font-bold text-primary font-sans truncate">
+                <span className="capitalize">B</span>eregnloenefterskat.dk
               </span>
             </Link>
           </div>
