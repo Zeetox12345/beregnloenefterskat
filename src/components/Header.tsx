@@ -53,7 +53,7 @@ export const Header = () => {
                 <ChevronDown className="h-4 w-4" />
               </DropdownMenuTrigger>
               
-              <DropdownMenuContent align="end" className="w-72 max-h-[70vh] overflow-y-auto">
+              <DropdownMenuContent align="end" className="w-72 max-h-[70vh] overflow-y-auto bg-popover !bg-opacity-100">
                 {Object.entries(salaryGroups).map(([groupName, salaries], index) => (
                   <div key={groupName}>
                     <DropdownMenuLabel className="text-primary font-semibold pt-2">

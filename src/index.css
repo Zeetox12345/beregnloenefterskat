@@ -99,3 +99,11 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Ensure dropdown menus are fully opaque on mobile */
+@layer components {
+  [data-radix-popper-content-wrapper] > div {
+    background-color: hsl(var(--popover)) !important;
+    backdrop-filter: none !important;
+  }
+}
