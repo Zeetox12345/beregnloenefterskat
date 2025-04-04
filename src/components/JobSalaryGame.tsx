@@ -190,22 +190,24 @@ export const JobSalaryGame = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="max-w-2xl mx-auto py-10 px-4 text-center"
+        className="max-w-2xl mx-auto py-6 px-3 sm:px-4 text-center"
       >
-        <div className="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
-          <h2 className="text-3xl font-bold mb-6 text-primary">Hvem tjener mest efter skat?</h2>
-          <p className="mb-8 text-lg text-gray-800 font-medium">Gæt om det næste job har højere eller lavere løn efter skat. Se hvor mange rigtige du kan få i træk!</p>
+        <div className="bg-white p-5 sm:p-8 rounded-2xl shadow-md border border-gray-100">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6 text-primary">Hvem tjener mest efter skat?</h2>
+          <p className="mb-6 sm:mb-8 text-base sm:text-lg text-gray-800 font-medium">
+            Gæt om det næste job har højere eller lavere løn efter skat. Se hvor mange rigtige du kan få i træk!
+          </p>
           {highScore > 0 && (
-            <div className="mb-8 bg-amber-100 py-3 px-4 rounded-xl inline-block border border-amber-200">
+            <div className="mb-6 sm:mb-8 bg-amber-100 py-2 sm:py-3 px-3 sm:px-4 rounded-xl inline-block border border-amber-200">
               <p className="font-bold text-amber-900">
-                <span className="text-2xl">🏆</span> Din højeste score: {highScore}
+                <span className="text-lg sm:text-2xl">🏆</span> Din højeste score: {highScore}
               </p>
             </div>
           )}
           <Button 
             onClick={startGame} 
             size="lg" 
-            className="w-full sm:w-auto text-lg px-8 py-6 h-auto bg-primary hover:bg-primary/90 shadow-md hover:shadow-lg transition-all transform hover:scale-105 font-bold text-white"
+            className="w-full text-base px-4 sm:px-8 py-3 sm:py-6 h-auto bg-primary hover:bg-primary/90 shadow-md hover:shadow-lg transition-all transform hover:scale-105 font-bold text-white"
           >
             Start spillet
           </Button>
@@ -218,14 +220,14 @@ export const JobSalaryGame = () => {
   const nextJob = jobsWithNetSalary[nextJobIndex];
 
   return (
-    <div className="max-w-3xl mx-auto py-10 px-4">
-      <div className="text-center mb-8">
-        <h2 className="text-3xl font-bold mb-4 text-primary">Hvem tjener mest efter skat?</h2>
-        <div className="flex justify-center items-center gap-8 mb-6">
-          <div className="text-lg bg-white shadow-md rounded-full px-5 py-2 border border-gray-100">
+    <div className="max-w-3xl mx-auto py-6 px-3 sm:px-4">
+      <div className="text-center mb-6">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-4 text-primary">Hvem tjener mest efter skat?</h2>
+        <div className="flex flex-wrap justify-center items-center gap-3 mb-6">
+          <div className="text-base sm:text-lg bg-white shadow-md rounded-full px-3 sm:px-5 py-1 sm:py-2 border border-gray-100 min-w-[100px]">
             <span className="font-bold text-primary">Score:</span> <span className="font-semibold">{score}</span>
           </div>
-          <div className="text-lg bg-white shadow-md rounded-full px-5 py-2 border border-gray-100">
+          <div className="text-base sm:text-lg bg-white shadow-md rounded-full px-3 sm:px-5 py-1 sm:py-2 border border-gray-100 min-w-[100px]">
             <span className="font-bold text-primary">Bedste:</span> <span className="font-semibold">{highScore}</span>
           </div>
         </div>
@@ -236,33 +238,35 @@ export const JobSalaryGame = () => {
             transition={{ duration: 0.3 }}
             className="mb-4"
           >
-            <span className="inline-block bg-gradient-to-r from-amber-500 to-red-500 text-white px-5 py-2 rounded-full text-lg font-bold shadow-md">
+            <span className="inline-block bg-gradient-to-r from-amber-500 to-red-500 text-white px-3 sm:px-5 py-1 sm:py-2 rounded-full text-base sm:text-lg font-bold shadow-md">
               {streak} i træk! 🔥
             </span>
           </motion.div>
         )}
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <motion.div
           initial={{ x: -50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <Card className="p-8 shadow-md rounded-xl bg-white border-t-4 border-primary">
+          <Card className="p-4 sm:p-8 shadow-md rounded-xl bg-white border-t-4 border-primary">
             <div className="flex flex-col h-full">
-              <div className="mb-auto">
-                <div className="inline-block px-3 py-1 bg-primary/15 text-primary rounded-md mb-3 text-sm font-bold">Nuværende job</div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-800">{currentJob.title}</h3>
-                <p className="mb-4 text-xl font-bold text-primary">
+              <div className="mb-auto w-full">
+                <div className="inline-block px-3 py-1 bg-primary/15 text-primary rounded-md mb-3 text-xs sm:text-sm font-bold">Nuværende job</div>
+                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-gray-800 break-words hyphens-auto">{currentJob.title}</h3>
+                <p className="mb-3 sm:mb-4 text-lg sm:text-xl font-bold text-primary break-words">
                   Løn efter skat: {currentJob.netSalary.toLocaleString("da-DK")} kr
                 </p>
               </div>
-              <div className="mt-4">
+              <div className="mt-3 sm:mt-4">
                 <div className="h-1 w-full bg-gray-200 rounded-full overflow-hidden">
                   <Progress value={(currentJobIndex / (jobsWithNetSalary.length - 1)) * 100} className="h-1" />
                 </div>
-                <p className="text-sm text-gray-700 mt-1 text-right font-medium">Job {currentJobIndex + 1} af {jobsWithNetSalary.length}</p>
+                <p className="text-xs sm:text-sm text-gray-700 mt-1 text-right font-medium truncate">
+                  Job {currentJobIndex + 1} af {jobsWithNetSalary.length}
+                </p>
               </div>
             </div>
           </Card>
@@ -273,37 +277,37 @@ export const JobSalaryGame = () => {
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          <Card className="p-8 shadow-md rounded-xl bg-white border-t-4 border-primary">
+          <Card className="p-4 sm:p-8 shadow-md rounded-xl bg-white border-t-4 border-primary">
             <div className="flex flex-col h-full">
-              <div className="mb-auto">
-                <div className="inline-block px-3 py-1 bg-primary/15 text-primary rounded-md mb-3 text-sm font-bold">Næste job</div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-800">{nextJob.title}</h3>
+              <div className="mb-auto w-full">
+                <div className="inline-block px-3 py-1 bg-primary/15 text-primary rounded-md mb-3 text-xs sm:text-sm font-bold">Næste job</div>
+                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-gray-800 break-words hyphens-auto">{nextJob.title}</h3>
                 
                 {showAnswer ? (
-                  <p className="mb-4 text-xl font-bold text-primary">
+                  <p className="mb-3 sm:mb-4 text-lg sm:text-xl font-bold text-primary break-words">
                     Løn efter skat: {nextJob.netSalary.toLocaleString("da-DK")} kr
                   </p>
                 ) : (
-                  <p className="mb-4 text-xl font-bold">
+                  <p className="mb-3 sm:mb-4 text-lg sm:text-xl font-bold break-words">
                     Løn efter skat: <span className="text-primary font-bold">?</span>
                   </p>
                 )}
               </div>
 
               {!showAnswer && !gameOver && (
-                <div className="flex gap-6 mt-4">
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3 mt-3 sm:mt-4">
                   <Button 
                     onClick={() => handleGuess(false)} 
-                    className="flex-1 py-6 h-auto text-lg bg-white border-2 border-red-500 text-red-600 hover:bg-red-50 transition-all font-bold"
+                    className="w-full py-2 sm:py-3 h-auto text-sm sm:text-base bg-white border-2 border-red-500 text-red-600 hover:bg-red-50 transition-all font-bold"
                     variant="outline"
                   >
-                    <span className="mr-2">👇</span> Lavere
+                    <span className="mr-1">👇</span> Lavere
                   </Button>
                   <Button 
                     onClick={() => handleGuess(true)} 
-                    className="flex-1 py-6 h-auto text-lg bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 transition-all font-bold"
+                    className="w-full py-2 sm:py-3 h-auto text-sm sm:text-base bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 transition-all font-bold"
                   >
-                    <span className="mr-2">☝️</span> Højere
+                    <span className="mr-1">☝️</span> Højere
                   </Button>
                 </div>
               )}
@@ -317,7 +321,7 @@ export const JobSalaryGame = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
-          className={`p-6 rounded-xl text-center mb-8 shadow-md ${
+          className={`p-4 sm:p-6 rounded-xl text-center mb-6 sm:mb-8 shadow-md overflow-hidden ${
             gameOver && score > 0 
               ? "bg-amber-50 text-amber-900 border border-amber-200" 
               : gameOver 
@@ -325,7 +329,7 @@ export const JobSalaryGame = () => {
               : "bg-green-50 text-green-900 border border-green-200"
           }`}
         >
-          <p className="font-bold text-lg">{message}</p>
+          <p className="font-bold text-base sm:text-lg break-words hyphens-auto">{message}</p>
         </motion.div>
       )}
 
@@ -339,7 +343,7 @@ export const JobSalaryGame = () => {
           <Button 
             onClick={startGame} 
             size="lg" 
-            className="w-full sm:w-auto text-lg px-8 py-6 h-auto bg-primary hover:bg-primary/90 shadow-md hover:shadow-lg transition-all transform hover:scale-105 font-bold"
+            className="w-full sm:w-auto text-base px-4 sm:px-6 py-2 sm:py-4 h-auto bg-primary hover:bg-primary/90 shadow-md hover:shadow-lg transition-all transform hover:scale-105 font-bold"
           >
             Spil igen
           </Button>

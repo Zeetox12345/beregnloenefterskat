@@ -25,13 +25,13 @@ export const Header = () => {
 
   return (
     <header className="w-full bg-gradient-to-r from-secondary to-accent py-4">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-3 items-center">
+      <div className="container mx-auto px-2 sm:px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 items-center">
           {/* Empty left column for balance */}
           <div className="hidden md:block"></div>
           
           {/* Centered logo and title */}
-          <div className="flex justify-center col-span-3 md:col-span-1">
+          <div className="flex justify-center col-span-1 mb-4 md:mb-0">
             <Link to="/" className="flex items-center space-x-3 hover:underline">
               <div className="relative flex items-center justify-center w-8 h-8 md:w-10 md:h-10 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 shadow-md hover:shadow-lg transition-all duration-300 hover:scale-110 group">
                 <Calculator className="h-5 w-5 md:h-6 md:w-6 text-white transform transition-all duration-300 group-hover:rotate-12" />
@@ -43,22 +43,22 @@ export const Header = () => {
             </Link>
           </div>
           
-          {/* Right side dropdown on desktop, below logo on mobile */}
-          <div className="col-span-3 md:col-span-1 flex justify-center md:justify-end mt-3 md:mt-0 space-x-4">
-            <Link to="/blog" className="flex items-center space-x-2 px-4 py-2 rounded-md bg-primary text-white hover:bg-primary/90 transition-colors">
+          {/* Navigation menu - mobile optimized */}
+          <div className="flex flex-wrap justify-center md:justify-end gap-2 md:gap-3">
+            <Link to="/blog" className="inline-flex items-center space-x-1 px-3 py-2 rounded-md bg-primary text-white hover:bg-primary/90 transition-colors text-sm md:text-base">
               <BookOpen className="h-4 w-4" />
               <span>Blog</span>
             </Link>
             
-            <Link to="/spil" className="flex items-center space-x-2 px-4 py-2 rounded-md bg-primary text-white hover:bg-primary/90 transition-colors">
+            <Link to="/spil" className="inline-flex items-center space-x-1 px-3 py-2 rounded-md bg-primary text-white hover:bg-primary/90 transition-colors text-sm md:text-base">
               <Gamepad className="h-4 w-4" />
               <span>Lønspil</span>
             </Link>
             
             <DropdownMenu open={isDropdownOpen} onOpenChange={setIsDropdownOpen}>
-              <DropdownMenuTrigger className="flex items-center space-x-2 px-4 py-2 rounded-md bg-primary text-white hover:bg-primary/90 transition-colors">
-                <span>Løn efter skat</span>
-                <ChevronDown className="h-4 w-4" />
+              <DropdownMenuTrigger className="inline-flex items-center space-x-1 px-3 py-2 rounded-md bg-primary text-white hover:bg-primary/90 transition-colors text-sm md:text-base">
+                <span>Løn</span>
+                <ChevronDown className="h-4 w-4 ml-1" />
               </DropdownMenuTrigger>
               
               <DropdownMenuContent align="end" className="w-72 max-h-[70vh] overflow-y-auto bg-popover !bg-opacity-100">
