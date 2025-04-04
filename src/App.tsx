@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import SalaryPage from "./pages/SalaryPage";
 import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
+import JobGamePage from "./pages/JobGamePage";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ const App = () => (
             <Route path="/loen/:salary" element={<SalaryPage />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
+            <Route path="/spil" element={<JobGamePage />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>

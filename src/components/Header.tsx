@@ -1,4 +1,4 @@
-import { Calculator, ChevronDown, BookOpen } from "lucide-react";
+import { Calculator, ChevronDown, BookOpen, Gamepad } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import {
@@ -48,6 +48,11 @@ export const Header = () => {
             <Link to="/blog" className="flex items-center space-x-2 px-4 py-2 rounded-md bg-primary text-white hover:bg-primary/90 transition-colors">
               <BookOpen className="h-4 w-4" />
               <span>Blog</span>
+            </Link>
+            
+            <Link to="/spil" className="flex items-center space-x-2 px-4 py-2 rounded-md bg-primary text-white hover:bg-primary/90 transition-colors">
+              <Gamepad className="h-4 w-4" />
+              <span>Lønspil</span>
             </Link>
             
             <DropdownMenu open={isDropdownOpen} onOpenChange={setIsDropdownOpen}>
