@@ -17,7 +17,7 @@ export const Header = () => {
 
   // Organize salary options into groups
   const salaryGroups = {
-    "Lav indkomst": [20000, 25000, 30000, 35000],
+    "Lav indkomst": [20000, 21000, 22000, 23000, 24000, 25000, 26000, 27000, 28000, 29000, 30000, 31000, 32000, 33000, 34000, 35000, 36000, 37000, 38000, 39000],
     "Mellem indkomst": [40000, 45000, 50000, 55000],
     "Høj indkomst": [60000, 65000, 70000, 75000],
     "Top indkomst": [80000, 85000, 90000, 95000, 100000]
