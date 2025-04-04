@@ -21,6 +21,16 @@ interface BlogPost {
 // Blog posts data
 const blogPosts: BlogPost[] = [
   {
+    id: 2,
+    slug: "sadan-undgar-du-restskat",
+    title: "Sådan undgår du restskat – 7 konkrete metoder til at holde styr på din skat og lønudbetaling",
+    date: "2025-04-04",
+    readTime: "10 min",
+    author: "admin",
+    excerpt: "Har du prøvet at få en ærgerlig overraskelse i form af en restskat, når årsopgørelsen rammer din e-Boks? Du er langt fra alene. I dette blogindlæg får du en step-by-step guide til, hvordan du minimerer risikoen for restskat – og samtidig sikrer, at du får mest muligt ud af din løn efter skat.",
+    featuredImage: "/Blogpictures/blogpost2pic.png"
+  },
+  {
     id: 1,
     slug: "sadan-far-du-mest-muligt-ud-af-din-loen-efter-skat",
     title: "Sådan får du mest muligt ud af din løn efter skat – 5 tips til at optimere din privatøkonomi",
