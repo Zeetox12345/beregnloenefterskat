@@ -82,10 +82,12 @@ export const InfoSections = ({ salary, isMainPage = false }: InfoSectionsProps) 
           <p className="mb-4">
             {isMainPage 
               ? "Denne beregner hjælper dig med at få et overblik over din løn efter skat. Herunder finder du en detaljeret gennemgang af det progressive skattesystem og hvordan din skat beregnes trin for trin."
-              : `Herunder finder du en detaljeret gennemgang af, hvordan din løn på ${calculationExample.grossSalary} kr 
-                beregnes efter skat, og hvordan det progressive skattesystem påvirker din indkomst.
-                Din effektive skatteprocent er <strong>${calculationExample.realTaxRate}%</strong> og 
-                du får udbetalt <strong>${calculationExample.udbetalt} kr</strong> efter skat.`
+              : <>
+                  Herunder finder du en detaljeret gennemgang af, hvordan din løn på {calculationExample.grossSalary} kr 
+                  beregnes efter skat, og hvordan det progressive skattesystem påvirker din indkomst.
+                  Din effektive skatteprocent er <strong>{calculationExample.realTaxRate}%</strong> og 
+                  du får udbetalt <strong>{calculationExample.udbetalt} kr</strong> efter skat.
+                </>
             }
           </p>
 
