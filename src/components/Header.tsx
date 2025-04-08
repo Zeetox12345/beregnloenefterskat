@@ -1,4 +1,4 @@
-import { Calculator, ChevronDown, BookOpen, Gamepad } from "lucide-react";
+import { Calculator, ChevronDown, BookOpen, Gamepad, Briefcase } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import {
@@ -14,6 +14,7 @@ import {
 export const Header = () => {
   const navigate = useNavigate();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isJobsDropdownOpen, setIsJobsDropdownOpen] = useState(false);
 
   // Organize salary options into groups
   const salaryGroups = {
@@ -22,6 +23,16 @@ export const Header = () => {
     "Høj indkomst": [60000, 65000, 70000, 75000],
     "Top indkomst": [80000, 85000, 90000, 95000, 100000]
   };
+
+  // Job specific pages
+  const jobPages = [
+    { name: "Fleksjob løn efter skat", path: "/jobs/fleksjob" },
+    { name: "Dagplejer løn efter skat", path: "/jobs/dagplejer" },
+    { name: "Værnepligt løn efter skat", path: "/jobs/vaernepligt" },
+    { name: "SU udeboende efter skat", path: "/jobs/su-udeboende" },
+    { name: "Pædagogmedhjælper løn efter skat", path: "/jobs/paedagogmedhjaelper" },
+    // More job pages to be added
+  ];
 
   return (
     <header className="w-full bg-gradient-to-r from-secondary to-accent py-4">
@@ -54,6 +65,33 @@ export const Header = () => {
               <Gamepad className="h-4 w-4" />
               <span>Lønspil</span>
             </Link>
+            
+            <DropdownMenu open={isJobsDropdownOpen} onOpenChange={setIsJobsDropdownOpen}>
+              <DropdownMenuTrigger className="inline-flex items-center space-x-1 px-3 py-2 rounded-md bg-primary text-white hover:bg-primary/90 transition-colors text-sm md:text-base">
+                <Briefcase className="h-4 w-4 mr-1" />
+                <span>Jobs</span>
+                <ChevronDown className="h-4 w-4 ml-1" />
+              </DropdownMenuTrigger>
+              
+              <DropdownMenuContent align="end" className="w-72 bg-popover !bg-opacity-100">
+                <DropdownMenuLabel className="text-primary font-semibold pt-2">
+                  Job-specifikke lønberegninger
+                </DropdownMenuLabel>
+                <DropdownMenuGroup>
+                  {jobPages.map((job) => (
+                    <DropdownMenuItem key={job.path} asChild>
+                      <Link 
+                        to={job.path}
+                        className="cursor-pointer w-full"
+                        onClick={() => setIsJobsDropdownOpen(false)}
+                      >
+                        {job.name}
+                      </Link>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuGroup>
+              </DropdownMenuContent>
+            </DropdownMenu>
             
             <DropdownMenu open={isDropdownOpen} onOpenChange={setIsDropdownOpen}>
               <DropdownMenuTrigger className="inline-flex items-center space-x-1 px-3 py-2 rounded-md bg-primary text-white hover:bg-primary/90 transition-colors text-sm md:text-base">
