@@ -2,7 +2,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import SalaryPage from "./pages/SalaryPage";
@@ -36,6 +36,11 @@ const App = () => (
             <Route path="/jobs/vaernepligt" element={<VaernepligtPage />} />
             <Route path="/jobs/su-udeboende" element={<SUUdeboendePage />} />
             <Route path="/jobs/paedagogmedhjaelper" element={<PaedagogmedhjaelperPage />} />
+            
+            {/* Redirect unwanted pages to the home page */}
+            <Route path="/sample-page" element={<Navigate replace to="/" />} />
+            <Route path="/category/uncategorized" element={<Navigate replace to="/" />} />
+            <Route path="/category/uncategorized/*" element={<Navigate replace to="/" />} />
           </Routes>
         </BrowserRouter>
       </TooltipProvider>

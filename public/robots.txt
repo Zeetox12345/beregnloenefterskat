@@ -1,10 +1,14 @@
 User-agent: *
 Allow: /
+Disallow: /sample-page
+Disallow: /category/uncategorized/
 
 # Allow Google to index all assets including favicon
 User-agent: Googlebot
 Allow: /
 Allow: /*.ico$
 Allow: /*.png$
+Disallow: /sample-page
+Disallow: /category/uncategorized/
 
 Sitemap: https://beregnloenefterskat.dk/page-sitemap.xml 
