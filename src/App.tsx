@@ -12,8 +12,8 @@ import JobGamePage from "./pages/JobGamePage";
 import FleksjobPage from "./pages/FleksjobPage";
 import DagplejerPage from "./pages/DagplejerPage";
 import VaernepligtPage from "./pages/VaernepligtPage";
+import SUUdeboendePage from "./pages/SUUdeboendePage";
 // Job pages will be imported once they are created
-// import SuUdeboendePage from "./pages/SuUdeboendePage";
 // import PaedagogmedhjaelperPage from "./pages/PaedagogmedhjaelperPage";
 
 const queryClient = new QueryClient();
@@ -34,8 +34,8 @@ const App = () => (
             <Route path="/jobs/fleksjob" element={<FleksjobPage />} />
             <Route path="/jobs/dagplejer" element={<DagplejerPage />} />
             <Route path="/jobs/vaernepligt" element={<VaernepligtPage />} />
+            <Route path="/jobs/su-udeboende" element={<SUUdeboendePage />} />
             {/* These routes will be uncommented once the pages are created */}
-            {/* <Route path="/jobs/su-udeboende" element={<SuUdeboendePage />} /> */}
             {/* <Route path="/jobs/paedagogmedhjaelper" element={<PaedagogmedhjaelperPage />} /> */}
           </Routes>
         </BrowserRouter>
