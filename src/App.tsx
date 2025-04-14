@@ -14,6 +14,8 @@ import DagplejerPage from "./pages/DagplejerPage";
 import VaernepligtPage from "./pages/VaernepligtPage";
 import SUUdeboendePage from "./pages/SUUdeboendePage";
 import PaedagogmedhjaelperPage from "./pages/PaedagogmedhjaelperPage";
+import KontanthjaelpPage from "./pages/KontanthjaelpPage";
+import SOSUHjaelperPage from "./pages/SOSUHjaelperPage";
 // Job pages will be imported once they are created
 
 const queryClient = new QueryClient();
@@ -36,6 +38,8 @@ const App = () => (
             <Route path="/jobs/vaernepligt" element={<VaernepligtPage />} />
             <Route path="/jobs/su-udeboende" element={<SUUdeboendePage />} />
             <Route path="/jobs/paedagogmedhjaelper" element={<PaedagogmedhjaelperPage />} />
+            <Route path="/jobs/kontanthjaelp-satser" element={<KontanthjaelpPage />} />
+            <Route path="/jobs/sosu-hjaelper" element={<SOSUHjaelperPage />} />
             
             {/* Redirect unwanted pages to the home page */}
             <Route path="/sample-page" element={<Navigate replace to="/" />} />

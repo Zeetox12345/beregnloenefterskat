@@ -31,6 +31,8 @@ export const Header = () => {
     { name: "Værnepligt løn efter skat", path: "/jobs/vaernepligt" },
     { name: "SU udeboende efter skat", path: "/jobs/su-udeboende" },
     { name: "Pædagogmedhjælper løn efter skat", path: "/jobs/paedagogmedhjaelper" },
+    { name: "Kontanthjælp satser efter skat", path: "/jobs/kontanthjaelp-satser" },
+    { name: "SOSU Hjælper Løn Efter Skat", path: "/jobs/sosu-hjaelper" },
     // More job pages to be added
   ];
 
