@@ -8,11 +8,11 @@ const VaernepligtPage = () => {
   const [selectedCity, setSelectedCity] = useState("København");
   
   const cityData = {
-    "København": { baseSalary: 9500, netMin: 7000, netMax: 7300, mealAllowance: 7470, totalPayout: 14500 },
-    "Aarhus": { baseSalary: 9500, netMin: 6900, netMax: 7200, mealAllowance: 7470, totalPayout: 14400 },
-    "Odense": { baseSalary: 9500, netMin: 6900, netMax: 7100, mealAllowance: 7470, totalPayout: 14400 },
-    "Aalborg": { baseSalary: 9500, netMin: 6800, netMax: 7100, mealAllowance: 7470, totalPayout: 14300 },
-    "Esbjerg": { baseSalary: 9500, netMin: 6800, netMax: 7100, mealAllowance: 7470, totalPayout: 14300 }
+    "København": { baseSalary: 9500, netMin: 7000, netMax: 7300, mealAllowance: 7890, totalPayout: 14900 },
+    "Aarhus": { baseSalary: 9500, netMin: 6900, netMax: 7200, mealAllowance: 7890, totalPayout: 14800 },
+    "Odense": { baseSalary: 9500, netMin: 6900, netMax: 7100, mealAllowance: 7890, totalPayout: 14800 },
+    "Aalborg": { baseSalary: 9500, netMin: 6800, netMax: 7100, mealAllowance: 7890, totalPayout: 14700 },
+    "Esbjerg": { baseSalary: 9500, netMin: 6800, netMax: 7100, mealAllowance: 7890, totalPayout: 14700 }
   };
 
   const cityExamples = useMemo(() => {
@@ -34,19 +34,19 @@ const VaernepligtPage = () => {
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-secondary/20 to-white">
       <SEO 
         title="Værnepligt Løn Efter Skat – Alt du Skal Vide"
-        description="Se, hvad du kan forvente i værnepligtsløn før og efter skat. Få indsigt i de 249 kr. skattefri kostpenge om dagen og få mest ud af din værnepligt."
-        keywords="værnepligt løn efter skat, værnepligtsløn, værnepligt kostpenge, værnepligt 249 kr, værnepligt skat, værnepligt indkomst"
+        description="Se, hvad du kan forvente i værnepligtsløn før og efter skat. Få indsigt i de 263 kr. skattefri kostpenge om dagen og få mest ud af din værnepligt."
+        keywords="værnepligt løn efter skat, værnepligtsløn, værnepligt kostpenge, værnepligt 263 kr, værnepligt skat, værnepligt indkomst"
       />
       <Header />
-      <PageTitle title="Værnepligt Løn Efter Skat – Alt du Skal Vide (inkl. 249 kr. Skattefri Kostpenge)" />
+      <PageTitle title="Værnepligt Løn Efter Skat – Alt du Skal Vide (inkl. 263 kr. Skattefri Kostpenge)" />
       
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Værnepligt Løn Efter Skat – Alt du Skal Vide (inkl. 249 kr. Skattefri Kostpenge)</h1>
+            <h1 className="text-3xl font-bold mb-6">Værnepligt Løn Efter Skat – Alt du Skal Vide (inkl. 263 kr. Skattefri Kostpenge)</h1>
             
             <p className="lead">
-              Skal du i værnepligt, eller er du blot nysgerrig på, hvad lønnen egentlig er, når skatten er trukket fra? I denne guide gennemgår vi værnepligt løn efter skat i Danmark – inklusive de 249 kr. skattefri kostpenge om dagen, som du kan modtage under visse betingelser. Du får et overblik over grundlønnen, hvordan skatten beregnes, og en tabel der viser, hvor meget du samlet kan få udbetalt hver måned med og uden kostpenge.
+              Skal du i værnepligt, eller er du blot nysgerrig på, hvad lønnen egentlig er, når skatten er trukket fra? I denne guide gennemgår vi værnepligt løn efter skat i Danmark – inklusive de 263 kr. skattefri kostpenge om dagen, som du kan modtage under visse betingelser. Du får et overblik over grundlønnen, hvordan skatten beregnes, og en tabel der viser, hvor meget du samlet kan få udbetalt hver måned med og uden kostpenge.
             </p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Hvad indebærer værnepligt?</h2>
@@ -59,23 +59,23 @@ const VaernepligtPage = () => {
               <li>Får du militær træning, øvelser og praktiske færdigheder.</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Grundløn + 249 kr. Skattefri Kostpenge</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Grundløn + 263 kr. Skattefri Kostpenge</h2>
             <p>
               Som værnepligtig kan du modtage:
             </p>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Grundløn (værnepligtsydelse):</strong> Typisk ca. 9.500 kr. om måneden før skat.</li>
-              <li><strong>Skattefri kostpenge (249 kr. pr. dag):</strong> Dette gælder kun, hvis du ikke benytter Forsvarets kost og logi. Får du maden stillet til rådighed på kasernen, modtager du normalt ikke disse penge.</li>
+              <li><strong>Skattefri kostpenge (263 kr. pr. dag):</strong> Dette gælder kun, hvis du ikke benytter Forsvarets kost og logi. Får du maden stillet til rådighed på kasernen, modtager du normalt ikke disse penge.</li>
             </ul>
             <p className="mt-2">
-              <strong>Eksempel:</strong> 249 kr. x 30 dage = 7.470 kr. skattefrit om måneden.
+              <strong>Eksempel:</strong> 263 kr. x 30 dage = 7.890 kr. skattefrit om måneden.
             </p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Tabel: Samlet Udbetaling med og uden Kostpenge</h2>
             <p>
               Nedenstående tabel viser et estimat for løn før og efter skat i forskellige byer. Samtidig kan du se, hvor meget du samlet får udbetalt, 
-              hvis du får kostpenge (7.470 kr. skattefrit ved 30 dages tjeneste). I København får en værnepligtig typisk 7.000-7.300 kr udbetalt efter skat,
-              men med kostpenge kan det samlede beløb nå op på ca. 14.500 kr.
+              hvis du får kostpenge (7.890 kr. skattefrit ved 30 dages tjeneste). I København får en værnepligtig typisk 7.000-7.300 kr udbetalt efter skat,
+              men med kostpenge kan det samlede beløb nå op på ca. 14.900 kr.
             </p>
 
             <div className="overflow-x-auto my-6">
@@ -130,7 +130,7 @@ const VaernepligtPage = () => {
 
             <h3 className="text-xl font-semibold mt-6 mb-2">Skattefri kostpenge</h3>
             <ul className="list-disc pl-6 space-y-2 mt-2">
-              <li>249 kr. pr. dag lægges direkte til din rådighedsøkonomi, uden at blive beskattet.</li>
+              <li>263 kr. pr. dag lægges direkte til din rådighedsøkonomi, uden at blive beskattet.</li>
               <li>Udbetales kun, hvis du ikke spiser på kasernen.</li>
             </ul>
 
@@ -140,7 +140,7 @@ const VaernepligtPage = () => {
                 <strong>Fri kost og logi:</strong> Hvis du vælger at spise og bo på kasernen, sparer du udgifter til mad og husleje.
               </li>
               <li>
-                <strong>Skattefri kostpenge:</strong> Vælger du at bo og spise ude, kan du få udbetalt 249 kr. pr. dag skattefrit.
+                <strong>Skattefri kostpenge:</strong> Vælger du at bo og spise ude, kan du få udbetalt 263 kr. pr. dag skattefrit.
               </li>
               <li>
                 <strong>Erfaring og netværk:</strong> Værnepligten giver ofte personlig udvikling, disciplin og mulighed for at skabe nye venskaber.
@@ -159,7 +159,7 @@ const VaernepligtPage = () => {
               <div>
                 <h3 className="text-xl font-semibold mb-2">Vælg mellem gratis kost og kostpenge</h3>
                 <p>
-                  Vurder, om det bedst kan betale sig at bo/spise på kasernen eller modtage de skattefri 249 kr. om dagen.
+                  Vurder, om det bedst kan betale sig at bo/spise på kasernen eller modtage de skattefri 263 kr. om dagen.
                 </p>
               </div>
 
@@ -190,8 +190,8 @@ const VaernepligtPage = () => {
             <h2 className="text-2xl font-semibold mt-8 mb-4">Konklusion</h2>
             <p>
               Som værnepligtig kan du forvente en grundløn på cirka 9.500 kr. før skat, hvilket ofte resulterer i en løn efter skat på omkring 6.800 - 7.300 kr. 
-              Reelt kommer du dog enten til at spare penge på kost og logi, hvis du bor og spiser på kasernen, eller du kan modtage 249 kr. skattefri kostpenge om dagen, 
-              hvis du selv sørger for maden. Det betyder, at din samlede udbetaling i sidstnævnte scenarie kan nærme sig 14.000 - 14.500 kr. alt efter din bopælskommune og fradrag.
+              Reelt kommer du dog enten til at spare penge på kost og logi, hvis du bor og spiser på kasernen, eller du kan modtage 263 kr. skattefri kostpenge om dagen, 
+              hvis du selv sørger for maden. Det betyder, at din samlede udbetaling i sidstnævnte scenarie kan nærme sig 14.700 - 14.900 kr. alt efter din bopælskommune og fradrag.
             </p>
             <p className="mt-4">
               Vil du have en præcis beregning for netop din situation, kan du benytte 
