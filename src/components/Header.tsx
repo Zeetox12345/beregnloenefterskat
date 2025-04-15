@@ -33,6 +33,7 @@ export const Header = () => {
     { name: "Pædagogmedhjælper løn efter skat", path: "/jobs/paedagogmedhjaelper" },
     { name: "Kontanthjælp satser efter skat", path: "/jobs/kontanthjaelp-satser" },
     { name: "SOSU Hjælper Løn Efter Skat", path: "/jobs/sosu-hjaelper" },
+    { name: "Konstabel Løn Efter Skat", path: "/jobs/konstabel-loen-efter-skat" },
     // More job pages to be added
   ];
 
