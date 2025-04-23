@@ -26,17 +26,17 @@ export const Header = () => {
 
   // Job specific pages
   const jobPages = [
-    { name: "Fleksjob løn efter skat", path: "/jobs/fleksjob" },
-    { name: "Dagplejer løn efter skat", path: "/jobs/dagplejer" },
-    { name: "Værnepligt løn efter skat", path: "/jobs/vaernepligt" },
-    { name: "SU udeboende efter skat", path: "/jobs/su-udeboende" },
-    { name: "Pædagogmedhjælper løn efter skat", path: "/jobs/paedagogmedhjaelper" },
-    { name: "Kontanthjælp satser efter skat", path: "/jobs/kontanthjaelp-satser" },
-    { name: "SOSU Hjælper Løn Efter Skat", path: "/jobs/sosu-hjaelper" },
+    { name: "Fleksjob", path: "/jobs/fleksjob" },
+    { name: "Dagplejer", path: "/jobs/dagplejer" },
+    { name: "Værnepligt", path: "/jobs/vaernepligt" },
+    { name: "SU Udeboende", path: "/jobs/su-udeboende" },
+    { name: "Pædagogmedhjælper", path: "/jobs/paedagogmedhjaelper" },
+    { name: "Kontanthjælp Satser", path: "/jobs/kontanthjaelp-satser" },
+    { name: "SOSU Hjælper", path: "/jobs/sosu-hjaelper" },
     { name: "Konstabel Løn Efter Skat", path: "/jobs/konstabel-loen-efter-skat" },
     { name: "SOSU Assistent Løn Efter Skat", path: "/jobs/sosu-assistent-loen-efter-skat" },
     { name: "Pædagogisk Assistent Løn Efter Skat", path: "/jobs/paedagogisk-assistent-loen-efter-skat" },
-    // More job pages to be added
+    { name: "Pædagog Løn Efter Skat", path: "/jobs/paedagog-loen-efter-skat" },
   ];
 
   return (
