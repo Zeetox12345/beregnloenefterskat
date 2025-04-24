@@ -186,7 +186,7 @@ const KonstabelLoenPage = () => {
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Sådan Beregner du Din Løn Efter Skat</h2>
             <p>
-              For at udregne din præcise konstabel løn efter skat, skal du typisk tage højde for:
+              For at få en hurtig estimering af din løn efter skat, skal du typisk tage højde for:
             </p>
 
             <div className="space-y-4 my-6">
@@ -217,7 +217,7 @@ const KonstabelLoenPage = () => {
             </div>
 
             <p>
-              Vil du hurtigt få et estimat af din egen løn efter skat, kan du bruge vores online-værktøj: <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a>.
+              Vil du hurtigt få en estimering af din egen løn efter skat, kan du bruge vores online-værktøj: <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a>.
             </p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Gode Råd til at Øge Din Løn som Konstabel</h2>

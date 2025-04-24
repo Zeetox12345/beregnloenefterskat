@@ -56,7 +56,7 @@ const PaedagogiskAssistentPage = () => {
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
-                Hurtigt overblik: En fuldtidsansat pædagogisk assistent modtager i 2025 typisk 19.000 – 22.000 kr. i løn efter skat pr. måned, afhængigt af bopælskommune, erfaring og tillæg. For dit helt nøjagtige tal kan du <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> på under ét minut.
+                Hurtigt overblik: En fuldtidsansat pædagogisk assistent modtager i 2025 typisk 19.000 – 22.000 kr. i løn efter skat pr. måned, afhængigt af bopælskommune, erfaring og tillæg. For en hurtig estimering kan du <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> på under ét minut.
               </p>
             </div>
 
@@ -231,7 +231,7 @@ const PaedagogiskAssistentPage = () => {
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Konklusion</h2>
             <p>
-              Som pædagogisk assistent i Danmark kan du i 2025 forvente en bruttoløn på 28.000 – 32.000 kr. og en nettoløn på 19.000 – 22.000 kr. – alt afhængigt af kommune, anciennitet og tillæg. Brug <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> for at få dit nøjagtige beløb og optimere din økonomi.
+              Som pædagogisk assistent i Danmark kan du i 2025 forvente en bruttoløn på 28.000 – 32.000 kr. og en nettoløn på 19.000 – 22.000 kr. – alt afhængigt af kommune, anciennitet og tillæg. Brug <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> for at få en hurtig estimering og optimere din økonomi.
             </p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Kilder</h2>

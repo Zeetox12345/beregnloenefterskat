@@ -57,7 +57,7 @@ const SOSUAssistentPage = () => {
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
-                TL;DR — En fuldtidsansat SOSU‐assistent kan i 2025 forvente omkring 20.000 – 23.000 kr. udbetalt pr. måned afhængigt af kommune, anciennitet og tillæg. Vil du have det nøjagtige tal for dig selv, så <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> på få sekunder.
+                TL;DR — En fuldtidsansat SOSU‐assistent kan i 2025 forvente omkring 20.000 – 23.000 kr. udbetalt pr. måned afhængigt af kommune, anciennitet og tillæg. Vil du have en hurtig estimering for dig selv, så <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> på få sekunder.
               </p>
             </div>
 

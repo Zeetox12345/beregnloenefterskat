@@ -57,7 +57,7 @@ const PaedagogPage = () => {
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
-                Hurtigt overblik: En fuldtidsansat pædagog får i 2025 typisk 20.000 – 24.000 kr. i løn efter skat pr. måned – afhængigt af kommune, anciennitet og tillæg. Vil du kende dit præcise tal? <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Beregn løn efter skat</a> på få sekunder.
+                Hurtigt overblik: En fuldtidsansat pædagog får i 2025 typisk 20.000 – 24.000 kr. i løn efter skat pr. måned – afhængigt af kommune, anciennitet og tillæg. Vil du have en hurtig estimering? <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Beregn løn efter skat</a> på få sekunder.
               </p>
             </div>
 
@@ -232,7 +232,7 @@ const PaedagogPage = () => {
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Konklusion</h2>
             <p>
-              Som pædagog kan du i 2025 forvente en bruttoløn på 29.000 – 35.000 kr. og en nettoløn på 20.000 – 24.000 kr.. Optimér din netto ved at holde styr på fradrag, tillæg og pension – og få dine helt præcise tal via <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a>.
+              Som pædagog kan du i 2025 forvente en bruttoløn på 29.000 – 35.000 kr. og en nettoløn på 20.000 – 24.000 kr.. Optimér din netto ved at holde styr på fradrag, tillæg og pension – og få en hurtig estimering via <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a>.
             </p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Kilder</h2>

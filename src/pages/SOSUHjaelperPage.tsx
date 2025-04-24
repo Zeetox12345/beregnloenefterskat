@@ -59,7 +59,7 @@ const SOSUHjaelperPage = () => {
               Som SOSU hjælper spiller du en afgørende rolle i pleje og omsorg for borgere, der har behov for støtte i hverdagen. Men hvad kan du forvente at få udbetalt efter skat i 2025? I denne artikel får du det fulde overblik over grundløn, kvalifikationsløn samt tillæg – og hvordan du beregner din SOSU Hjælper Løn Efter Skat.
             </p>
             <p>
-              Hvis du vil have en konkret beregning for netop din situation, kan du bruge vores værktøj 
+              Hvis du vil have en hurtig estimering for netop din situation, kan du bruge vores værktøj 
               <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline mx-1" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a>, 
               hvor du nemt kan indtaste dine oplysninger og se din forventede udbetaling.
             </p>
@@ -158,7 +158,7 @@ const SOSUHjaelperPage = () => {
             </div>
 
             <p>
-              Tip: Vil du have et præcist estimat på din egen udbetaling, kan du bruge 
+              Tip: Vil du have en hurtig estimering af din egen udbetaling, kan du bruge 
               <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline mx-1" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a>.
             </p>
 

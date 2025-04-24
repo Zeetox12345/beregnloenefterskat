@@ -217,7 +217,7 @@ const FleksjobPage = () => {
               Fleksjob-løn efter skat er ikke en statisk størrelse. Den afhænger af din personlige situation, dit timetal, 
               kommunale tilskud, individuelle fradrag og skatteniveauet i din kommune. Dette kan forklare, hvorfor en bruttoløn på 30.000 kr 
               i København giver 20.000-20.500 kr udbetalt, mens 28.000 kr i Aalborg resulterer i 18.500-19.000 kr efter skat. 
-              Derfor er det vigtigt at lave en individuel beregning, så du kan få et nøjagtigt billede af din økonomi.
+              Derfor er det vigtigt at lave en hurtig estimering, så du kan få et godt overblik over din økonomi.
             </p>
             <p className="mt-4">
               Vil du have en hurtig oversigt over, hvad du kan forvente at få udbetalt, er det en god idé at benytte 
@@ -241,7 +241,7 @@ const FleksjobPage = () => {
               </li>
             </ul>
             <p className="mt-6">
-              Ved at bruge disse kilder og værktøjer kan du opnå et retvisende indblik i din fleksjob-løn efter skat, 
+              Ved at bruge disse kilder og værktøjer kan du opnå en hurtig estimering af din fleksjob-løn efter skat,
               så du kan planlægge din økonomi mest optimalt.
             </p>
           </div>
