@@ -1,0 +1,36 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Job Pages
+
+Job pages in this application follow a consistent pattern. They provide information about salaries for specific professions or situations (e.g., SU student support) before and after tax.
+
+## Structure
+
+Each job page is located in `src/pages/` with a descriptive name, like:
+- [src/pages/EnligForsoergerSUPage.tsx](mdc:src/pages/EnligForsoergerSUPage.tsx) - Single parent SU support page
+- [src/pages/SUUdeboendePage.tsx](mdc:src/pages/SUUdeboendePage.tsx) - SU for non-resident students
+- [src/pages/PaedagogPage.tsx](mdc:src/pages/PaedagogPage.tsx) - Pedagogue salary page
+
+## Common Features
+
+Each job page typically includes:
+1. SEO metadata (title, description)
+2. A quick overview section with key information
+3. Tables showing salaries before and after tax in different cities
+4. Interactive city selection
+5. FAQ sections
+6. Sources and references
+7. Links to the salary calculator on the main site
+
+## Navigation
+
+Job pages are added to the navigation menu in [src/components/Header.tsx](mdc:src/components/Header.tsx) in the `jobPages` array, and routes are defined in [src/App.tsx](mdc:src/App.tsx).
+
+## SEO
+
+When creating a new job page, update both sitemap files:
+- [public/sitemap.xml](mdc:public/sitemap.xml)
+- [public/page-sitemap.xml](mdc:public/page-sitemap.xml)

@@ -1,0 +1,22 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Project Structure
+
+This is a React application built with React Router and TailwindCSS that calculates salaries after taxes in Denmark. The main structure is:
+
+- [src/App.tsx](mdc:src/App.tsx) - Main application component with all routes
+- [src/pages/](mdc:src/pages) - Page components for different routes
+- [src/components/](mdc:src/components) - Reusable UI components
+- [src/utils/](mdc:src/utils) - Utility functions
+- [src/lib/](mdc:src/lib) - Library code and integrations
+- [src/hooks/](mdc:src/hooks) - Custom React hooks
+- [public/](mdc:public) - Static assets and files including sitemap.xml
+
+## Key Files
+
+- [src/App.tsx](mdc:src/App.tsx) - Route definitions
+- [src/components/Header.tsx](mdc:src/components/Header.tsx) - Main navigation component
+- [public/sitemap.xml](mdc:public/sitemap.xml) - Site map for SEO

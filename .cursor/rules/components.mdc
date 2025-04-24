@@ -1,0 +1,41 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# Components
+
+This application uses a set of reusable components located in `src/components/`.
+
+## Core Components
+
+- [src/components/Header.tsx](mdc:src/components/Header.tsx) - Main navigation header with dropdown menus
+- [src/components/Footer.tsx](mdc:src/components/Footer.tsx) - Page footer
+- [src/components/PageTitle.tsx](mdc:src/components/PageTitle.tsx) - Title component for pages
+- [src/components/SEO.tsx](mdc:src/components/SEO.tsx) - SEO metadata component
+
+## UI Components
+
+The application uses a shadcn/ui style component library with components in `src/components/ui/`, including:
+- Dropdown menus
+- Tooltips
+- Toasts/notifications
+- Form elements
+
+## Usage Pattern
+
+Components are typically imported at the top of page files:
+
+```tsx
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { PageTitle } from "@/components/PageTitle";
+import { SEO } from "@/components/SEO";
+```
+
+The layout pattern typically used in pages is:
+1. SEO component for metadata
+2. Header component
+3. PageTitle component
+4. Main content
+5. Footer component

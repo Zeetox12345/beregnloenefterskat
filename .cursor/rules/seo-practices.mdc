@@ -1,0 +1,60 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+# SEO Best Practices
+
+This application implements several SEO best practices that should be followed when creating or modifying pages.
+
+## Page Metadata
+
+Each page uses the SEO component to define metadata:
+
+```tsx
+<SEO 
+  title="Enlig Forsørger SU Efter Skat 2025 – Sats, Skat og Tips"
+  description="Få overblik over enlig forsørger SU efter skat 2025: satser, løn efter skat-tal for forskellige kommuner og praktiske råd om fradrag, fribeløb og SU-lån."
+  keywords="enlig forsørger SU, SU efter skat, forsørgertillæg, SU-sats 2025, fribeløb SU, studiejob, SU udbetaling, studerende økonomi, enlig forsørger"
+/>
+```
+
+## Sitemap
+
+The application maintains two sitemap files that must be updated when adding new pages:
+- [public/sitemap.xml](mdc:public/sitemap.xml) - Main sitemap
+- [public/page-sitemap.xml](mdc:public/page-sitemap.xml) - Secondary sitemap
+
+When adding a new page, add a URL entry following this format:
+
+```xml
+<url>
+  <loc>https://beregnloenefterskat.dk/jobs/enlig-forsoerger-su</loc>
+  <lastmod>2025-04-20</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
+```
+
+## URL Structure
+
+The application follows a consistent URL structure:
+- Job pages: `/jobs/[job-name]` (e.g., `/jobs/enlig-forsoerger-su`)
+- Salary pages: `/loen/[amount]` (e.g., `/loen/30000`)
+- Blog: `/blog` and `/blog/[slug]`
+
+## External Links
+
+External links should include:
+- `target="_blank"` - To open in a new tab
+- `rel="noopener noreferrer"` - For security and to avoid referral information leakage
+- Descriptive text - Clear description of the linked content
+
+```tsx
+<a href="https://www.su.dk/satser/satser-for-stoette-til-foraeldre" 
+   target="_blank" 
+   rel="noopener noreferrer" 
+   className="text-blue-600 hover:underline">
+  Styrelsen for Institutioner og Uddannelsesstøtte (SU.dk)
+</a>
+```
