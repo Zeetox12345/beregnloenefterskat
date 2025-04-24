@@ -30,6 +30,7 @@ export const Header = () => {
     { name: "Dagplejer", path: "/jobs/dagplejer" },
     { name: "Værnepligt", path: "/jobs/vaernepligt" },
     { name: "SU Udeboende", path: "/jobs/su-udeboende" },
+    { name: "Enlig Forsørger SU", path: "/jobs/enlig-forsoerger-su" },
     { name: "Pædagogmedhjælper", path: "/jobs/paedagogmedhjaelper" },
     { name: "Kontanthjælp Satser", path: "/jobs/kontanthjaelp-satser" },
     { name: "SOSU Hjælper", path: "/jobs/sosu-hjaelper" },
