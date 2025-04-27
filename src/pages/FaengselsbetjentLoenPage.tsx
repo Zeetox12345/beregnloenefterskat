@@ -53,7 +53,7 @@ const FaengselsbetjentLoenPage = () => {
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
-                TL;DR – En fuldtidsansat fængselsbetjent kan i 2025 forvente ca. 20.500 – 23.500 kr. i løn efter skat pr. måned, afhængigt af tjenestested, anciennitet og vagttillæg. Få et personligt estimat på få sekunder med <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a>.
+                TL;DR – En fuldtidsansat fængselsbetjent kan i 2025 forvente ca. 20.500 – 23.500 kr. i løn efter skat pr. måned, afhængigt af tjenestested, anciennitet og vagttillæg. Få et personligt lønestimat på få sekunder med <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a>.
               </p>
             </div>
 
@@ -95,7 +95,7 @@ const FaengselsbetjentLoenPage = () => {
             </div>
 
             <p className="text-sm text-gray-600 italic">
-              *Beregnede nettobeløb med kommuneskat 2025 uden kirkeskat. Brug <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> for præcise tal med din kommune, fradrag og eventuel kirkeskat.
+              *Beregnede nettobeløb med kommuneskat 2025 uden kirkeskat. Brug <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> for at få et mere retvisende estimat baseret på din kommune, personlige fradrag og eventuel kirkeskat.
             </p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Lønudvikling efter Anciennitet</h2>
@@ -146,7 +146,7 @@ const FaengselsbetjentLoenPage = () => {
               </ul>
             </div>
             <p>
-              Lav din egen beregning nu – <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">brug beregn løn efter skat</a>.
+              Lav dit eget estimat nu – <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">brug beregn løn efter skat</a>.
             </p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Hvad påvirker fængselsbetjent løn efter skat?</h2>
@@ -187,7 +187,7 @@ const FaengselsbetjentLoenPage = () => {
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Konklusion</h2>
             <p>
-              Som fængselsbetjent i Danmark ligger bruttolønnen i 2025 på 30.000 – 36.000 kr. og nettolønnen på 20.500 – 23.500 kr.. Optimer din økonomi ved at udnytte tillæg, fradrag og pension, og find dit præcise tal via <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a>.
+              Som fængselsbetjent i Danmark ligger bruttolønnen i 2025 på 30.000 – 36.000 kr. og nettolønnen på 20.500 – 23.500 kr.. Optimer din økonomi ved at udnytte tillæg, fradrag og pension, og få et mere retvisende estimat for din situation via <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a>.
             </p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Kilder</h2>
