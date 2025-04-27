@@ -42,6 +42,7 @@ export const Header = () => {
     { name: "Fængselsbetjent Løn Efter Skat", path: "/jobs/faengselsbetjent-loen-efter-skat" },
     { name: "Politibetjent Løn Efter Skat", path: "/jobs/politibetjent-loen-efter-skat" },
     { name: "Socialrådgiver Løn Efter Skat", path: "/jobs/socialraadgiver-loen-efter-skat" },
+    { name: "Folkeskolelærer Løn Efter Skat", path: "/jobs/folkeskolelaerer-loen-efter-skat" },
   ];
 
   return (
