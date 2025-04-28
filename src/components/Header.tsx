@@ -39,6 +39,7 @@ export const Header = () => {
       { name: "Dagplejer", path: "/jobs/dagplejer" },
       { name: "Tandklinikassistent", path: "/jobs/tandklinikassistent-loen-efter-skat" },
       { name: "Psykolog", path: "/jobs/psykolog-loen-efter-skat" },
+      { name: "Ergoterapeut", path: "/jobs/ergoterapeut-loen-efter-skat" },
     ],
     "Undervisning": [
       { name: "Pædagogmedhjælper", path: "/jobs/paedagogmedhjaelper" },
