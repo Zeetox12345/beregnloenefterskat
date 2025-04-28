@@ -24,27 +24,38 @@ export const Header = () => {
     "Top indkomst": [80000, 85000, 90000, 95000, 100000]
   };
 
-  // Job specific pages
-  const jobPages = [
-    { name: "Fleksjob", path: "/jobs/fleksjob" },
-    { name: "Dagplejer", path: "/jobs/dagplejer" },
-    { name: "Værnepligt", path: "/jobs/vaernepligt" },
-    { name: "SU Udeboende", path: "/jobs/su-udeboende" },
-    { name: "Enlig Forsørger SU", path: "/jobs/enlig-forsoerger-su" },
-    { name: "Pædagogmedhjælper", path: "/jobs/paedagogmedhjaelper" },
-    { name: "Kontanthjælp Satser", path: "/jobs/kontanthjaelp-satser" },
-    { name: "SOSU Hjælper", path: "/jobs/sosu-hjaelper" },
-    { name: "Konstabel Løn Efter Skat", path: "/jobs/konstabel-loen-efter-skat" },
-    { name: "SOSU Assistent Løn Efter Skat", path: "/jobs/sosu-assistent-loen-efter-skat" },
-    { name: "Pædagogisk Assistent Løn Efter Skat", path: "/jobs/paedagogisk-assistent-loen-efter-skat" },
-    { name: "Pædagog Løn Efter Skat", path: "/jobs/paedagog-loen-efter-skat" },
-    { name: "Skraldemand Løn Efter Skat", path: "/jobs/skraldemand-loen-efter-skat" },
-    { name: "Fængselsbetjent Løn Efter Skat", path: "/jobs/faengselsbetjent-loen-efter-skat" },
-    { name: "Politibetjent Løn Efter Skat", path: "/jobs/politibetjent-loen-efter-skat" },
-    { name: "Socialrådgiver Løn Efter Skat", path: "/jobs/socialraadgiver-loen-efter-skat" },
-    { name: "Folkeskolelærer Løn Efter Skat", path: "/jobs/folkeskolelaerer-loen-efter-skat" },
-    { name: "Gymnasielærer Løn Efter Skat", path: "/jobs/gymnasielaerer-loen-efter-skat" },
-  ];
+  // Job specific pages organized by categories
+  const jobCategories = {
+    "Offentlige Ydelser": [
+      { name: "Fleksjob", path: "/jobs/fleksjob" },
+      { name: "Værnepligt", path: "/jobs/vaernepligt" },
+      { name: "SU Udeboende", path: "/jobs/su-udeboende" },
+      { name: "Enlig Forsørger SU", path: "/jobs/enlig-forsoerger-su" },
+      { name: "Kontanthjælp Satser", path: "/jobs/kontanthjaelp-satser" },
+    ],
+    "Sundhed & Omsorg": [
+      { name: "SOSU Hjælper", path: "/jobs/sosu-hjaelper" },
+      { name: "SOSU Assistent", path: "/jobs/sosu-assistent-loen-efter-skat" },
+      { name: "Dagplejer", path: "/jobs/dagplejer" },
+    ],
+    "Undervisning": [
+      { name: "Pædagogmedhjælper", path: "/jobs/paedagogmedhjaelper" },
+      { name: "Pædagogisk Assistent", path: "/jobs/paedagogisk-assistent-loen-efter-skat" },
+      { name: "Pædagog", path: "/jobs/paedagog-loen-efter-skat" },
+      { name: "Folkeskolelærer", path: "/jobs/folkeskolelaerer-loen-efter-skat" },
+      { name: "Gymnasielærer", path: "/jobs/gymnasielaerer-loen-efter-skat" },
+    ],
+    "Sikkerhed & Forsvar": [
+      { name: "Konstabel", path: "/jobs/konstabel-loen-efter-skat" },
+      { name: "Fængselsbetjent", path: "/jobs/faengselsbetjent-loen-efter-skat" },
+      { name: "Politibetjent", path: "/jobs/politibetjent-loen-efter-skat" },
+    ],
+    "Handel & Service": [
+      { name: "Skraldemand", path: "/jobs/skraldemand-loen-efter-skat" },
+      { name: "Elektriker", path: "/jobs/elektriker-loen-efter-skat" },
+      { name: "Socialrådgiver", path: "/jobs/socialraadgiver-loen-efter-skat" },
+    ]
+  };
 
   return (
     <header className="w-full bg-gradient-to-r from-secondary to-accent py-4">
@@ -85,23 +96,34 @@ export const Header = () => {
                 <ChevronDown className="h-4 w-4 ml-1" />
               </DropdownMenuTrigger>
               
-              <DropdownMenuContent align="end" className="w-72 bg-popover !bg-opacity-100">
-                <DropdownMenuLabel className="text-primary font-semibold pt-2">
+              <DropdownMenuContent align="end" className="w-72 max-h-[70vh] overflow-y-auto bg-popover !bg-opacity-100">
+                <DropdownMenuLabel className="text-primary font-semibold pt-2 sticky top-0 bg-popover z-10">
                   Job-specifikke lønberegninger
                 </DropdownMenuLabel>
-                <DropdownMenuGroup>
-                  {jobPages.map((job) => (
-                    <DropdownMenuItem key={job.path} asChild>
-                      <Link 
-                        to={job.path}
-                        className="cursor-pointer w-full"
-                        onClick={() => setIsJobsDropdownOpen(false)}
-                      >
-                        {job.name}
-                      </Link>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuGroup>
+                
+                {Object.entries(jobCategories).map(([category, jobs], index) => (
+                  <div key={category}>
+                    <DropdownMenuLabel className="text-gray-600 font-medium text-sm pt-1">
+                      {category}
+                    </DropdownMenuLabel>
+                    <DropdownMenuGroup>
+                      {jobs.map((job) => (
+                        <DropdownMenuItem key={job.path} asChild>
+                          <Link 
+                            to={job.path}
+                            className="cursor-pointer w-full pl-5"
+                            onClick={() => setIsJobsDropdownOpen(false)}
+                          >
+                            {job.name}
+                          </Link>
+                        </DropdownMenuItem>
+                      ))}
+                    </DropdownMenuGroup>
+                    {index < Object.entries(jobCategories).length - 1 && (
+                      <DropdownMenuSeparator />
+                    )}
+                  </div>
+                ))}
               </DropdownMenuContent>
             </DropdownMenu>
             
