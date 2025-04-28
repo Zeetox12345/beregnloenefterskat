@@ -39,7 +39,7 @@ const ElektrikerLoenPage = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-secondary/20 to-white">
       <SEO 
-        title="Elektriker Løn Efter Skat 2025 – Din Komplette Guide"
+        title="Elektriker Løn Efter Skat 2025 – Tabeller & Tips"
         description="Opdaterede 2025-tal for elektriker løn efter skat: byer, lærling-, svende- og overmontør­løn. Beregn løn efter skat hurtigt."
         keywords="elektriker løn efter skat 2025, elektriker indkomst, elektriker branche, elektriker anciennitet, DEF overenskomst, elektrikerløn"
       />
