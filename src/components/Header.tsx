@@ -37,6 +37,7 @@ export const Header = () => {
       { name: "Bioanalytiker", path: "/jobs/bioanalytiker-loen-efter-skat" },
       { name: "SOSU Hjælper", path: "/jobs/sosu-hjaelper" },
       { name: "SOSU Assistent", path: "/jobs/sosu-assistent-loen-efter-skat" },
+      { name: "SOSU Elev", path: "/jobs/elevloen-sosu-efter-skat" },
       { name: "Dagplejer", path: "/jobs/dagplejer" },
       { name: "Tandklinikassistent", path: "/jobs/tandklinikassistent-loen-efter-skat" },
       { name: "Psykolog", path: "/jobs/psykolog-loen-efter-skat" },
