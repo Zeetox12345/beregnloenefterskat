@@ -44,6 +44,7 @@ export const Header = () => {
       { name: "Fysioterapeut", path: "/jobs/fysioterapeut-loen-efter-skat" },
     ],
     "Undervisning": [
+      { name: "Ph.d.-studerende", path: "/jobs/phd-loen-efter-skat" },
       { name: "Pædagogmedhjælper", path: "/jobs/paedagogmedhjaelper" },
       { name: "Pædagogisk Assistent", path: "/jobs/paedagogisk-assistent-loen-efter-skat" },
       { name: "Pædagog", path: "/jobs/paedagog-loen-efter-skat" },
