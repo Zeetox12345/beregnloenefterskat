@@ -34,6 +34,7 @@ export const Header = () => {
       { name: "Kontanthjælp Satser", path: "/jobs/kontanthjaelp-satser" },
     ],
     "Sundhed & Omsorg": [
+      { name: "Bioanalytiker", path: "/jobs/bioanalytiker-loen-efter-skat" },
       { name: "SOSU Hjælper", path: "/jobs/sosu-hjaelper" },
       { name: "SOSU Assistent", path: "/jobs/sosu-assistent-loen-efter-skat" },
       { name: "Dagplejer", path: "/jobs/dagplejer" },
