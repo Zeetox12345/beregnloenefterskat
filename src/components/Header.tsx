@@ -41,6 +41,7 @@ export const Header = () => {
       { name: "Dagplejer", path: "/jobs/dagplejer" },
       { name: "Tandklinikassistent", path: "/jobs/tandklinikassistent-loen-efter-skat" },
       { name: "Tandlæge", path: "/jobs/tandlaege-loen-efter-skat" },
+      { name: "Læge", path: "/jobs/laege-loen-efter-skat" },
       { name: "Psykolog", path: "/jobs/psykolog-loen-efter-skat" },
       { name: "Ergoterapeut", path: "/jobs/ergoterapeut-loen-efter-skat" },
       { name: "Farmakonom", path: "/jobs/farmakonom-loen-efter-skat" },
