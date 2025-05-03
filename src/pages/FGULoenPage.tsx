@@ -182,9 +182,9 @@ const FGULoenPage = () => {
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Kilder</h2>
             <ul>
-              <li>Styrelsen for Undervisning og Kvalitet – Skoleydelsessatser 2025</li>
-              <li>Skatteministeriet – Personfradrag & AM‑bidrag 2025</li>
-              <li>Dansk Produktionsskoleforening – Produktionstillægssatser</li>
+              <li><a href="https://www.uvm.dk/forberedende-grunduddannelse/om-forberedende-grunduddannelse/ydelser" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Styrelsen for Undervisning og Kvalitet – Skoleydelsessatser 2025</a></li>
+              <li><a href="https://skat.dk/hjaelp/satser" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Skatteministeriet – Personfradrag & AM‑bidrag 2025</a></li>
+              <li><a href="https://www.danskindustri.dk/vi-radgiver-dig/personale/elever-og-larlinge/ansattelsesvilkar-for-larlinge-og-elever/lon-til-larlinge-og-elever/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Dansk Produktionsskoleforening – Produktionstillægssatser</a></li>
             </ul>
 
             <p className="text-sm text-gray-600 italic mt-8">
