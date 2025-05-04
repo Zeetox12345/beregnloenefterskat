@@ -39,7 +39,7 @@ const BygningskonstruktoerLoenPage = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-secondary/20 to-white">
       <SEO 
-        title="Bygningskonstruktør Løn 2025 – Se Din Løn Efter Skat Nu"
+        title="Bygningskonstruktør Løn Efter Skat 2025 – Se Din Løn Efter Skat Nu"
         description="Hvad får du som bygningskonstruktør efter skat? Se løntabeller for 2025 og få et estimat med beregn løn efter skat. Opdateret med nye overenskomster."
         keywords="bygningskonstruktør løn efter skat, projektleder tillæg, BIM-specialist løn, bygningskonstruktør overenskomst, site supervisor løn"
       />
