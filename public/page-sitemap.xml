@@ -516,4 +516,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
+  <!-- Add the new entry for the ejendomsmaegler page -->
+  <url>
+    <loc>https://beregnloenefterskat.dk/jobs/ejendomsmaegler-loen-efter-skat</loc>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
 </urlset> 
