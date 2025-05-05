@@ -279,7 +279,13 @@
   </url>
   <url>
     <loc>https://beregnloenefterskat.dk/jobs/ejendomsmaegler-loen-efter-skat</loc>
-    <lastmod>2025-05-15</lastmod>
+    <lastmod>2025-08-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://beregnloenefterskat.dk/jobs/bankraadgiver-loen-efter-skat</loc>
+    <lastmod>2025-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
