@@ -41,7 +41,7 @@ const LaborantLoenPage = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-secondary/20 to-white">
       <SEO 
-        title="Din Laborant Løn Efter Skat 2025 – Hvad Får Du Udbetalt?"
+        title="Laborant Løn Efter Skat 2025 – Hvad Får Du Udbetalt?"
         description="Hvor meget får du som laborant efter skat? Se opdaterede tal og brug beregn løn efter skat til at finde dit eget udbetalingsbeløb."
         keywords="laborant løn, laborant løn efter skat, udbetalt løn, løn efter skat, laborant nettoløn, laborant indkomst, HK"
       />
