@@ -162,6 +162,8 @@ Add a new entry to `public/sitemap.xml` (and `page-sitemap.xml` if it exists):
 </url>
 ```
 
+**Note:** Always update both `sitemap.xml` and `page-sitemap.xml` with the new job page entry for SEO.
+
 ## URL Naming Conventions
 
 Use kebab-case for job URLs, following the pattern:
