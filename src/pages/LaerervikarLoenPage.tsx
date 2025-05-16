@@ -143,7 +143,6 @@ const LaerervikarLoenPage = () => {
               <li>A-skat (~ 35 %): 8 030 kr.</li>
               <li><strong>Lærervikar løn efter skat: ≈ 19 570 kr.</strong></li>
             </ul>
-            <p className="mt-2">For andre løntrin og kommuner: <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a>.</p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Fire veje til en højere lærervikar løn efter skat</h2>
             <div className="space-y-6 my-6">
