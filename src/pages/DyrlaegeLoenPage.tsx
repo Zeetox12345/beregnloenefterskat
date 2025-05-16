@@ -40,7 +40,7 @@ const DyrlaegeLoenPage = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-secondary/20 to-white">
       <SEO 
-        title="Din Dyrlæge Løn Efter Skat 2025 – Hvad Får Du Udbetalt?"
+        title="Dyrlæge Løn Efter Skat 2025 – Hvad Får Du Udbetalt?"
         description="Hvor meget får du som dyrlæge efter skat i 2025? Se realistiske løntal for smådyr, hest og klinikejere. Beregn dit eget beløb nemt."
         keywords="dyrlæge løn efter skat 2025, dyrlæge nettoløn, dyrlæge indkomst, smådyrsdyrlæge løn, hestedyrlæge løn"
       />
@@ -50,7 +50,7 @@ const DyrlaegeLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Dyrlæge Løn Efter Skat 2025 – Fra Poter til Pengepung 🐾💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Dyrlæge Løn Efter Skat 2025 – Fra Poter til Pengepung </h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -138,11 +138,11 @@ const DyrlaegeLoenPage = () => {
             <div className="bg-gray-50 p-4 rounded-md border border-gray-200 my-4">
               <ul className="list-none space-y-2 pl-0">
                 <li><strong>Løn før skat:</strong> 48 000 kr.</li>
-                <li><strong>AM‑bidrag 8 % ➜</strong> 3 840 kr.</li>
-                <li><strong>Skattepligtig indkomst ➜</strong> 44 160 kr.</li>
-                <li><strong>Personfradrag ➜</strong> 4 650 kr.</li>
-                <li><strong>Beskatningsgrundlag ➜</strong> 39 510 kr.</li>
-                <li><strong>A‑skat (~ 37 %) ➜</strong> 14 600 kr.</li>
+                <li><strong>AM‑bidrag 8 % </strong> 3 840 kr.</li>
+                <li><strong>Skattepligtig indkomst </strong> 44 160 kr.</li>
+                <li><strong>Personfradrag </strong> 4 650 kr.</li>
+                <li><strong>Beskatningsgrundlag </strong> 39 510 kr.</li>
+                <li><strong>A‑skat (~ 37 %) </strong> 14 600 kr.</li>
                 <li><strong>Dyrlæge løn efter skat ≈</strong> 30 160 kr.</li>
               </ul>
             </div>
@@ -151,7 +151,7 @@ const DyrlaegeLoenPage = () => {
               Vil du teste flere vagter eller lavere kommuneskat? <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Beregn løn efter skat</a> – tager under ét minut.
             </p>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Sådan løfter du din dyrlæge løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Sådan løfter du din dyrlæge løn efter skat </h2>
             <div className="overflow-x-auto my-6">
               <table className="min-w-full bg-white border border-gray-300 rounded-lg">
                 <thead>
@@ -181,7 +181,7 @@ const DyrlaegeLoenPage = () => {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Dyrlæge Løn Efter Skat ℹ️</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Dyrlæge Løn Efter Skat</h2>
             <div className="space-y-4">
               <div>
                 <p className="font-semibold">Hvad tjener en nyuddannet dyrlæge efter skat?</p>

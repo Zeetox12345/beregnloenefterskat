@@ -50,7 +50,7 @@ const FrisoerLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Frisør Løn Efter Skat 2025 – Fra Saks til Saldo ✂️💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Frisør Løn Efter Skat 2025 – Fra Saks til Saldo ️</h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -140,11 +140,11 @@ const FrisoerLoenPage = () => {
             <div className="bg-gray-50 p-4 rounded-md border border-gray-200 my-4">
               <ul className="list-none space-y-2 pl-0">
                 <li><strong>Løn før skat:</strong> 29.500 kr.</li>
-                <li><strong>AM-bidrag 8 % ➜</strong> 2.360 kr.</li>
-                <li><strong>Skattepligtig indkomst ➜</strong> 27.140 kr.</li>
-                <li><strong>Personfradrag ➜</strong> 4.650 kr.</li>
-                <li><strong>Beskatningsgrundlag ➜</strong> 22.490 kr.</li>
-                <li><strong>A-skat (~ 35 %) ➜</strong> 7.870 kr.</li>
+                <li><strong>AM-bidrag 8 % </strong> 2.360 kr.</li>
+                <li><strong>Skattepligtig indkomst </strong> 27.140 kr.</li>
+                <li><strong>Personfradrag </strong> 4.650 kr.</li>
+                <li><strong>Beskatningsgrundlag </strong> 22.490 kr.</li>
+                <li><strong>A-skat (~ 35 %) </strong> 7.870 kr.</li>
                 <li><strong>Frisør løn efter skat ≈</strong> 19.270 kr.</li>
               </ul>
             </div>
@@ -183,7 +183,7 @@ const FrisoerLoenPage = () => {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">4 Tips til at hæve din løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">4 Tips til at hæve din løn efter skat </h2>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Sats på farve & balayage-kunder</strong> – højere snitomsætning → mere provision.</li>
               <li><strong>Book "tiggetimer" (aftner/lørdage)</strong> med forhøjet timeløn.</li>
@@ -191,7 +191,7 @@ const FrisoerLoenPage = () => {
               <li><strong>Kurser i barbering & extensions</strong> – specialydelser giver større ticket-price.</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Frisør Løn Efter Skat ℹ️</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Frisør Løn Efter Skat</h2>
             <div className="space-y-4">
               <div>
                 <p className="font-semibold">Hvad tjener en frisør efter skat som nyuddannet?</p>

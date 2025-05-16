@@ -49,7 +49,7 @@ const IngenioerLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Ingeniør Løn Efter Skat 2025 – Fra CAD-Model til Kontoudtog 🏗️💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Ingeniør Løn Efter Skat 2025 – Fra CAD-Model til Kontoudtog ️</h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -98,7 +98,7 @@ const IngenioerLoenPage = () => {
             </div>
             <p className="text-sm text-gray-600 italic">*Løn efter skat beregnet med 8 % AM-bidrag, måneds­fradrag 4 300 kr. og gennemsnitlig kommune­skat 25,1 %.</p>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Hvad påvirker en ingeniør løn efter skat? 🔧</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Hvad påvirker en ingeniør løn efter skat? </h2>
             <div className="overflow-x-auto my-6">
               <table className="min-w-full bg-white border border-gray-300 rounded-lg">
                 <thead>
@@ -143,7 +143,7 @@ const IngenioerLoenPage = () => {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Løn efter skat i de største ingeniør-hubs (2025) 🌍</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Løn efter skat i de største ingeniør-hubs (2025) </h2>
             <div className="overflow-x-auto my-6">
               <table className="min-w-full bg-white border border-gray-300 rounded-lg">
                 <thead>
@@ -166,7 +166,7 @@ const IngenioerLoenPage = () => {
             </div>
             <p className="text-sm">* Beregnet med AM-bidrag 8 %, personfradrag 4 300 kr./md. og gennemsnitlig kommuneskat 25,1 %.</p>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Karrierekurven – hvor hurtigt stiger lønnen? 📈</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Karrierekurven – hvor hurtigt stiger lønnen? </h2>
             <ul className="list-disc pl-6">
               <li>Graduate (0–2 år) – idriftsætning, support, løn efter skat ~30 000 kr.</li>
               <li>Projekt­ingeniør (3–5 år) – ansvar for del­leverancer, 32–35 000 kr.</li>
@@ -175,7 +175,7 @@ const IngenioerLoenPage = () => {
               <li>Portefølje- eller afdelingschef (12+ år) – &gt;45 000 kr. efter skat + bonus.</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Konkret beregningseksempel ⚙️</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Konkret beregningseksempel ️</h2>
             <p className="font-medium">Senior elektro­ingeniør i Odense<br/>Løn før skat: 59 000 kr.</p>
             <div className="bg-gray-50 p-4 rounded-lg my-4">
               <p>Trin</p>
@@ -187,7 +187,7 @@ const IngenioerLoenPage = () => {
               <p className="font-bold">Løn efter skat ≈ 35 800 kr.</p>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Fem hurtige boosts til højere ingeniør løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Fem hurtige boosts til højere ingeniør løn efter skat </h2>
             <div className="overflow-x-auto my-6">
               <table className="min-w-full bg-white border border-gray-300 rounded-lg">
                 <thead>
@@ -227,7 +227,7 @@ const IngenioerLoenPage = () => {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Fremtidige løn- og jobtendenser 🔮</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Fremtidige løn- og jobtendenser </h2>
             <ul className="list-disc pl-6">
               <li>Grøn omstilling – Power-to-X, CCS og offshore vind skaber stor efterspørgsel på proces-, el- og maskin­ingeniører.</li>
               <li>AI & digital twin-modeller – hæver lønnen for software-, data- og automations­specialister med 8–12 %.</li>
@@ -235,7 +235,7 @@ const IngenioerLoenPage = () => {
               <li>Internationalisering – engelsksprogede projekter giver diæter og bonus uden at flytte bopæl.</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – oftest stillede spørgsmål 🤔</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – oftest stillede spørgsmål </h2>
             <div className="space-y-4">
               <div>
                 <h3 className="font-semibold">Hvor meget tjener en nyuddannet ingeniør efter skat?</h3>
@@ -255,7 +255,7 @@ const IngenioerLoenPage = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Konklusion 🏁</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Konklusion </h2>
             <p>Ingeniør løn efter skat ligger i 2025 typisk mellem 29 000 og 45 000 kr.. Branchevalg, certificeringer, bonus-ordninger, skifte­hold og kommune­skat er de hurtigste gear til et højere nettobeløb. Brug en lønberegner, læg en certifikat-plan og forhandl tillæg – så sikrer du, at dine CAD-filer og P&ID-diagrammer omsættes til flere kroner på kontoen.</p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Kilder</h2>

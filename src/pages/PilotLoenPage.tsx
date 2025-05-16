@@ -40,7 +40,7 @@ const PilotLoenPage = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-secondary/20 to-white">
       <SEO 
-        title="Hvad Tjener En Pilot Efter Skat? Realistisk Lønguide 2025"
+        title="Pilot Løn Efter Skat 2025 - Realistisk Lønguide 2025"
         description="Få overblik over pilot løn efter skat – fra cadet til kaptajn. Sammenlign stillinger, selskaber og baser, og få dit eget nettobeløb beregnet på få sekunder."
         keywords="pilot løn efter skat, kaptajn løn, flyver løn, SAS pilot løn, flytype tillæg, pilot løn danmark, Emirates pilot løn"
       />
@@ -50,7 +50,7 @@ const PilotLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Pilot Løn Efter Skat 2025 – Fra Cockpit til Kontoudtog ✈️💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Pilot Løn Efter Skat 2025 – Fra Cockpit til Kontoudtog ️</h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -196,7 +196,7 @@ const PilotLoenPage = () => {
               Vil du regne din egne bloktimer eller flyselskab? Smut over på <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> – hurtigere end du kan programmere FMS'en.
             </p>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Fire turbo-tjek til højere pilot løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Fire turbo-tjek til højere pilot løn efter skat </h2>
             
             <div className="overflow-x-auto my-6">
               <table className="min-w-full bg-white border border-gray-300 rounded-lg">
@@ -227,7 +227,7 @@ const PilotLoenPage = () => {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Pilot Løn Efter Skat ℹ️</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Pilot Løn Efter Skat</h2>
             <div className="space-y-4">
               <div>
                 <p className="font-semibold">Hvad tjener en ny pilot efter skat?</p>

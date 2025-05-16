@@ -128,7 +128,7 @@ const BygningskonstruktoerLoenPage = () => {
               *Gennemsnitlig kommuneskat 25 % + AM‑bidrag 8 %.
             </p>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Værktøj til højere bygningskonstruktør løn efter skat 🔧</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Værktøj til højere bygningskonstruktør løn efter skat </h2>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Projektleder‑tillæg</strong> – 3‑7 % ekstra pr. projekt.</li>
               <li><strong>BIM‑specialist</strong> – Revit/Navisworks certifikat ⇒ +1.500‑2.500 kr./md.</li>
@@ -153,7 +153,7 @@ const BygningskonstruktoerLoenPage = () => {
               Regn med dine egne tal i <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> og få et øjeblikkeligt estimat.
             </p>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Bygningskonstruktør Løn Efter Skat 🏗️</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Bygningskonstruktør Løn Efter Skat ️</h2>
             <div className="space-y-4">
               <div>
                 <p className="font-semibold">Hvad tjener en bygningskonstruktør før skat?</p>
@@ -173,7 +173,7 @@ const BygningskonstruktoerLoenPage = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">4 Trin til en stærkere løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">4 Trin til en stærkere løn efter skat </h2>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Bliv BIM‑ninja</strong> – softwarecertifikater giver løft.</li>
               <li><strong>Forhandl projektleder‑tillæg tidligt.</strong></li>

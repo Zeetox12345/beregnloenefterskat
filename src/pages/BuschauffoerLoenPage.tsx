@@ -41,7 +41,7 @@ const BuschauffoerLoenPage = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-secondary/20 to-white">
       <SEO 
-        title="Din Buschauffør Løn Efter Skat 2025 – Hvad Får Du Udbetalt?"
+        title="Buschauffør Løn Efter Skat 2025 – Hvad Får Du Udbetalt?"
         description="Hvor meget får du som buschauffør efter skat? Se løntal og tillæg for 2025, og brug beregn løn efter skat til dit eget realistiske beløb."
         keywords="buschauffør løn efter skat 2025, bus chauffør løn, buschaufførløn, bybus løn, nattillæg, weekendtillæg, chauffør overenskomst"
       />
@@ -51,7 +51,7 @@ const BuschauffoerLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Buschauffør Løn Efter Skat 2025 – Fra Rat til Rådighedsbeløb 🚌💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Buschauffør Løn Efter Skat 2025 – Fra Rat til Rådighedsbeløb </h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -176,7 +176,7 @@ const BuschauffoerLoenPage = () => {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">4 hurtige tips til at forbedre din løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">4 hurtige tips til at forbedre din løn efter skat </h2>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Tag de skæve timer</strong> – nat / helligdage giver de højeste tillæg.</li>
               <li><strong>Fokusér på langdistance / turist</strong> – højere kilometertillæg → mere efter skat.</li>

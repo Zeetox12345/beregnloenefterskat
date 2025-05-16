@@ -38,7 +38,7 @@ const TandlaegeLoenPage = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-secondary/20 to-white">
       <SEO 
-        title="Hvad er Tandlæge Løn Efter Skat i 2025? Realistisk Overblik"
+        title="Tandlæge Løn Efter Skat 2025 - Se Realistisk Overblik"
         description="Se realistiske estimater for tandlæge løn efter skat i 2025. Sammenlign byer, erfaring og ansættelsesformer – og beregn din nettoløn hurtigt."
         keywords="tandlæge løn efter skat 2025, tandlæge nettoløn, klinikejers indkomst, omsætningsbonus tandlæge, overenskomst tandlæge"
       />
@@ -48,7 +48,7 @@ const TandlaegeLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Tandlæge Løn Efter Skat 2025 – Fra Bor til Bankkonto 🦷💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Tandlæge Løn Efter Skat 2025 – Fra Bor til Bankkonto </h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -151,7 +151,7 @@ const TandlaegeLoenPage = () => {
               Test dine egne tal på få sekunder i <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a>.
             </p>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Tandlæge Løn Efter Skat 🦷</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Tandlæge Løn Efter Skat </h2>
             <div className="space-y-4">
               <div>
                 <p className="font-semibold">Hvor meget tjener en tandlæge før skat?</p>
@@ -171,7 +171,7 @@ const TandlaegeLoenPage = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">4 Boremaskine‑tips til højere nettoløn 📈</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">4 Boremaskine‑tips til højere nettoløn </h2>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Tag implantat‑ og kirurgisk efteruddannelse</strong> – +10 % lønløft.</li>
               <li><strong>Forhandl omsætningsprocent</strong> i privat klinik.</li>

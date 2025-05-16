@@ -51,7 +51,7 @@ const RevisorLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Revisor Løn Efter Skat 2025 – Fra Excel-ark til Egenkapital 💼📊💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Revisor Løn Efter Skat 2025 – Fra Excel-ark til Egenkapital </h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -185,7 +185,7 @@ const RevisorLoenPage = () => {
               Beregn dit eget nettobeløb med <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> — det tager kun få sekunder.
             </p>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Fire bund-linje-boostere til højere revisor løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Fire bund-linje-boostere til højere revisor løn efter skat </h2>
             <p>
               Disse strategier kan betydeligt øge din nettoløn som revisor — både i starten og senere i karrieren.
             </p>
@@ -218,7 +218,7 @@ const RevisorLoenPage = () => {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Revisor Løn Efter Skat ℹ️</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Revisor Løn Efter Skat</h2>
             <div className="space-y-4">
               <div>
                 <p className="font-semibold">Hvad tjener en ny revisorassistent efter skat?</p>

@@ -49,7 +49,7 @@ const MekanikerLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Mekaniker Løn Efter Skat 2025 – Fra Skruenøgle til Sparekonto 🔧💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Mekaniker Løn Efter Skat 2025 – Fra Skruenøgle til Sparekonto </h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -153,7 +153,7 @@ const MekanikerLoenPage = () => {
               Lav dit eget regnestykke med <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a>.
             </p>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Mekaniker Løn Efter Skat 🔧</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Mekaniker Løn Efter Skat </h2>
             <div className="space-y-4">
               <div>
                 <p className="font-semibold">Hvad tjener en mekaniker før skat?</p>
@@ -173,7 +173,7 @@ const MekanikerLoenPage = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">4 Hestekræfter til højere løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">4 Hestekræfter til højere løn efter skat </h2>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Certificér dig i el- og hybridteknik</strong> → +1‑2 k netto.</li>
               <li><strong>Kør akkord på bremse‑ og koblingsjobs.</strong></li>

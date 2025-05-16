@@ -48,7 +48,7 @@ const MejeristLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Mejerist Løn Efter Skat 2025 – Fra Pasteurisering til PayDay 🥛💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Mejerist Løn Efter Skat 2025 – Fra Pasteurisering til PayDay </h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -138,7 +138,7 @@ const MejeristLoenPage = () => {
               </ul>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Fire hurtige veje til højere mejerist løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Fire hurtige veje til højere mejerist løn efter skat </h2>
             <table className="min-w-full bg-white border border-gray-300 rounded-lg mb-6">
               <thead>
                 <tr className="bg-gray-100">
@@ -154,7 +154,7 @@ const MejeristLoenPage = () => {
               </tbody>
             </table>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Mejerist Løn Efter Skat ℹ️</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Mejerist Løn Efter Skat</h2>
             <div className="space-y-4">
               <div>
                 <p className="font-semibold">Hvad tjener en nyudlært mejerist efter skat?</p>

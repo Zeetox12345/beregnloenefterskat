@@ -46,7 +46,7 @@ const FGULoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">FGU Løn Efter Skat 2025 – Din Elevguide 💰</h1>
+            <h1 className="text-3xl font-bold mb-6">FGU Løn Efter Skat 2025 – Din Elevguide </h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -143,7 +143,7 @@ const FGULoenPage = () => {
               <p><strong>FGU løn efter skat:</strong> ≈ 10.270 kr.</p>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Sådan kan du løfte din fgu løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Sådan kan du løfte din fgu løn efter skat </h2>
             <ul>
               <li><strong>Maksimér produktionstimer</strong> – flere timer = højere løn, selv efter skat.</li>
               <li><strong>Søg evt. ungdomsbolig</strong> med lav husleje, så du kan klare dig på skoleydelsen.</li>

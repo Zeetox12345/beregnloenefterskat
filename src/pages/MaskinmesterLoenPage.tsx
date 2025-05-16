@@ -40,7 +40,7 @@ const MaskinmesterLoenPage = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-secondary/20 to-white">
       <SEO 
-        title="Din Maskinmester Løn Efter Skat 2025 – Hvad Får Du Udbetalt?"
+        title="Maskinmester Løn Efter Skat 2025 – Hvad Får Du Udbetalt?"
         description="Få indblik i maskinmester løn efter skat 2025: byer, offshore‑tillæg og ledelses­roller. Beregn dit personlige tal nu."
         keywords="maskinmester løn efter skat, offshore maskinmester, driftleder løn, skibsmester løn, el-autorisation, vagt tillæg maskinmester"
       />
@@ -50,7 +50,7 @@ const MaskinmesterLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Maskinmester Løn Efter Skat 2025 – Fra Turbiner til Tilgodehavende ⚙️💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Maskinmester Løn Efter Skat 2025 – Fra Turbiner til Tilgodehavende ️</h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -82,7 +82,7 @@ const MaskinmesterLoenPage = () => {
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="py-3 px-4 border-b">Funktions­tillæg</td>
-                    <td className="py-3 px-4 border-b">Driftleder, QHSE, el‑autorisation ➔ +1 500 – 3 500 kr./md. før skat.</td>
+                    <td className="py-3 px-4 border-b">Driftleder, QHSE, el‑autorisation  +1 500 – 3 500 kr./md. før skat.</td>
                   </tr>
                   <tr className="hover:bg-gray-50">
                     <td className="py-3 px-4 border-b">Pension 13 %</td>
@@ -177,7 +177,7 @@ const MaskinmesterLoenPage = () => {
               Test andre scenarier på under ét minut i <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a>.
             </p>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Boost din maskinmester løn efter skat – 4 hurtige hacks 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Boost din maskinmester løn efter skat – 4 hurtige hacks </h2>
             <div className="overflow-x-auto my-6">
               <table className="min-w-full bg-white border border-gray-300 rounded-lg">
                 <thead>
@@ -207,7 +207,7 @@ const MaskinmesterLoenPage = () => {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Maskinmester Løn Efter Skat ℹ️</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Maskinmester Løn Efter Skat</h2>
             <div className="space-y-4">
               <div>
                 <p className="font-semibold">Hvad tjener en ny maskinmester efter skat?</p>

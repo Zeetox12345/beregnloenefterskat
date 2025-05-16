@@ -47,7 +47,7 @@ const TandplejerLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Tandplejer Løn Efter Skat 2025 – Fra Profylakse til PayDay 🦷💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Tandplejer Løn Efter Skat 2025 – Fra Profylakse til PayDay </h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -212,7 +212,7 @@ const TandplejerLoenPage = () => {
               </ul>
             </div>
             
-            <h2 className="text-2xl font-semibold mt-8 mb-4">5. Syv hurtige hacks til højere tandplejer løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">5. Syv hurtige hacks til højere tandplejer løn efter skat </h2>
             <div className="overflow-x-auto my-6">
               <table className="min-w-full bg-white border border-gray-300 rounded-lg">
                 <thead>

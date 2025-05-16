@@ -35,7 +35,7 @@ const TaxachauffoerLoenPage = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-secondary/20 to-white">
       <SEO 
-        title="Hvad er Taxachauffør Løn Efter Skat i 2025? Se Realistiske Estimater Her"
+        title="Taxachauffør Løn Efter Skat 2025 - Se Realistiske Estimater Her"
         description="Få overblik over din taxachauffør løn efter skat 2025 – med eksempler for byer, skiftehold og kilometertal. Beregn dit eget estimat på få sekunder."
         keywords="taxachauffør løn efter skat 2025, taxi indkomst, taxa nettoløn, procent af omsætning, chauffør nattetillæg"
       />
@@ -45,7 +45,7 @@ const TaxachauffoerLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Taxachauffør Løn Efter Skat 2025 – Fra Rat til Resultat 🚕📊</h1>
+            <h1 className="text-3xl font-bold mb-6">Taxachauffør Løn Efter Skat 2025 – Fra Rat til Resultat </h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -134,7 +134,7 @@ const TaxachauffoerLoenPage = () => {
               <li><strong>Drikkepenge</strong> – beskattes, men hæver nettoløn 500–1.200 kr./md.</li>
               <li><strong>Brændstofaftale</strong> – lav dieselpris = højere procentløn.</li>
               <li><strong>Kommuneskat</strong> – forskel på 3 % mellem billig og dyr kommune.</li>
-              <li><strong>El‑taxi 🚗⚡</strong> – lavere brændstof → højere andel til chaufføren.</li>
+              <li><strong>El‑taxi </strong> – lavere brændstof → højere andel til chaufføren.</li>
             </ul>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Eksempel: Netto på natkørsel i Odense (31.000 kr.)</h2>
@@ -152,7 +152,7 @@ const TaxachauffoerLoenPage = () => {
               Vil du have dit eget estimat? Klik på <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a>.
             </p>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Taxachauffør Løn Efter Skat 🚖</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Taxachauffør Løn Efter Skat </h2>
             <div className="space-y-4">
               <div>
                 <p className="font-semibold">Hvad tjener en taxachauffør før skat?</p>
@@ -172,7 +172,7 @@ const TaxachauffoerLoenPage = () => {
               </div>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">4 Tips til at få meteret til at tikke 📈</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">4 Tips til at få meteret til at tikke </h2>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Kør nat‑ og weekendvagter</strong> – høje tillæg + færre pauser.</li>
               <li><strong>Skift til el‑taxi</strong> – brændstofbesparelse kan øge procentlønnen.</li>

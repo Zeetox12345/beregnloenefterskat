@@ -50,7 +50,7 @@ const RadiografLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Radiograf Løn Efter Skat 2025 – Fra Røntgen til Rådighedsbeløb 💰</h1>
+            <h1 className="text-3xl font-bold mb-6">Radiograf Løn Efter Skat 2025 – Fra Røntgen til Rådighedsbeløb </h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -162,7 +162,7 @@ const RadiografLoenPage = () => {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">4 hurtige hacks til en højere løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">4 hurtige hacks til en højere løn efter skat </h2>
             <ol className="list-decimal pl-6 space-y-2">
               <li>Certificér dig i MR, CT eller angio – funktionstillæg og flere vagter.</li>
               <li>Byt vagter til højtillægstider (nat/helligdag) – bedst betalt efter skat.</li>
@@ -170,7 +170,7 @@ const RadiografLoenPage = () => {
               <li>Dokumentér befordring – fradraget skærer yderligere af skatten hver måned.</li>
             </ol>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Radiograf Løn Efter Skat ℹ️</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Radiograf Løn Efter Skat</h2>
             <div className="space-y-4">
               <div>
                 <p className="font-medium">Hvad tjener en nyuddannet radiograf efter skat?</p>

@@ -50,7 +50,7 @@ const EjendomsmaeglerLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Ejendomsmægler Løn Efter Skat 2025 – Fra Salgsopstilling til Saldo 🏠💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Ejendomsmægler Løn Efter Skat 2025 – Fra Salgsopstilling til Saldo </h1>
             <p className="text-gray-600 italic mb-6">(Opdateret maj 2025 med de nyeste løntal og skattesatser)</p>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
@@ -220,7 +220,7 @@ const EjendomsmaeglerLoenPage = () => {
               * Firmabil beskattes som værdi af fri bil og reducerer netto­indtægten.
             </p>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">6. Fire hurtige hacks til en højere nettoløn 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">6. Fire hurtige hacks til en højere nettoløn </h2>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Fokuser på high‑end segmentet</strong> – en enkelt salg på +8 mio. kr. kan slå 3 almindelige villahandler.</li>
               <li><strong>Forhandl provisionstrappen</strong> (fx 10 % af honorar over 70 000 kr.).</li>

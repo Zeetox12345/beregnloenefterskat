@@ -49,7 +49,7 @@ const MalerLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Maler Løn Efter Skat 2025 – Fra Penselstrøg til Payslip 🎨💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Maler Løn Efter Skat 2025 – Fra Penselstrøg til Payslip </h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -184,7 +184,7 @@ const MalerLoenPage = () => {
               Vil du teste lavere kommuneskat eller højere akkordbonus? Kør dine tal i <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> – hurtigere end at dække én væg med filt.
             </p>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Fire farvesikre tricks til højere maler løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Fire farvesikre tricks til højere maler løn efter skat </h2>
             <div className="overflow-x-auto my-6">
               <table className="min-w-full bg-white border border-gray-300 rounded-lg">
                 <thead>
@@ -214,7 +214,7 @@ const MalerLoenPage = () => {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Maler Løn Efter Skat ℹ️</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Maler Løn Efter Skat</h2>
             <div className="space-y-4">
               <div>
                 <p className="font-semibold">Hvad tjener en nyuddannet maler efter skat?</p>
@@ -236,7 +236,7 @@ const MalerLoenPage = () => {
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Konklusion</h2>
             <p>
-              I 2025 spænder maler løn efter skat fra omkring 22 000 kr. for lærlinge til 30 000 kr. for erfarne akkordmestre. Overenskomst-satser, akkord, specialisering og lav kommuneskat er de hurtigste farver i paletten til et større nettobeløb. Vil du vide præcis, hvad næste faktura bliver til i hånden? Brug <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> – så er dit tal tørret, før malingen er det. 🎨
+              I 2025 spænder maler løn efter skat fra omkring 22 000 kr. for lærlinge til 30 000 kr. for erfarne akkordmestre. Overenskomst-satser, akkord, specialisering og lav kommuneskat er de hurtigste farver i paletten til et større nettobeløb. Vil du vide præcis, hvad næste faktura bliver til i hånden? Brug <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> – så er dit tal tørret, før malingen er det. 
             </p>
 
             <p className="text-sm text-gray-600 italic mt-8">

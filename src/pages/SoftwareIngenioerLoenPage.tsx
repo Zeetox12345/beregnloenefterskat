@@ -50,7 +50,7 @@ const SoftwareIngenioerLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Software Ingeniør Løn Efter Skat 2025 – Fra GitHub-Push til Girokort 💻💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Software Ingeniør Løn Efter Skat 2025 – Fra GitHub-Push til Girokort </h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -190,7 +190,7 @@ const SoftwareIngenioerLoenPage = () => {
               Vil du teste RSU-bonus eller flytning til lav-skat-kommune? Prøv <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> – hurtigere end din næste CI-pipeline.
             </p>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Fire turbo-tricks til højere software ingeniør løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Fire turbo-tricks til højere software ingeniør løn efter skat </h2>
             <div className="overflow-x-auto my-6">
               <table className="min-w-full bg-white border border-gray-300 rounded-lg">
                 <thead>
@@ -220,7 +220,7 @@ const SoftwareIngenioerLoenPage = () => {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Software Ingeniør Løn Efter Skat ℹ️</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Software Ingeniør Løn Efter Skat</h2>
             <div className="space-y-4">
               <div>
                 <p className="font-semibold">Hvad tjener en ny software ingeniør efter skat?</p>

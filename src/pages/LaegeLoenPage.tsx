@@ -50,7 +50,7 @@ const LaegeLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Læge Løn Efter Skat 2025 – Fra Stetoskop til Saldo 🩺💰</h1>
+            <h1 className="text-3xl font-bold mb-6">Læge Løn Efter Skat 2025 – Fra Stetoskop til Saldo </h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -184,7 +184,7 @@ const LaegeLoenPage = () => {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">4 måder at hæve din læge løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">4 måder at hæve din læge løn efter skat </h2>
             <ol className="list-decimal pl-6 my-4">
               <li className="mb-2"><strong>Tag højintensive vagter</strong> – helligdage & nat giver mest nettoløn pr. time.</li>
               <li className="mb-2"><strong>Subs. kursus & forskning</strong> – udløser funktionstillæg + indirekte karriereboost.</li>
@@ -192,7 +192,7 @@ const LaegeLoenPage = () => {
               <li><strong>Bliv teamleder / overlæge</strong> – det store spring i løn efter skat kommer her.</li>
             </ol>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Læge Løn Efter Skat ℹ️</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Læge Løn Efter Skat</h2>
             <div className="space-y-4 my-6">
               <div className="border-b pb-3">
                 <p className="font-semibold">Hvor meget får en nyuddannet læge efter skat?</p>

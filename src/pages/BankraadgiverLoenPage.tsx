@@ -50,7 +50,7 @@ const BankraadgiverLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Bankrådgiver Løn Efter Skat 2025 – Fra Rente til Rådighedsbeløb 🏦💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Bankrådgiver Løn Efter Skat 2025 – Fra Rente til Rådighedsbeløb </h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -180,7 +180,7 @@ const BankraadgiverLoenPage = () => {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">4 hurtige tips til at øge din løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">4 hurtige tips til at øge din løn efter skat </h2>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Bliv certificeret i investerings­rådgivning</strong> – giver højere tillæg.</li>
               <li><strong>Fokusér på produktpakker</strong> (lån + forsikring + investering) ⇒ større bonus.</li>
@@ -188,7 +188,7 @@ const BankraadgiverLoenPage = () => {
               <li><strong>Tag step‑up til erhvervs­rådgiver</strong> – branche­segmentet betaler 5‑8 % mere.</li>
             </ul>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Bankrådgiver Løn Efter Skat ℹ️</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Bankrådgiver Løn Efter Skat</h2>
             <div className="space-y-4">
               <div>
                 <p className="font-semibold">Hvad tjener en nyuddannet bankrådgiver efter skat?</p>

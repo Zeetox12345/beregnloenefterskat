@@ -50,7 +50,7 @@ const ProjektlederLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Projektleder Løn Efter Skat 2025 – Fra Gantt-tavle til Girokort 📊💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Projektleder Løn Efter Skat 2025 – Fra Gantt-tavle til Girokort </h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -163,7 +163,7 @@ const ProjektlederLoenPage = () => {
               Vil du teste din egen projektleder-indkomst med forskellige tillæg? <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Beregn løn efter skat</a> og få et personligt estimat.
             </p>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Fire lynhurtige boosts til højere projektleder løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Fire lynhurtige boosts til højere projektleder løn efter skat </h2>
             
             <div className="overflow-x-auto my-6">
               <table className="min-w-full bg-white border border-gray-300 rounded-lg">
@@ -194,7 +194,7 @@ const ProjektlederLoenPage = () => {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Projektleder Løn Efter Skat ℹ️</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Projektleder Løn Efter Skat</h2>
             
             <div className="mb-6">
               <h3 className="text-lg font-medium">Hvad tjener en ny projektleder efter skat?</h3>

@@ -50,7 +50,7 @@ const DatamatikerLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Datamatiker Løn Efter Skat 2025 – Fra SQL-Query til Spendable Kroner 💾💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Datamatiker Løn Efter Skat 2025 – Fra SQL-Query til Spendable Kroner </h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -186,7 +186,7 @@ const DatamatikerLoenPage = () => {
               </ul>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Fire hurtige boosts til højere datamatiker løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Fire hurtige boosts til højere datamatiker løn efter skat </h2>
             <div className="overflow-x-auto my-6">
               <table className="min-w-full bg-white border border-gray-300 rounded-lg">
                 <thead>
@@ -216,7 +216,7 @@ const DatamatikerLoenPage = () => {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Datamatiker Løn Efter Skat ℹ️</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Datamatiker Løn Efter Skat</h2>
             <div className="space-y-4">
               <div>
                 <p className="font-semibold">Hvad tjener en ny datamatiker efter skat?</p>

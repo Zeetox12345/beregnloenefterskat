@@ -50,7 +50,7 @@ const SundhedsplejerskeLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Sundhedsplejerske Løn Efter Skat 2025 – Fra Babyvejning til Bankkonto 🍼💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Sundhedsplejerske Løn Efter Skat 2025 – Fra Babyvejning til Bankkonto </h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -162,7 +162,7 @@ const SundhedsplejerskeLoenPage = () => {
               Vil du regne med flere weekend­tillæg eller lavere kommuneskat? <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Beregn løn efter skat</a> tager under ét minut.
             </p>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">4 Smutveje til en højere løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">4 Smutveje til en højere løn efter skat </h2>
             <div className="overflow-x-auto my-6">
               <table className="min-w-full bg-white border border-gray-300 rounded-lg">
                 <thead className="bg-gray-100">
@@ -192,7 +192,7 @@ const SundhedsplejerskeLoenPage = () => {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Sundhedsplejerske Løn Efter Skat ℹ️</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Sundhedsplejerske Løn Efter Skat</h2>
             <div className="mb-8">
               <p><strong>Hvad tjener en ny sundhedsplejerske efter skat?</strong> Cirka 24 000 kr./md. uden ulempe­tillæg.</p>
               <p><strong>Hvordan rammer man 30 000 kr. efter skat?</strong> Specialist- eller teamleder­funktion + regelmæssige weekend­besøg.</p>

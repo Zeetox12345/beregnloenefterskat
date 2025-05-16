@@ -49,7 +49,7 @@ const BioanalytikerLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Bioanalytiker Løn Efter Skat 2025 – Din Guide fra Laboratoriet til Lønsedlen 🧪💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Bioanalytiker Løn Efter Skat 2025 – Din Guide fra Laboratoriet til Lønsedlen </h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -62,7 +62,7 @@ const BioanalytikerLoenPage = () => {
               Bioanalytikere står bag blodprøver, PCR‑tests, MR‑scannings­forberedelse, mikrobiologi og meget mere. De fleste arbejder i regionernes hospitalslaboratorier eller i privat diagnostik (fx Unilabs). Overenskomster forhandles af Danske Bioanalytikere (dbio) med Danske Regioner og KL.
             </p>
             <p className="italic">
-              Fun fact: Dit laboratorierør — om det er covid‑PCR eller hæmoglobin A1c — har højst sandsynlig passeret en bioanalytikers hænder 🤲.
+              Fun fact: Dit laboratorierør — om det er covid‑PCR eller hæmoglobin A1c — har højst sandsynlig passeret en bioanalytikers hænder .
             </p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Mission Nettoløn: Typiske 2025‑tal før og efter skat</h2>
@@ -131,7 +131,7 @@ const BioanalytikerLoenPage = () => {
               *Gennemsnitlig kommuneskat 25 % + AM‑bidrag 8 %.
             </p>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">Løn‑lab‑faktorer 🔬</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">Løn‑lab‑faktorer </h2>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Kommuneskat</strong> – Vejle 23,4 % vs. Brønderslev 26,3 %.</li>
               <li><strong>Vagt‑ og weekendtillæg</strong> – Nattevagt +35 %, weekend +40 %.</li>
@@ -152,7 +152,7 @@ const BioanalytikerLoenPage = () => {
               </ul>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ om bioanalytiker løn efter skat 🧑‍🔬</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ om bioanalytiker løn efter skat ‍</h2>
             <div className="space-y-4">
               <div>
                 <p className="font-semibold">Hvad tjener en bioanalytiker før skat?</p>

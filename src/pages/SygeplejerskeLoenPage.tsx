@@ -40,7 +40,7 @@ const SygeplejerskeLoenPage = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gradient-to-b from-secondary/20 to-white">
       <SEO 
-        title="Din Sygeplejerske Løn Efter Skat 2025 – Hvad Får Du Udbetalt?"
+        title="Sygeplejerske Løn Efter Skat 2025 – Hvad Får Du Udbetalt?"
         description="Hvor meget får en sygeplejerske efter skat? Se løntal og tillæg for 2025, og brug beregn løn efter skat til dit personlige estimat."
         keywords="sygeplejerske løn, sygeplejerske løn efter skat, sygeplejerskeløn, sygeplejerske indkomst, sygeplejerske udbetalt, løn sygeplejerske 2025"
       />
@@ -50,7 +50,7 @@ const SygeplejerskeLoenPage = () => {
       <main className="flex-1">
         <div className="container mx-auto px-4 py-8">
           <div className="bg-white rounded-lg shadow-lg p-6 md:p-8 prose max-w-none">
-            <h1 className="text-3xl font-bold mb-6">Sygeplejerske Løn Efter Skat 2025 – Fra Stetoskop til Sparekonto 🩺💸</h1>
+            <h1 className="text-3xl font-bold mb-6">Sygeplejerske Løn Efter Skat 2025 – Fra Stetoskop til Sparekonto </h1>
             
             <div className="bg-gray-100 p-4 rounded-lg my-6">
               <p className="font-medium">
@@ -138,7 +138,7 @@ const SygeplejerskeLoenPage = () => {
               Vil du teste flere nattevagter eller lavere kommuneskat? <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Beregn løn efter skat</a> og få et personligt estimat.
             </p>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">4 genveje til en større sygeplejerske løn efter skat 🚀</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">4 genveje til en større sygeplejerske løn efter skat </h2>
             <div className="overflow-x-auto my-6">
               <table className="min-w-full bg-white border border-gray-300 rounded-lg">
                 <thead className="bg-gray-100">
@@ -168,7 +168,7 @@ const SygeplejerskeLoenPage = () => {
               </table>
             </div>
 
-            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Sygeplejerske Løn Efter Skat ℹ️</h2>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">FAQ – Sygeplejerske Løn Efter Skat</h2>
             <div className="mb-8">
               <p><strong>Hvor meget får en ny sygeplejerske udbetalt?</strong> Ca. 21 500 kr./md.</p>
               <p><strong>Kan jeg nå 30 000 kr. efter skat?</strong> Ja, med special­tillæg + faste nattevagter.</p>
