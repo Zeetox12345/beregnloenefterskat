@@ -1,4 +1,4 @@
-import { Calculator, ChevronDown, BookOpen, Gamepad, Briefcase } from "lucide-react";
+import { Calculator, ChevronDown, BookOpen, Gamepad, Briefcase, Search } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import {
@@ -10,11 +10,13 @@ import {
   DropdownMenuSeparator,
   DropdownMenuGroup,
 } from "@/components/ui/dropdown-menu";
+import { Input } from "@/components/ui/input";
 
 export const Header = () => {
   const navigate = useNavigate();
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isJobsDropdownOpen, setIsJobsDropdownOpen] = useState(false);
+  const [jobSearchQuery, setJobSearchQuery] = useState("");
 
   // Organize salary options into groups
   const salaryGroups = {
@@ -100,6 +102,28 @@ export const Header = () => {
     ]
   };
 
+  // Filter jobs based on search query
+  const getFilteredJobs = () => {
+    if (!jobSearchQuery.trim()) return jobCategories;
+    
+    const searchTerm = jobSearchQuery.toLowerCase().trim();
+    const filteredCategories: Record<string, { name: string; path: string }[]> = {};
+    
+    Object.entries(jobCategories).forEach(([category, jobs]) => {
+      const filteredJobs = jobs.filter(job => 
+        job.name.toLowerCase().includes(searchTerm)
+      );
+      
+      if (filteredJobs.length > 0) {
+        filteredCategories[category] = filteredJobs;
+      }
+    });
+    
+    return filteredCategories;
+  };
+  
+  const filteredJobCategories = getFilteredJobs();
+
   return (
     <header className="w-full bg-gradient-to-r from-secondary to-accent py-4">
       <div className="container mx-auto px-2 sm:px-4">
@@ -140,33 +164,63 @@ export const Header = () => {
               </DropdownMenuTrigger>
               
               <DropdownMenuContent align="end" className="w-72 max-h-[70vh] overflow-y-auto bg-popover !bg-opacity-100">
-                <DropdownMenuLabel className="text-primary font-semibold pt-2 sticky top-0 bg-popover z-10">
-                  Job-specifikke lønberegninger
-                </DropdownMenuLabel>
+                <div className="sticky top-0 z-20 bg-white pt-2 pb-2 border-b shadow-sm">
+                  <DropdownMenuLabel className="text-primary font-semibold">
+                    Job-specifikke lønberegninger
+                  </DropdownMenuLabel>
                 
-                {Object.entries(jobCategories).map(([category, jobs], index) => (
-                  <div key={category}>
-                    <DropdownMenuLabel className="text-gray-600 font-medium text-sm pt-1">
-                      {category}
-                    </DropdownMenuLabel>
-                    <DropdownMenuGroup>
-                      {jobs.map((job) => (
-                        <DropdownMenuItem key={job.path} asChild>
-                          <Link 
-                            to={job.path}
-                            className="cursor-pointer w-full pl-5"
-                            onClick={() => setIsJobsDropdownOpen(false)}
-                          >
-                            {job.name}
-                          </Link>
-                        </DropdownMenuItem>
-                      ))}
-                    </DropdownMenuGroup>
-                    {index < Object.entries(jobCategories).length - 1 && (
-                      <DropdownMenuSeparator />
-                    )}
+                  <div className="px-2 py-2">
+                    <div className="relative">
+                      <Search className="h-4 w-4 absolute left-2 top-3 text-muted-foreground" />
+                      <Input 
+                        type="text" 
+                        placeholder="Søg efter job..." 
+                        value={jobSearchQuery}
+                        onChange={(e) => setJobSearchQuery(e.target.value)}
+                        onKeyDown={(e) => {
+                          // Prevent dropdown keyboard navigation from interfering with typing
+                          e.stopPropagation();
+                        }}
+                        className="pl-8 h-9"
+                      />
+                    </div>
                   </div>
-                ))}
+                </div>
+                
+                <div className="pt-4">
+                  {Object.keys(filteredJobCategories).length === 0 ? (
+                    <div className="px-2 py-4 text-center text-muted-foreground">
+                      Ingen jobs matcher din søgning
+                    </div>
+                  ) : (
+                    Object.entries(filteredJobCategories).map(([category, jobs], index) => (
+                      <div key={category} className="mt-1 first:mt-0">
+                        <DropdownMenuLabel className="text-gray-600 font-medium text-sm pt-1">
+                          {category}
+                        </DropdownMenuLabel>
+                        <DropdownMenuGroup>
+                          {jobs.map((job) => (
+                            <DropdownMenuItem key={job.path} asChild>
+                              <Link 
+                                to={job.path}
+                                className="cursor-pointer w-full pl-5"
+                                onClick={() => {
+                                  setJobSearchQuery("");
+                                  setIsJobsDropdownOpen(false);
+                                }}
+                              >
+                                {job.name}
+                              </Link>
+                            </DropdownMenuItem>
+                          ))}
+                        </DropdownMenuGroup>
+                        {index < Object.entries(filteredJobCategories).length - 1 && (
+                          <DropdownMenuSeparator />
+                        )}
+                      </div>
+                    ))
+                  )}
+                </div>
               </DropdownMenuContent>
             </DropdownMenu>
             
