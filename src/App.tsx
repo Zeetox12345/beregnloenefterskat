@@ -81,6 +81,7 @@ import MarkedsføringsøkonomLoenPage from "./pages/MarkedsføringsøkonomLoenPa
 import JuristLoenPage from "./pages/JuristLoenPage";
 import ArkitektLoenPage from "./pages/ArkitektLoenPage";
 import ButiksassistentLoenPage from "./pages/ButiksassistentLoenPage";
+import PortoerLoenPage from "./pages/PortoerLoenPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 // Job pages will be imported once they are created
 
@@ -172,6 +173,7 @@ const App = () => (
             <Route path="/jobs/jurist" element={<JuristLoenPage />} />
             <Route path="/jobs/arkitekt" element={<ArkitektLoenPage />} />
             <Route path="/jobs/butiksassistent" element={<ButiksassistentLoenPage />} />
+            <Route path="/jobs/portoer" element={<PortoerLoenPage />} />
             
             {/* Redirect unwanted pages to the home page */}
             <Route path="/sample-page" element={<Navigate replace to="/" />} />
