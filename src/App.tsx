@@ -78,6 +78,7 @@ import ForsikringsmatematikLoenPage from "./pages/ForsikringsmatematikLoenPage";
 import SundhedsadministrativKoordinatorLoenPage from "./pages/SundhedsadministrativKoordinatorLoenPage";
 import LaerervikarLoenPage from "./pages/LaerervikarLoenPage";
 import MarkedsføringsøkonomLoenPage from "./pages/MarkedsføringsøkonomLoenPage";
+import JuristLoenPage from "./pages/JuristLoenPage";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 // Job pages will be imported once they are created
 
@@ -166,6 +167,7 @@ const App = () => (
             <Route path="/jobs/sundhedsadministrativ-koordinator-loen-efter-skat" element={<SundhedsadministrativKoordinatorLoenPage />} />
             <Route path="/jobs/laerervikar-loen-efter-skat" element={<LaerervikarLoenPage />} />
             <Route path="/jobs/markedsfoeringsoekonom-loen-efter-skat" element={<MarkedsføringsøkonomLoenPage />} />
+            <Route path="/jobs/jurist" element={<JuristLoenPage />} />
             
             {/* Redirect unwanted pages to the home page */}
             <Route path="/sample-page" element={<Navigate replace to="/" />} />

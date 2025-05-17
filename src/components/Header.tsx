@@ -75,6 +75,7 @@ export const Header = () => {
       { name: "Politibetjent", path: "/jobs/politibetjent-loen-efter-skat" },
     ],
     "Handel & Service": [
+      { name: "Advokat", path: "/jobs/advokat-loen-efter-skat" },
       { name: "Bankrådgiver", path: "/jobs/bankraadgiver-loen-efter-skat" },
       { name: "Bygningsingeniør", path: "/jobs/bygningsingenioer-loen-efter-skat" },
       { name: "Bygningskonstruktør", path: "/jobs/bygningskonstruktoer-loen-efter-skat" },
@@ -86,6 +87,7 @@ export const Header = () => {
       { name: "Finansøkonom", path: "/jobs/finansoekonom-loen-efter-skat" },
       { name: "Frisør", path: "/jobs/frisoer-loen-efter-skat" },
       { name: "Ingeniør", path: "/jobs/ingenioer-loen-efter-skat" },
+      { name: "Jurist", path: "/jobs/jurist" },
       { name: "Maler", path: "/jobs/maler-loen-efter-skat" },
       { name: "Markedsføringsøkonom", path: "/jobs/markedsfoeringsoekonom-loen-efter-skat" },
       { name: "Maskinmester", path: "/jobs/maskinmester-loen-efter-skat" },
@@ -103,7 +105,6 @@ export const Header = () => {
       { name: "Elektriker", path: "/jobs/elektriker-loen-efter-skat" },
       { name: "Lastbilchauffør", path: "/jobs/lastbilchauffoer-loen-efter-skat" },
       { name: "Socialrådgiver", path: "/jobs/socialraadgiver-loen-efter-skat" },
-      { name: "Advokat", path: "/jobs/advokat-loen-efter-skat" },
       { name: "Voksenlærling", path: "/jobs/voksenlaerling-loen-efter-skat" },
       { name: "Forsikringsmatematik", path: "/jobs/forsikringsmatematik-loen-efter-skat" },
     ]
