@@ -77,6 +77,7 @@ import VoksenlaerlingLoenPage from "./pages/VoksenlaerlingLoenPage";
 import ForsikringsmatematikLoenPage from "./pages/ForsikringsmatematikLoenPage";
 import SundhedsadministrativKoordinatorLoenPage from "./pages/SundhedsadministrativKoordinatorLoenPage";
 import LaerervikarLoenPage from "./pages/LaerervikarLoenPage";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 // Job pages will be imported once they are created
 
 const queryClient = new QueryClient();
@@ -94,6 +95,7 @@ const App = () => (
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:slug" element={<BlogPost />} />
             <Route path="/spil" element={<JobGamePage />} />
+            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
             <Route path="/jobs/fleksjob" element={<FleksjobPage />} />
             <Route path="/jobs/dagplejer" element={<DagplejerPage />} />
             <Route path="/jobs/vaernepligt" element={<VaernepligtPage />} />
