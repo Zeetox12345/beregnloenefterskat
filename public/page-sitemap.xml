@@ -663,7 +663,13 @@
   </url>
   <url>
     <loc>https://beregnloenefterskat.dk/jobs/laerervikar-loen-efter-skat</loc>
-    <lastmod>2025-06-30</lastmod>
+    <lastmod>2025-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://beregnloenefterskat.dk/jobs/markedsføringsøkonom-loen-efter-skat</loc>
+    <lastmod>2025-05-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
