@@ -175,6 +175,7 @@ Examples:
 - `elevloen-sosu`
 - `taxachauffoer`
 - `jurist`
+- `arkitekt`
 
 Note: The previous convention of appending "-loen-efter-skat" to URLs is deprecated. All new job pages should use the simpler job title format for better user experience and cleaner URLs.
 
@@ -190,13 +191,26 @@ Note: The previous convention of appending "-loen-efter-skat" to URLs is depreca
    - FAQs
 4. Use **Danish language** throughout
 5. Include **external sources** for authority
+6. **IMPORTANT:** All internal links should use the exact anchor text "beregn løn efter skat" for consistency and SEO benefits
+
+## Recent Examples
+
+### Arkitekt (May 2025)
+
+The arkitekt page (`/jobs/arkitekt`) demonstrates best practices:
+- Clean URL structure without redundant suffixes
+- Interactive city salary table with highlighting
+- Comprehensive experience-based progression data
+- Well-structured sections including factors affecting salary and tips for higher net pay
+- All internal links use "beregn løn efter skat" as anchor text
+- Clear emoji usage in title (💰) for visual emphasis
 
 ## SEO Guidelines
 
 1. Use descriptive titles: "[Job Title] Løn Efter Skat 2025"
 2. Include relevant keywords in meta description
 3. Use job-specific terms in heading tags
-4. Link to the main calculator: `beregn løn efter skat`
+4. Link to the main calculator using the anchor text: `beregn løn efter skat`
 5. Keep content updated annually
 
 ## Testing
@@ -207,3 +221,4 @@ Before finalizing, verify:
 - All routes and imports are working
 - Tables display correctly on mobile
 - SEO tags are properly set 
+- All internal links use "beregn løn efter skat" as anchor text 
