@@ -165,7 +165,7 @@ const App = () => (
             <Route path="/jobs/forsikringsmatematik-loen-efter-skat" element={<ForsikringsmatematikLoenPage />} />
             <Route path="/jobs/sundhedsadministrativ-koordinator-loen-efter-skat" element={<SundhedsadministrativKoordinatorLoenPage />} />
             <Route path="/jobs/laerervikar-loen-efter-skat" element={<LaerervikarLoenPage />} />
-            <Route path="/jobs/markedsføringsøkonom-loen-efter-skat" element={<MarkedsføringsøkonomLoenPage />} />
+            <Route path="/jobs/markedsfoeringsoekonom-loen-efter-skat" element={<MarkedsføringsøkonomLoenPage />} />
             
             {/* Redirect unwanted pages to the home page */}
             <Route path="/sample-page" element={<Navigate replace to="/" />} />
