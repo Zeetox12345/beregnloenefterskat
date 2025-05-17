@@ -123,7 +123,7 @@ Add the new page import and route to `App.tsx`:
 import [JobTitle]LoenPage from "./pages/[JobTitle]LoenPage";
 
 // Add the route within the Routes component
-<Route path="/jobs/[job-url-path]" element={<[JobTitle]LoenPage />} />
+<Route path="/jobs/[job-title]" element={<[JobTitle]LoenPage />} />
 ```
 
 ## Step 3: Update Header.tsx
@@ -135,7 +135,7 @@ const jobCategories = {
   // Existing categories
   "[Category Name]": [
     // Existing jobs
-    { name: "[Job Title]", path: "/jobs/[job-url-path]" },
+    { name: "[Job Title]", path: "/jobs/[job-title]" },
     // ...
   ],
   // ...
@@ -155,7 +155,7 @@ Add a new entry to `public/sitemap.xml` (and `page-sitemap.xml` if it exists):
 
 ```xml
 <url>
-  <loc>https://beregnloenefterskat.dk/jobs/[job-url-path]</loc>
+  <loc>https://beregnloenefterskat.dk/jobs/[job-title]</loc>
   <lastmod>[YYYY-MM-DD]</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.9</priority>
@@ -166,14 +166,17 @@ Add a new entry to `public/sitemap.xml` (and `page-sitemap.xml` if it exists):
 
 ## URL Naming Conventions
 
-Use kebab-case for job URLs, following the pattern:
-- `[job-title]-loen-efter-skat`
+Use kebab-case for job URLs, using only the job title:
+- `[job-title]`
 
 Examples:
-- `phd-loen-efter-skat`
-- `bioanalytiker-loen-efter-skat`
-- `elevloen-sosu-efter-skat`
-- `taxachauffoer-loen-efter-skat`
+- `phd`
+- `bioanalytiker`
+- `elevloen-sosu`
+- `taxachauffoer`
+- `jurist`
+
+Note: The previous convention of appending "-loen-efter-skat" to URLs is deprecated. All new job pages should use the simpler job title format for better user experience and cleaner URLs.
 
 ## Content Guidelines
 
