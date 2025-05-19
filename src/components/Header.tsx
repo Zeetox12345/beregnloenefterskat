@@ -39,6 +39,7 @@ export const Header = () => {
     ],
     "Sundhed & Omsorg": [
       { name: "Bioanalytiker", path: "/jobs/bioanalytiker-loen-efter-skat" },
+      { name: "Carelink", path: "/jobs/carelink" },
       { name: "Dyrlæge", path: "/jobs/dyrlaege-loen-efter-skat" },
       { name: "Jordemoder", path: "/jobs/jordemoder-loen-efter-skat" },
       { name: "Laborant", path: "/jobs/laborant-loen-efter-skat" },
