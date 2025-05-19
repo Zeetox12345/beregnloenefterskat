@@ -90,7 +90,7 @@ const CarelinkLoenPage = () => {
               </table>
             </div>
 
-            <p className="text-sm">*Beregnet ved 160 arbejdstimer pr. måned. Nettobeløb forudsætter AM-bidrag 8 %, personfradrag 4.650 kr. og gennemsnitlig kommuneskat 24,9 %. Brug <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> til at få din helt personlige Carelink løn efter skat – justér antal timer, kommune og fradrag på under ét minut.</p>
+            <p className="text-sm">*Beregnet ved 160 arbejdstimer pr. måned. Nettobeløb forudsætter AM-bidrag 8 %, personfradrag 4.650 kr. og gennemsnitlig kommuneskat 24,9 %. Brug <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> til at få din helt personlige Carelink løn efter skat.</p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Hvad påvirker Carelink løn efter skat?</h2>
 
