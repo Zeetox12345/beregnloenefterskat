@@ -38,6 +38,7 @@ export const Header = () => {
       { name: "Kontanthjælp Satser", path: "/jobs/kontanthjaelp-satser" },
     ],
     "Sundhed & Omsorg": [
+      { name: "Ambulanceredder", path: "/jobs/ambulanceredder" },
       { name: "Bioanalytiker", path: "/jobs/bioanalytiker-loen-efter-skat" },
       { name: "Carelink", path: "/jobs/carelink" },
       { name: "Dyrlæge", path: "/jobs/dyrlaege-loen-efter-skat" },
