@@ -52,6 +52,7 @@ export const Header = () => {
       { name: "SOSU Elev", path: "/jobs/elevloen-sosu-efter-skat" },
       { name: "Sygeplejerske", path: "/jobs/sygeplejerske-loen-efter-skat" },
       { name: "Sundhedsplejerske", path: "/jobs/sundhedsplejerske-loen-efter-skat" },
+      { name: "Veterinærsygeplejerske", path: "/jobs/veterinaersygeplejerske" },
       { name: "Dagplejer", path: "/jobs/dagplejer" },
       { name: "Tandklinikassistent", path: "/jobs/tandklinikassistent-loen-efter-skat" },
       { name: "Tandlæge", path: "/jobs/tandlaege-loen-efter-skat" },
