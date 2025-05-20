@@ -101,6 +101,7 @@ export const Header = () => {
       { name: "IT Supporter", path: "/jobs/it-supporter" },
       { name: "Jurist", path: "/jobs/jurist" },
       { name: "Key Account Manager", path: "/jobs/key-account-manager" },
+      { name: "Konsulent", path: "/jobs/konsulent" },
       { name: "Lastbilchauffør", path: "/jobs/lastbilchauffoer-loen-efter-skat" },
       { name: "Maler", path: "/jobs/maler-loen-efter-skat" },
       { name: "Markedsføringsøkonom", path: "/jobs/markedsfoeringsoekonom-loen-efter-skat" },
