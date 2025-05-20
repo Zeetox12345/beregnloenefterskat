@@ -43,6 +43,7 @@ export const Header = () => {
       { name: "Carelink", path: "/jobs/carelink" },
       { name: "Dyrlæge", path: "/jobs/dyrlaege-loen-efter-skat" },
       { name: "Jordemoder", path: "/jobs/jordemoder-loen-efter-skat" },
+      { name: "Kosmetisk Sygeplejerske", path: "/jobs/kosmetisk-sygeplejerske" },
       { name: "Laborant", path: "/jobs/laborant-loen-efter-skat" },
       { name: "Lægesekretær", path: "/jobs/laegesekretaer-loen-efter-skat" },
       { name: "Portør", path: "/jobs/portoer" },
