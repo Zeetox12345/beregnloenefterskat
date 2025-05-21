@@ -107,6 +107,7 @@ export const Header = () => {
       { name: "Key Account Manager", path: "/jobs/key-account-manager" },
       { name: "Konsulent", path: "/jobs/konsulent" },
       { name: "Køletekniker", path: "/jobs/koeletekniker" },
+      { name: "Lagermedarbejder", path: "/jobs/lagermedarbejder" },
       { name: "Lastbilchauffør", path: "/jobs/lastbilchauffoer-loen-efter-skat" },
       { name: "Maler", path: "/jobs/maler-loen-efter-skat" },
       { name: "Markedsføringsøkonom", path: "/jobs/markedsfoeringsoekonom-loen-efter-skat" },
