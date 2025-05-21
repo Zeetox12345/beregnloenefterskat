@@ -228,7 +228,7 @@ const FinancialControllerLoenPage = () => {
             </ul>
             
             <p className="text-sm text-gray-600 italic mt-8">
-              Opdateret: august 2025.
+              Opdateret: maj 2025.
             </p>
           </div>
         </div>
