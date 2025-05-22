@@ -40,6 +40,7 @@ export const Header = () => {
     ],
     "Sundhed & Omsorg": [
       { name: "Ambulanceredder", path: "/jobs/ambulanceredder" },
+      { name: "Anæstesisygeplejerske", path: "/jobs/anaestesisygeplejerske" },
       { name: "Bioanalytiker", path: "/jobs/bioanalytiker-loen-efter-skat" },
       { name: "Carelink", path: "/jobs/carelink" },
       { name: "Dyrlæge", path: "/jobs/dyrlaege-loen-efter-skat" },
