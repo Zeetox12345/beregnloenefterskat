@@ -197,7 +197,7 @@ const ChefkonsulentLoenPage = () => {
                 <tbody>
                   <tr>
                     <td className="py-2 px-4 border-b">Betaler alle chefkonsulenter topskat?</td>
-                    <td className="py-2 px-4 border-b">De fleste gør – topskat rammer ved brutto­løn > 63 000 kr./md.</td>
+                    <td className="py-2 px-4 border-b">De fleste gør – topskat rammer ved brutto­løn 63 000 kr./md.</td>
                   </tr>
                   <tr>
                     <td className="py-2 px-4 border-b">Indgår pension i nettoløn?</td>
