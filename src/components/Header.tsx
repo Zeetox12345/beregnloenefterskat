@@ -37,6 +37,7 @@ export const Header = () => {
       { name: "Enlig Forsørger SU", path: "/jobs/enlig-forsoerger-su" },
       { name: "Kontanthjælp Satser", path: "/jobs/kontanthjaelp-satser" },
       { name: "Løn Under Sygdom", path: "/jobs/loen-under-sygdom" },
+      { name: "Løn Under Barsel", path: "/jobs/loen-under-barsel" },
     ],
     "Sundhed & Omsorg": [
       { name: "Ambulanceredder", path: "/jobs/ambulanceredder" },
