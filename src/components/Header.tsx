@@ -49,6 +49,7 @@ export const Header = () => {
       { name: "Kosmetisk Sygeplejerske", path: "/jobs/kosmetisk-sygeplejerske" },
       { name: "Laborant", path: "/jobs/laborant-loen-efter-skat" },
       { name: "Lægesekretær", path: "/jobs/laegesekretaer-loen-efter-skat" },
+      { name: "Paramediciner", path: "/jobs/paramediciner" },
       { name: "Portør", path: "/jobs/portoer" },
       { name: "SOSU Hjælper", path: "/jobs/sosu-hjaelper" },
       { name: "SOSU Assistent", path: "/jobs/sosu-assistent-loen-efter-skat" },
