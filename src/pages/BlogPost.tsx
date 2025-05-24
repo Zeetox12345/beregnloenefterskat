@@ -116,7 +116,7 @@ const blogPosts: Record<string, BlogPost> = {
         type: 'image',
         content: '',
         imageUrl: "https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
-        imageAlt: "Et billede af en sparegris eller et pensionsdokument, der illustrerer opsparing"
+        imageAlt: "En plante der vokser op fra mønter i en glaskrukke - symbol på økonomisk vækst og opsparing"
       },
       {
         type: 'text',
@@ -870,6 +870,308 @@ Pengene er bundet i din pension, og du kan ikke bruge dem frit her og nu. Det ka
         content: `Regelmæssige beregninger af løn efter skat – kombineret med realistisk budget og rettidige fradrag – giver dig overblik, ro i maven og bedre beslutninger, når livet eller markedet byder på forandringer. Skulle der opstå behov for kortfristet finansiering, kan en <a href="https://www.kviklaanberegner.dk/" target="_blank" rel="noopener noreferrer">kviklån beregner</a> på få sekunder vise præcis, hvad lånet vil koste. Ved at holde nettolønnen i centrum og lade tal frem for følelser styre, skaber du en stærk platform for økonomisk trivsel både nu og i fremtiden.`
       }
     ]
+  },
+  "faa-mest-muligt-ud-af-loennen-efter-skat-og-stadig-plads-til-fornoejelse": {
+    id: 4,
+    slug: "faa-mest-muligt-ud-af-loennen-efter-skat-og-stadig-plads-til-fornoejelse",
+    title: "Få mest muligt ud af lønnen efter skat – og stadig plads til fornøjelse",
+    date: "2025-05-24",
+    readTime: "18 min",
+    author: "admin",
+    sections: [
+      {
+        type: 'image',
+        content: '',
+        imageUrl: "https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80",
+        imageAlt: "En plante der vokser op fra mønter i en glaskrukke - symbol på økonomisk vækst og opsparing"
+      },
+      {
+        type: 'text',
+        content: `Når pengene tikker ind den første i måneden, er det nettopengene – dem du har tilbage efter skat – der afgør, hvor meget luft der er til både forpligtelser og fornøjelser. Mange taler om at spare, men lige så vigtigt er det at prioritere de penge, du allerede har. I denne guide får du en komplet trin‑for‑trin‑metode til at udnytte din løn efter skat bedre, så der både er plads til opsparing, faste udgifter og lidt sjov i hverdagen.`
+      },
+      {
+        type: 'text',
+        content: `<strong>Kort version:</strong>`
+      },
+      {
+        type: 'text',
+        content: `<ul style="margin: 16px 0; padding-left: 24px;">
+<li style="margin-bottom: 8px;">Kend din nettoløn på kronen.</li>
+<li style="margin-bottom: 8px;">Fordel pengene i fire "krukker": Faste udgifter, Opsparing, Fornøjelse, Fremtid.</li>
+<li style="margin-bottom: 8px;">Optimér hvert område med små rutiner, der giver store resultater over tid.</li>
+</ul>`
+      },
+      {
+        type: 'heading',
+        content: '1. Tæl din nettoløn – ikke din bruttoløn'
+      },
+      {
+        type: 'text',
+        content: `Mange budgetter går skævt, fordi de tager udgangspunkt i bruttolønnen. Brug en lønberegner til at se:`
+      },
+      {
+        type: 'text',
+        content: `<ul style="margin: 16px 0; padding-left: 24px;">
+<li style="margin-bottom: 8px;"><strong>Reel udbetaling hver måned</strong> – så ved du, hvad du kan disponere over.</li>
+<li style="margin-bottom: 8px;"><strong>Fradrag og skatteprocenter</strong> – små justeringer kan flytte 300‑400 kr. netto.</li>
+<li style="margin-bottom: 8px;"><strong>Simulation af lønforhandling</strong> – se effekten af +1.000 kr. brutto før du lover pengene væk.</li>
+</ul>`
+      },
+      {
+        type: 'text',
+        content: `Når du kender nettobeløbet, fordeler du det i fire krukker:`
+      },
+      {
+        type: 'text',
+        content: `<div style="overflow-x: auto; margin: 24px 0;">
+<table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  <thead>
+    <tr style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+      <th style="padding: 16px; text-align: left; font-weight: 600;">Krukke</th>
+      <th style="padding: 16px; text-align: left; font-weight: 600;">Typisk procent</th>
+      <th style="padding: 16px; text-align: left; font-weight: 600;">Eksempler</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #e5e7eb;">
+      <td style="padding: 16px; font-weight: 500;">Faste udgifter</td>
+      <td style="padding: 16px;">45‑55 %</td>
+      <td style="padding: 16px;">Husleje, realkredit, forsikring, A‑kasse</td>
+    </tr>
+    <tr style="background-color: #f8fafc; border-bottom: 1px solid #e5e7eb;">
+      <td style="padding: 16px; font-weight: 500;">Opsparing & buffer</td>
+      <td style="padding: 16px;">10‑20 %</td>
+      <td style="padding: 16px;">Akut buffer, ferie, større køb</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #e5e7eb;">
+      <td style="padding: 16px; font-weight: 500;">Fornøjelse</td>
+      <td style="padding: 16px;">5‑15 %</td>
+      <td style="padding: 16px;">Restaurant, hobby, underholdning</td>
+    </tr>
+    <tr style="background-color: #f8fafc;">
+      <td style="padding: 16px; font-weight: 500;">Fremtid</td>
+      <td style="padding: 16px;">10‑20 %</td>
+      <td style="padding: 16px;">Pension, investering, efteruddannelse</td>
+    </tr>
+  </tbody>
+</table>
+</div>`
+      },
+      {
+        type: 'text',
+        content: `Små justeringer i hver krukke kan frigive betydelige beløb uden at sænke livskvaliteten.`
+      },
+      {
+        type: 'heading',
+        content: '2. Sæt fornøjelse på budgettet – og få mere værdi for pengene'
+      },
+      {
+        type: 'text',
+        content: `Det lyder paradoksalt at budgettere for fornøjelse, men hvis du ikke afsætter penge til sjov, ender du med spontane køb, der vælte hele månedsregnskabet.`
+      },
+      {
+        type: 'text',
+        content: `<strong>Sådan gør du:</strong>`
+      },
+      {
+        type: 'text',
+        content: `<ul style="margin: 16px 0; padding-left: 24px;">
+<li style="margin-bottom: 8px;"><strong>Fast beløb:</strong> Afsæt fx 5–10 % af nettolønnen til oplevelser.</li>
+<li style="margin-bottom: 8px;"><strong>Variabel belønning:</strong> Hæver du lønnen, lader du 20 % af stigningen gå til ekstra fornøjelser i et år.</li>
+<li style="margin-bottom: 8px;"><strong>Sæsonpuljer:</strong> Gem "sommer‑" og "jule‑" fornøjelse på separate konti for at undgå januar‐kuller.</li>
+</ul>`
+      },
+      {
+        type: 'text',
+        content: `<strong>Billige (og gratis) idéer</strong>`
+      },
+      {
+        type: 'text',
+        content: `<ul style="margin: 16px 0; padding-left: 24px;">
+<li style="margin-bottom: 8px;">Biblioteksevents, fribilletter fra fagforeningen, frivillige filmvisninger.</li>
+<li style="margin-bottom: 8px;"><strong>Bytteaftaler:</strong> Del streamingkonti lovligt via husstanden, eller lån sportsudstyr af venner.</li>
+<li style="margin-bottom: 8px;"><strong>Gamification:</strong> Brug "nul‑købs"‐dage, hvor du konkurrerer med dig selv om ingen discretionary spending.</li>
+</ul>`
+      },
+      {
+        type: 'heading',
+        content: '3. Online underholdning uden at sprænge budgettet'
+      },
+      {
+        type: 'text',
+        content: `Streaming, gaming og lydbøger kan hurtigt løbe op, men der findes gratis alternativer. Et eksempel er kampagner med gratis spins i online kasinobranchen. Hvis du vil se de aktuelle kampagner samlet ét sted, kan du tjekke <a href="https://www.ugensfreespins.dk/" target="_blank" rel="noopener noreferrer">ugens free spins</a>. Her finder du ugentlige oversigter over udbydere, der deler spins uden krav om indskud – en måde at prøve spil uden at belaste nettopungen.`
+      },
+      {
+        type: 'text',
+        content: `<strong>Praktisk tip:</strong> Sæt tids‑ eller tabslimit i spillets indstillinger før start, så du holder dig inden for fornøjelsesbudgettet.`
+      },
+      {
+        type: 'heading',
+        content: '4. Mikro‑opsparing: spar op, mens du hygger dig'
+      },
+      {
+        type: 'text',
+        content: `En af de største faldgruber er, at fornøjelsesbudgettet langsomt æder opsparingen. Med mikro‑opsparing vendes problemet til en fordel:`
+      },
+      {
+        type: 'text',
+        content: `<div style="overflow-x: auto; margin: 24px 0;">
+<table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  <thead>
+    <tr style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+      <th style="padding: 16px; text-align: left; font-weight: 600;">Teknik</th>
+      <th style="padding: 16px; text-align: left; font-weight: 600;">Sådan virker den</th>
+      <th style="padding: 16px; text-align: left; font-weight: 600;">Eksempel</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #e5e7eb;">
+      <td style="padding: 16px; font-weight: 500;">Rund op</td>
+      <td style="padding: 16px;">Beløb afrundes automatisk til nærmeste 10 kr.</td>
+      <td style="padding: 16px;">Betaler du 37 kr. for kaffe, går 3 kr. til opsparing</td>
+    </tr>
+    <tr style="background-color: #f8fafc; border-bottom: 1px solid #e5e7eb;">
+      <td style="padding: 16px; font-weight: 500;">Match beløb</td>
+      <td style="padding: 16px;">Hver krone brugt på fornøjelse matches med 1 kr. til opsparing</td>
+      <td style="padding: 16px;">150 kr. biograf → 150 kr. på bufferkonto</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #e5e7eb;">
+      <td style="padding: 16px; font-weight: 500;">Belønningsopsparing</td>
+      <td style="padding: 16px;">Fuld måned uden budgetoverskridelse udløser bonusopsparing</td>
+      <td style="padding: 16px;">5 % ekstra af fornøjelsesbudgettet</td>
+    </tr>
+    <tr style="background-color: #f8fafc;">
+      <td style="padding: 16px; font-weight: 500;">Challenge‑konto</td>
+      <td style="padding: 16px;">Udfordringer (løb 5 km, læs bog) udløser indsætning</td>
+      <td style="padding: 16px;">20 kr. pr. opgave</td>
+    </tr>
+  </tbody>
+</table>
+</div>`
+      },
+      {
+        type: 'text',
+        content: `Automatisér via mobilbanken – så sparer du uden at mærke det.`
+      },
+      {
+        type: 'heading',
+        content: '5. Optimer skatten – brug fradrag aktivt'
+      },
+      {
+        type: 'text',
+        content: `Skatten er dit største minuspost, så selv små fradrag rykker. Tjek mindst én gang årligt:`
+      },
+      {
+        type: 'text',
+        content: `<ul style="margin: 16px 0; padding-left: 24px;">
+<li style="margin-bottom: 8px;"><strong>Kørsel:</strong> Befordringsfradrag også ved kollektiv trafik over 12 km hver vej.</li>
+<li style="margin-bottom: 8px;"><strong>Fagforening/A‑kasse:</strong> Kan trækkes fuldt fra, ofte overset i forskudsopgørelsen.</li>
+<li style="margin-bottom: 8px;"><strong>Servicefradrag 2025:</strong> Op til 19.400 kr. i arbejdsløn til håndværker eller rengøring.</li>
+<li style="margin-bottom: 8px;"><strong>Velgørenhed:</strong> Gaver over 220 kr. til godkendte organisationer kan trækkes fra.</li>
+</ul>`
+      },
+      {
+        type: 'text',
+        content: `Opdater forskudsopgørelsen løbende – restskat er dyrere end en kassekredit.`
+      },
+      {
+        type: 'heading',
+        content: '6. Sidehustle eller passiv indtægt – få flere kroner i nettolønnen'
+      },
+      {
+        type: 'text',
+        content: `At øge indtægten kan være lige så effektivt som at skære i udgifterne:`
+      },
+      {
+        type: 'text',
+        content: `<ul style="margin: 16px 0; padding-left: 24px;">
+<li style="margin-bottom: 8px;"><strong>Sælg færdigheder</strong> på freelancesider – grafik, tekst, kodning.</li>
+<li style="margin-bottom: 8px;"><strong>Udlej:</strong> Værktøj, festtøj, bil – platformsøkonomi gør det nemt.</li>
+<li style="margin-bottom: 8px;"><strong>Affiliate/indholdsproduktion:</strong> Skab indhold om et nicheemne, fx privatøkonomi, og tjen på reklamer.</li>
+</ul>`
+      },
+      {
+        type: 'text',
+        content: `Registrér B‑skat med det samme. Sæt 40 % af sideindtægten til side, så slipper du for skattesjok.`
+      },
+      {
+        type: 'heading',
+        content: '7. Teknologi, der holder dig på sporet'
+      },
+      {
+        type: 'text',
+        content: `<ul style="margin: 16px 0; padding-left: 24px;">
+<li style="margin-bottom: 8px;"><strong>Budget‑apps:</strong> F.eks. Spiir eller Money Manager til visuel oversigt.</li>
+<li style="margin-bottom: 8px;"><strong>Automatiske overførsler:</strong> Opret regler i netbank: løn → fire krukker samme dag.</li>
+<li style="margin-bottom: 8px;"><strong>Low balance alerts:</strong> SMS eller push, når kontoen nærmer sig nul.</li>
+<li style="margin-bottom: 8px;"><strong>Smartwatch‐påmindelser:</strong> Kort vibration kl. 12:00, "hold dig til budgettet" – overraskende effektivt.</li>
+</ul>`
+      },
+      {
+        type: 'heading',
+        content: '8. Fremtidskrukken – pensionsbuffer, investering og selvudvikling'
+      },
+      {
+        type: 'text',
+        content: `<div style="overflow-x: auto; margin: 24px 0;">
+<table style="width: 100%; border-collapse: collapse; background: white; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+  <thead>
+    <tr style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+      <th style="padding: 16px; text-align: left; font-weight: 600;">Formål</th>
+      <th style="padding: 16px; text-align: left; font-weight: 600;">Tidsramme</th>
+      <th style="padding: 16px; text-align: left; font-weight: 600;">Hvorfor det er vigtigt</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="border-bottom: 1px solid #e5e7eb;">
+      <td style="padding: 16px; font-weight: 500;">Pension</td>
+      <td style="padding: 16px;">20‑40 år</td>
+      <td style="padding: 16px;">Tvangsopsparing med skattefordel i nutiden</td>
+    </tr>
+    <tr style="background-color: #f8fafc; border-bottom: 1px solid #e5e7eb;">
+      <td style="padding: 16px; font-weight: 500;">Investering</td>
+      <td style="padding: 16px;">5‑15 år</td>
+      <td style="padding: 16px;">Slår inflationen, bygger formue</td>
+    </tr>
+    <tr style="border-bottom: 1px solid #e5e7eb;">
+      <td style="padding: 16px; font-weight: 500;">Efteruddannelse</td>
+      <td style="padding: 16px;">1‑3 år</td>
+      <td style="padding: 16px;">Øger lønpotentiale, skattefradrag muligt</td>
+    </tr>
+    <tr style="background-color: #f8fafc;">
+      <td style="padding: 16px; font-weight: 500;">Sabbat/karrierepause</td>
+      <td style="padding: 16px;">3‑5 år</td>
+      <td style="padding: 16px;">Mental sundhed, livskvalitet</td>
+    </tr>
+  </tbody>
+</table>
+</div>`
+      },
+      {
+        type: 'text',
+        content: `Automatisér overførsler til hver delmålkonto – ud af øje, ud af sind.`
+      },
+      {
+        type: 'heading',
+        content: '9. Krisetest dit budget – sådan klarer du uforudsete chok'
+      },
+      {
+        type: 'text',
+        content: `<ul style="margin: 16px 0; padding-left: 24px;">
+<li style="margin-bottom: 8px;"><strong>Stress‑test:</strong> Fjern 20 % af indtægten i et regneark. Holder budgettet?</li>
+<li style="margin-bottom: 8px;"><strong>Tre scenarier:</strong> Baseline, worst case, best case. Giver ro, når livet slår kolbøtter.</li>
+<li style="margin-bottom: 8px;"><strong>Nødcheckliste:</strong> Bufferkonto, kreditramme du aldrig rører, forsikringer.</li>
+</ul>`
+      },
+      {
+        type: 'heading',
+        content: 'Konklusion'
+      },
+      {
+        type: 'text',
+        content: `Et solidt overblik over lønnen efter skat handler ikke kun om at skære forbruget ned, men også om at planlægge plads til det, der gør livet sjovt – uden at gå i minus. Ved at fordele indtægten i fire krukker, udnytte fradrag og mikro‑opsparing, og ved at udnytte gratis underholdningstilbud som dem, der samles på <a href="https://www.ugensfreespins.dk/" target="_blank" rel="noopener noreferrer">ugens free spins</a>, får du mere værdi ud af hver krone. Resultatet? En hverdag med både økonomisk tryghed og ægte hverdagsglæde – nu og langt ud i fremtiden.`
+      }
+    ]
   }
 };
 
@@ -917,11 +1219,15 @@ const BlogPost = () => {
           ? `Sådan undgår du restskat | 7 konkrete metoder | Beregn Løn Efter Skat 2025`
           : slug === "sadan-optimerer-du-din-hverdagsokonomi-efter-skat"
           ? `Sådan optimerer du din økonomi efter skat i 2025`
+          : slug === "faa-mest-muligt-ud-af-loennen-efter-skat-og-stadig-plads-til-fornoejelse"
+          ? `Få mest muligt ud af lønnen efter skat – og stadig plads til fornøjelse`
           : `5 tips til at optimere din privatøkonomi | Beregn Løn Efter Skat`}
         description={slug === "sadan-undgar-du-restskat"
           ? "Undgå restskat med vores 7 konkrete metoder. Lær at opdatere forskudsopgørelsen, udnytte fradrag og holde styr på din skat. Se hvordan du beregner din reelle løn efter skat i 2025."
           : slug === "sadan-optimerer-du-din-hverdagsokonomi-efter-skat"
           ? "Få styr på din nettoløn, budget, fradrag og finansielle beslutninger. Brug smarte værktøjer og få mere ud af pengene – uden at gå på kompromis."
+          : slug === "faa-mest-muligt-ud-af-loennen-efter-skat-og-stadig-plads-til-fornoejelse"
+          ? "Lær at fordele din nettoløn i fire krukker: faste udgifter, opsparing, fornøjelse og fremtid. Få praktiske tips til mikro-opsparing, skatteoptimering og gratis underholdning."
           : "Få 5 effektive tips til at optimere din løn efter skat. Lær at udnytte fradrag, forstå nettoløn vs. bruttoløn og skab et stærkere økonomisk fundament. Beregn din aktuelle løn efter skat i 2025 her!"}
       />
       <Header />

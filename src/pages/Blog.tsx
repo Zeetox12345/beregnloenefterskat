@@ -21,6 +21,16 @@ interface BlogPost {
 // Blog posts data
 const blogPosts: BlogPost[] = [
   {
+    id: 4,
+    slug: "faa-mest-muligt-ud-af-loennen-efter-skat-og-stadig-plads-til-fornoejelse",
+    title: "Få mest muligt ud af lønnen efter skat – og stadig plads til fornøjelse",
+    date: "2025-05-24",
+    readTime: "18 min",
+    author: "admin",
+    excerpt: "Når pengene tikker ind den første i måneden, er det nettopengene der afgør, hvor meget luft der er til både forpligtelser og fornøjelser. Få en komplet guide til at fordele din løn i fire krukker og skabe plads til både opsparing og sjov.",
+    featuredImage: "https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+  },
+  {
     id: 3,
     slug: "sadan-optimerer-du-din-hverdagsokonomi-efter-skat",
     title: "Sådan optimerer du din hverdagsøkonomi efter skat – den komplette guide",
