@@ -29,6 +29,7 @@ export const Header = () => {
   // Job specific pages organized by categories
   const jobCategories = {
     "Offentlige Ydelser": [
+      { name: "Borgmester", path: "/jobs/borgmester" },
       { name: "Statsminister", path: "/jobs/statsminister-loen-efter-skat" },
       { name: "Fleksjob", path: "/jobs/fleksjob" },
       { name: "Førtidspension", path: "/jobs/foertidspension" },
