@@ -1220,14 +1220,14 @@ const BlogPost = () => {
           : slug === "sadan-optimerer-du-din-hverdagsokonomi-efter-skat"
           ? `Sådan optimerer du din økonomi efter skat i 2025`
           : slug === "faa-mest-muligt-ud-af-loennen-efter-skat-og-stadig-plads-til-fornoejelse"
-          ? `Få mest muligt ud af lønnen efter skat – og stadig plads til fornøjelse`
+          ? `Få mere ud af din nettoløn – uden at spare fornøjelsen væk`
           : `5 tips til at optimere din privatøkonomi | Beregn Løn Efter Skat`}
         description={slug === "sadan-undgar-du-restskat"
           ? "Undgå restskat med vores 7 konkrete metoder. Lær at opdatere forskudsopgørelsen, udnytte fradrag og holde styr på din skat. Se hvordan du beregner din reelle løn efter skat i 2025."
           : slug === "sadan-optimerer-du-din-hverdagsokonomi-efter-skat"
           ? "Få styr på din nettoløn, budget, fradrag og finansielle beslutninger. Brug smarte værktøjer og få mere ud af pengene – uden at gå på kompromis."
           : slug === "faa-mest-muligt-ud-af-loennen-efter-skat-og-stadig-plads-til-fornoejelse"
-          ? "Lær at fordele din nettoløn i fire krukker: faste udgifter, opsparing, fornøjelse og fremtid. Få praktiske tips til mikro-opsparing, skatteoptimering og gratis underholdning."
+          ? "Lær hvordan du maksimerer din løn efter skat med budgettips, mikro-opsparing og gratis fornøjelser – uden at gå på kompromis med livskvaliteten."
           : "Få 5 effektive tips til at optimere din løn efter skat. Lær at udnytte fradrag, forstå nettoløn vs. bruttoløn og skab et stærkere økonomisk fundament. Beregn din aktuelle løn efter skat i 2025 her!"}
       />
       <Header />
