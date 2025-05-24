@@ -21,6 +21,16 @@ interface BlogPost {
 // Blog posts data
 const blogPosts: BlogPost[] = [
   {
+    id: 3,
+    slug: "sadan-optimerer-du-din-hverdagsokonomi-efter-skat",
+    title: "Sådan optimerer du din hverdagsøkonomi efter skat – den komplette guide",
+    date: "2025-05-24",
+    readTime: "15 min",
+    author: "admin",
+    excerpt: "Din nettoløn er den mest ærlige indikator for dit økonomiske råderum. Denne komplette guide viser, hvordan systematisk beregning af løn efter skat kan styrke din økonomi, fra daglige valg til store livsbeslutninger.",
+    featuredImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+  },
+  {
     id: 2,
     slug: "sadan-undgar-du-restskat",
     title: "Sådan undgår du restskat – 7 konkrete metoder til at holde styr på din skat og lønudbetaling",
