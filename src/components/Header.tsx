@@ -134,6 +134,7 @@ export const Header = () => {
       { name: "Procesoperatør", path: "/jobs/procesoperatoer-loen-efter-skat" },
       { name: "Projektleder", path: "/jobs/projektleder-loen-efter-skat" },
       { name: "Receptionist", path: "/jobs/receptionist" },
+      { name: "Rengøringsassistent", path: "/jobs/rengoeringsassistent" },
       { name: "Revisor", path: "/jobs/revisor-loen-efter-skat" },
       { name: "Salgsassistent", path: "/jobs/salgsassistent" },
       { name: "Skraldemand", path: "/jobs/skraldemand-loen-efter-skat" },
