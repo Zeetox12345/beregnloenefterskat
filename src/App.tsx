@@ -122,6 +122,7 @@ import MaskingenioerLoenPage from "./pages/MaskiningenioerLoenPage";
 import RengoeringsassistentLoenPage from "./pages/RengoeringsassistentLoenPage";
 import McdonaldsLoenPage from "./pages/McdonaldsLoenPage";
 import CroupierLoenPage from "./pages/CroupierLoenPage";
+import SpecialkonsulentLoenPage from "./pages/SpecialkonsulentLoenPage";
 // Job pages will be imported once they are created
 
 const queryClient = new QueryClient();
@@ -231,8 +232,8 @@ const App = () => (
             <Route path="/jobs/kosmetisk-sygeplejerske" element={<KosmetiskSygeplejerskeLoenPage />} />
             <Route path="/jobs/veterinaersygeplejerske" element={<VeterinaersygeplejerskeLoenPage />} />
             <Route path="/jobs/industritekniker" element={<IndustriteknikerLoenPage />} />
-            <Route path="/jobs/indkoeber" element={<IndkoeberLoenPage />} />
             <Route path="/jobs/financial-controller" element={<FinancialControllerLoenPage />} />
+            <Route path="/jobs/indkoeber" element={<IndkoeberLoenPage />} />
             <Route path="/jobs/lagermedarbejder" element={<LagermedarbejderLoenPage />} />
             <Route path="/jobs/loen-under-sygdom" element={<LoenUnderSygdomPage />} />
             <Route path="/jobs/lokomotivfoerer" element={<LokomotivfoererLoenPage />} />
@@ -252,6 +253,7 @@ const App = () => (
             <Route path="/jobs/rengoeringsassistent" element={<RengoeringsassistentLoenPage />} />
             <Route path="/jobs/mcdonalds" element={<McdonaldsLoenPage />} />
             <Route path="/jobs/croupier" element={<CroupierLoenPage />} />
+            <Route path="/jobs/specialkonsulent" element={<SpecialkonsulentLoenPage />} />
             
             {/* Redirect unwanted pages to the home page */}
             <Route path="/sample-page" element={<Navigate replace to="/" />} />
