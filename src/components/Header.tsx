@@ -150,6 +150,7 @@ export const Header = () => {
       { name: "Tømrer", path: "/jobs/toemrer-loen-efter-skat" },
       { name: "Ungarbejder", path: "/jobs/ungarbejder" },
       { name: "Voksenlærling", path: "/jobs/voksenlaerling-loen-efter-skat" },
+      { name: "VVS-montør", path: "/jobs/vvs" },
       { name: "Wolt Kurér", path: "/jobs/wolt" },
     ]
   };
