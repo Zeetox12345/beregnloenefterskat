@@ -21,6 +21,16 @@ interface BlogPost {
 // Blog posts data
 const blogPosts: BlogPost[] = [
   {
+    id: 5,
+    slug: "feriebudget-loen-efter-skat-kuffert-guide",
+    title: "Ferieøkonomi 2025: Sådan planlægger du drømmeferien med din løn efter skat – og finder den perfekte kuffert",
+    date: "2025-05-28",
+    readTime: "20 min",
+    author: "admin",
+    excerpt: "Sommeren lurer lige om hjørnet, og rejsefeberen stiger. Men før du booker flybilletter eller den lækre kuffert, er der én ting der afgør om drømmen bliver til virkelighed: din løn efter skat. Få den ultimative guide til feriebudget og den rette rejsepakke.",
+    featuredImage: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
+  },
+  {
     id: 4,
     slug: "faa-mest-muligt-ud-af-loennen-efter-skat-og-stadig-plads-til-fornoejelse",
     title: "Få mest muligt ud af lønnen efter skat – og stadig plads til fornøjelse",
