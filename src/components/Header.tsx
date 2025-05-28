@@ -102,6 +102,7 @@ export const Header = () => {
       { name: "Buschauffør", path: "/jobs/buschauffoer-loen-efter-skat" },
       { name: "Chefkonsulent", path: "/jobs/chefkonsulent" },
       { name: "Civilingeniør", path: "/jobs/civilingenioer-loen-efter-skat" },
+      { name: "Croupier", path: "/jobs/croupier" },
       { name: "Datamatiker", path: "/jobs/datamatiker-loen-efter-skat" },
       { name: "Ejendomsmægler", path: "/jobs/ejendomsmaegler-loen-efter-skat" },
       { name: "Elektriker", path: "/jobs/elektriker-loen-efter-skat" },
