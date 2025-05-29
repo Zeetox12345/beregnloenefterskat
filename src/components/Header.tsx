@@ -31,6 +31,7 @@ export const Header = () => {
     "Offentlige Ydelser": [
       { name: "Borgmester", path: "/jobs/borgmester" },
       { name: "Statsminister", path: "/jobs/statsminister-loen-efter-skat" },
+      { name: "Dagpenge", path: "/jobs/dagpenge" },
       { name: "Fleksjob", path: "/jobs/fleksjob" },
       { name: "Førtidspension", path: "/jobs/foertidspension" },
       { name: "Værnepligt", path: "/jobs/vaernepligt" },
