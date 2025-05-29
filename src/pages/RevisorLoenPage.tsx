@@ -243,6 +243,17 @@ const RevisorLoenPage = () => {
               Revisor løn efter skat spænder i 2025 fra 24 000 til 47 000 kr. om måneden. Certificering, kundetyper og kommuneskat er de hurtigste veje til et smukkere nettooverskud. Vil du se, hvad dine afstemninger og notehenvisninger kaster af sig? Kør et personligt tjek på <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> – så er facit klart, før klienten siger "Godkendt".
             </p>
 
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-6 my-8">
+              <div className="flex items-center justify-center space-x-2">
+                <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+                <p className="text-center text-blue-800 font-medium">
+                  Dette indlæg er udgivet i samarbejde med <a href="https://tjekrevisor.dk/" className="text-blue-600 hover:text-blue-800 underline font-semibold transition-colors duration-200" target="_blank" rel="noopener noreferrer">Tjekrevisor.dk</a>
+                </p>
+              </div>
+            </div>
+
             <h2 className="text-2xl font-semibold mt-8 mb-4">Kilder</h2>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><a href="https://fagforeningsguide.dk/hvad-tjener-en-revisor-lonstatistik/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">FagforeningsGuide – "Revisor Lønstatistik 2025" (opdateret marts 2025).</a></li>
