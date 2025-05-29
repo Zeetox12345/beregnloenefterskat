@@ -124,7 +124,7 @@ const DagpengeLoenPage = () => {
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Fire måder at få mere ud af dagpengene</h2>
             <ol className="list-decimal pl-6 space-y-2 mt-2">
-              <li><strong>Opfyld beskæftigelseskravet</strong> – 30 278 kr. i gennemsnitlig løn (12/24 måneder) giver de første tre måneders højeste tillæg. <em>Kilde: <a href="#" className="text-blue-600 hover:underline">Magistrenes A-kasse</a></em></li>
+              <li><strong>Opfyld beskæftigelseskravet</strong> – 30 278 kr. i gennemsnitlig løn (12/24 måneder) giver de første tre måneders højeste tillæg.</li>
               <li><strong>Udnyt fradrag</strong> – transport-, fagforenings- og rentefradrag kan hæve udbetalt beløb med flere hundrede kroner pr. måned.</li>
               <li><strong>Skift til lav-skat kommune</strong> – op til 0,8 pct.point lavere kommuneskat svarer til ca. 600 kr. mere netto.</li>
               <li><strong>Ekstra-job under beløbsgrænse</strong> – arbejde op til 14,8 t/uge uden modregning (kræver klip i dagpenge), men giver kontant nettoløft.</li>
