@@ -188,6 +188,17 @@ const FysioterapeutLoenPage = () => {
               Fysioterapeuter i Danmark tjener i 2025 en bruttoløn på 31.000 – 38.000 kr. og en typisk fysioterapeut løn efter skat på 21.000 – 25.500 kr.. Du kan finde dit eget estimat på få sekunder med <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a>.
             </p>
 
+            <div className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-lg p-6 my-8">
+              <div className="flex items-center justify-center space-x-2">
+                <svg className="w-5 h-5 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M12.316 3.051a1 1 0 01.633 1.265l-4 12a1 1 0 11-1.898-.632l4-12a1 1 0 011.265-.633zM5.707 6.293a1 1 0 010 1.414L3.414 10l2.293 2.293a1 1 0 11-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0zm8.586 0a1 1 0 011.414 0l3 3a1 1 0 010 1.414l-3 3a1 1 0 11-1.414-1.414L16.586 10l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                </svg>
+                <p className="text-center text-blue-800 font-medium">
+                  Sponsoreret - Dette indlæg er lavet i samarbejde med smertefys.nu - <a href="https://smertefys.nu/" className="text-blue-600 hover:text-blue-800 underline font-semibold transition-colors duration-200" target="_blank" rel="noopener noreferrer">Fysioterapeut</a> i Køge
+                </p>
+              </div>
+            </div>
+
             <h2 className="text-2xl font-semibold mt-8 mb-4">Kilder</h2>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><a href="https://www.fysio.dk/globalassets/documents/raadgivning/loen/statslige-lonsatser-01-04-2025.pdf" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">Danske Fysioterapeuter – Lønstatistik 2025</a></li>
