@@ -123,6 +123,7 @@ export const Header = () => {
       { name: "Jurist", path: "/jobs/jurist" },
       { name: "Key Account Manager", path: "/jobs/key-account-manager" },
       { name: "Konsulent", path: "/jobs/konsulent" },
+      { name: "Kundeservicekonsulent", path: "/jobs/kundeservicekonsulent" },
       { name: "Køletekniker", path: "/jobs/koeletekniker" },
       { name: "Leasingkonsulent", path: "/jobs/leasingkonsulent" },
       { name: "Lagermedarbejder", path: "/jobs/lagermedarbejder" },
