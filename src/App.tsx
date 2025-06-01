@@ -273,7 +273,7 @@ const App = () => (
             <Route path="/jobs/rejseguide" element={<RejseguideLoenPage />} />
             <Route path="/jobs/vagt" element={<VagtLoenPage />} />
             <Route path="/jobs/dataanalytiker" element={<DataanalytikerLoenPage />} />
-            <Route path="/jobs/fitnessinstruktør" element={<FitnessinstruktørLoenPage />} />
+            <Route path="/jobs/fitnessinstruktoer" element={<FitnessinstruktørLoenPage />} />
             
             {/* Redirect unwanted pages to the home page */}
             <Route path="/sample-page" element={<Navigate replace to="/" />} />
