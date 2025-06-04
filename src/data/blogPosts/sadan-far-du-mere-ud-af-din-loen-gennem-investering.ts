@@ -26,7 +26,7 @@ export const investmentBlogPost: BlogPost = {
       type: 'text',
       content: `I en tid hvor inflation og stigende leveomkostninger presser danskernes privatøkonomi, bliver det vigtigere end nogensinde at tænke langsigtet og strategisk om sine penge. For mange stopper det økonomiske overblik ved lønsedlen og skatteudregningen, men det er først efter skatten er betalt, at de virkelige muligheder begynder.<br><br>
 
-Denne artikel giver dig et overblik over, hvordan du får mest muligt ud af din <a href="/">løn</a> gennem investering – og hvorfor det er vigtigere end nogensinde.`
+Denne artikel giver dig et overblik over, hvordan du får mest muligt ud af din løn gennem investering – og hvorfor det er vigtigere end nogensinde.`
     },
     {
       type: 'heading',
@@ -62,7 +62,7 @@ De mest benyttede investeringsformer er aktier, fonde og køb af ejendom. Krypto
     },
     {
       type: 'text',
-      content: `En udbredt misforståelse er, at investering er forbeholdt folk med høj <a href="/">løn</a>, stor formue eller avanceret finansiel viden. Intet kunne være længere fra sandheden.<br><br>
+      content: `En udbredt misforståelse er, at investering er forbeholdt folk med høj løn, stor formue eller avanceret finansiel viden. Intet kunne være længere fra sandheden.<br><br>
 
 I dag er der masser af platforme, hvor du kan komme i gang med blot 100 kr. og uden teknisk indsigt. Robo-rådgivere og automatiserede investeringsløsninger gør det muligt at investere bredt og balanceret – selv som nybegynder.<br><br>
 
@@ -138,7 +138,7 @@ Men selvom du bliver beskattet af dine gevinster, så er investering en rigtig g
     },
     {
       type: 'text',
-      content: `Der findes mange troværdige kilder og hjemmesider, hvor du kan lære mere om investering. En af de bedste ressourcer til danske forhold er <a href="https://d-investering.dk/" target="_blank" rel="noopener noreferrer">d-investering.dk</a>, hvor du kan finde vejledninger, strategier og nyheder, uanset om du er nybegynder eller øvet. Hos D-Investering tager vi investering ned i øjenhøjde, og leverer indhold som er til at forstå for dig som nybegynder.`
+      content: `Der findes mange troværdige kilder og hjemmesider, hvor du kan lære mere om investering. En af de bedste ressourcer til danske forhold er <a href="https://d-investering.dk/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: none; font-weight: 500;">d-investering.dk</a>, hvor du kan finde vejledninger, strategier og nyheder, uanset om du er nybegynder eller øvet. Hos D-Investering tager vi investering ned i øjenhøjde, og leverer indhold som er til at forstå for dig som nybegynder.`
     },
     {
       type: 'heading',
@@ -146,7 +146,7 @@ Men selvom du bliver beskattet af dine gevinster, så er investering en rigtig g
     },
     {
       type: 'text',
-      content: `At få <a href="/">løn</a> hver måned er ikke slutningen på din økonomiske rejse – det er begyndelsen. Hvis du lærer at investere en del af din indkomst, kan du skabe økonomisk frihed, tryghed og handlemuligheder på sigt. Inflationen arbejder imod dig – men investering kan arbejde for dig.<br><br>
+      content: `At få løn hver måned er ikke slutningen på din økonomiske rejse – det er begyndelsen. Hvis du lærer at investere en del af din indkomst, kan du skabe økonomisk frihed, tryghed og handlemuligheder på sigt. Inflationen arbejder imod dig – men investering kan arbejde for dig.<br><br>
 
 Start småt, lær løbende, og husk: Den bedste dag at begynde at investere var i går. Den næstbedste er i dag.`
     }
