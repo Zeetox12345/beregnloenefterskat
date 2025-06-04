@@ -5,72 +5,7 @@ import { PageTitle } from "@/components/PageTitle";
 import { SEO } from "@/components/SEO";
 import { Calendar, Clock, User, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
-// Define the BlogPost interface
-interface BlogPost {
-  id: number;
-  slug: string;
-  title: string;
-  date: string;
-  readTime: string;
-  author: string;
-  excerpt: string;
-  featuredImage: string;
-}
-
-// Blog posts data
-const blogPosts: BlogPost[] = [
-  {
-    id: 5,
-    slug: "feriebudget-loen-efter-skat-kuffert-guide",
-    title: "Ferieøkonomi 2025: Sådan planlægger du drømmeferien med din løn efter skat – og finder den perfekte kuffert",
-    date: "2025-05-28",
-    readTime: "20 min",
-    author: "admin",
-    excerpt: "Sommeren lurer lige om hjørnet, og rejsefeberen stiger. Men før du booker flybilletter eller den lækre kuffert, er der én ting der afgør om drømmen bliver til virkelighed: din løn efter skat. Få den ultimative guide til feriebudget og den rette rejsepakke.",
-    featuredImage: "https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
-  },
-  {
-    id: 4,
-    slug: "faa-mest-muligt-ud-af-loennen-efter-skat-og-stadig-plads-til-fornoejelse",
-    title: "Få mest muligt ud af lønnen efter skat – og stadig plads til fornøjelse",
-    date: "2025-05-24",
-    readTime: "18 min",
-    author: "admin",
-    excerpt: "Når pengene tikker ind den første i måneden, er det nettopengene der afgør, hvor meget luft der er til både forpligtelser og fornøjelser. Få en komplet guide til at fordele din løn i fire krukker og skabe plads til både opsparing og sjov.",
-    featuredImage: "https://images.unsplash.com/photo-1579621970588-a35d0e7ab9b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
-  },
-  {
-    id: 3,
-    slug: "sadan-optimerer-du-din-hverdagsokonomi-efter-skat",
-    title: "Sådan optimerer du din hverdagsøkonomi efter skat – den komplette guide",
-    date: "2025-05-24",
-    readTime: "15 min",
-    author: "admin",
-    excerpt: "Din nettoløn er den mest ærlige indikator for dit økonomiske råderum. Denne komplette guide viser, hvordan systematisk beregning af løn efter skat kan styrke din økonomi, fra daglige valg til store livsbeslutninger.",
-    featuredImage: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
-  },
-  {
-    id: 2,
-    slug: "sadan-undgar-du-restskat",
-    title: "Sådan undgår du restskat – 7 konkrete metoder til at holde styr på din skat og lønudbetaling",
-    date: "2025-04-04",
-    readTime: "10 min",
-    author: "admin",
-    excerpt: "Har du prøvet at få en ærgerlig overraskelse i form af en restskat, når årsopgørelsen rammer din e-Boks? Du er langt fra alene. I dette blogindlæg får du en step-by-step guide til, hvordan du minimerer risikoen for restskat – og samtidig sikrer, at du får mest muligt ud af din løn efter skat.",
-    featuredImage: "/Blogpictures/blogpost2pic.png"
-  },
-  {
-    id: 1,
-    slug: "sadan-far-du-mest-muligt-ud-af-din-loen-efter-skat",
-    title: "Sådan får du mest muligt ud af din løn efter skat – 5 tips til at optimere din privatøkonomi",
-    date: "2025-03-29",
-    readTime: "12 min",
-    author: "admin",
-    excerpt: "Har du nogensinde undret dig over, hvordan du kan få mest muligt ud af din løn – når skatten først er trukket? I dette blogindlæg zoomer vi ind på fem konkrete tips, der hjælper dig med at beregne løn efter skat og bruge dine penge optimalt.",
-    featuredImage: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80"
-  }
-];
+import { getBlogPostsSortedByDate } from "@/data/blogPosts";
 
 const Blog = () => {
   const [fadeIn, setFadeIn] = useState(false);
@@ -88,6 +23,29 @@ const Blog = () => {
       day: 'numeric'
     });
   };
+
+  // Get blog posts and create excerpts from first text section
+  const blogPosts = getBlogPostsSortedByDate().map(post => {
+    // Find the first text section to create an excerpt
+    const firstTextSection = post.sections.find(section => section.type === 'text' && section.content.trim() !== '');
+    let excerpt = '';
+    
+    if (firstTextSection) {
+      // Strip HTML tags and get first ~150 characters
+      const textContent = firstTextSection.content.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+      excerpt = textContent.length > 150 ? textContent.substring(0, 150) + '...' : textContent;
+    }
+
+    // Get featured image from first image section
+    const firstImageSection = post.sections.find(section => section.type === 'image' && section.imageUrl);
+    const featuredImage = firstImageSection?.imageUrl || "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80";
+
+    return {
+      ...post,
+      excerpt,
+      featuredImage
+    };
+  });
 
   return (
     <>
