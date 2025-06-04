@@ -58,8 +58,8 @@ const BlogPost = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
       <SEO 
-        title={`${blogPost.title} | Beregn Løn Efter Skat`}
-        description={`${blogPost.title} - Læs mere om løn efter skat, skatteberegning og økonomisk rådgivning på Beregn Løn Efter Skat.`}
+        title={blogPost.metaTitle || `${blogPost.title} | Beregn Løn Efter Skat`}
+        description={blogPost.metaDescription || `${blogPost.title} - Læs mere om løn efter skat, skatteberegning og økonomisk rådgivning på Beregn Løn Efter Skat.`}
         keywords="løn efter skat, skatteberegning, nettoløn, bruttoløn, økonomi, Danmark"
       />
       <Header />
