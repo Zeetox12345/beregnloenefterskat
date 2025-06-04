@@ -26,13 +26,19 @@ const Blog = () => {
 
   // Get blog posts and create excerpts from first text section
   const blogPosts = getBlogPostsSortedByDate().map(post => {
-    // Find the first text section to create an excerpt
-    const firstTextSection = post.sections.find(section => section.type === 'text' && section.content.trim() !== '');
+    // Find the first meaningful text section to create an excerpt
+    // Skip sponsored content indicators to avoid showing "Sponsoreret indhold" in previews
+    const meaningfulTextSection = post.sections.find(section => 
+      section.type === 'text' && 
+      section.content.trim() !== '' && 
+      !section.content.includes('Sponsoreret indhold')
+    );
+    
     let excerpt = '';
     
-    if (firstTextSection) {
+    if (meaningfulTextSection) {
       // Strip HTML tags and get first ~150 characters
-      const textContent = firstTextSection.content.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+      const textContent = meaningfulTextSection.content.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
       excerpt = textContent.length > 150 ? textContent.substring(0, 150) + '...' : textContent;
     }
 
