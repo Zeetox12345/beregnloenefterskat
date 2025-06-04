@@ -10,6 +10,8 @@ export interface BlogPost {
   id: number;
   slug: string;
   title: string;
+  metaTitle?: string;
+  metaDescription?: string;
   date: string;
   readTime: string;
   author: string;

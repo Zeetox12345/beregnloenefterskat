@@ -18,6 +18,8 @@ export const yourBlogPostName: BlogPost = {
   id: [NEXT_AVAILABLE_ID],
   slug: "kebab-case-url-slug",
   title: "Danish Title - Must be SEO Optimized",
+  metaTitle: "SEO Optimized Meta Title for Search Engines",
+  metaDescription: "Concise description of the blog post content for search engines and social sharing",
   date: "YYYY-MM-DD",
   readTime: "X min",
   author: "admin",
@@ -46,7 +48,7 @@ Use these three section types only:
   type: 'image',
   content: '',
   imageUrl: "https://images.unsplash.com/photo-... OR /Blogpictures/filename.png",
-  imageAlt: "Danish description of the image"
+  imageAlt: ""
 }
 ```
 
@@ -73,14 +75,33 @@ Use these three section types only:
 - **SEO**: Include relevant keywords like "løn efter skat", "skatteberegning", "nettoløn", "bruttoløn"
 - **Length**: Aim for 8-20 minute read times
 - **Structure**: Use clear headings to break up content
+- **DO NOT** include calculator prompts like "Klar til at beregne din løn efter skat?" at the end of articles
 
 ### 5. HTML Formatting Guidelines
 - Use `<strong>` for bold text
+- **Paragraph spacing**: Always use `<br><br>` between paragraphs to ensure proper visual separation that matches Word document formatting:
+  ```html
+  First paragraph text here.<br><br>
+  
+  Second paragraph text here.<br><br>
+  
+  Third paragraph text here.
+  ```
 - Use `<ul>` and `<li>` for lists with proper styling:
   ```html
   <ul style="margin: 16px 0; padding-left: 24px;">
   <li style="margin-bottom: 8px;">List item text</li>
   </ul>
+  ```
+- For numbered lists, use this format with HTML line breaks to ensure proper vertical alignment:
+  ```html
+  1. <strong>Bold heading</strong>: Description text.<br><br>
+  
+  2. <strong>Bold heading</strong>: Description text.<br><br>
+  
+  3. <strong>Bold heading</strong>: Description text.<br><br>
+  
+  4. <strong>Bold heading</strong>: Description text.
   ```
 - Use tables for data with proper styling:
   ```html
@@ -123,7 +144,7 @@ Use these three section types only:
 ### 7. Image Guidelines
 - **Unsplash**: Use high-quality images from Unsplash with proper attribution
 - **Local images**: Store in `/public/Blogpictures/` and reference as `/Blogpictures/filename.png`
-- **Alt text**: Always provide descriptive Danish alt text
+- **Alt text**: Leave alt text empty for sponsored content images
 - **Placement**: Usually place a hero image after sponsored content indicator (if any)
 
 ### 8. Sponsored Content Rules
@@ -138,14 +159,17 @@ Before considering the blog post complete:
 - [ ] ID is sequential and unique
 - [ ] Slug matches filename
 - [ ] Title is SEO-optimized Danish
+- [ ] Meta title is provided and optimized for search engines
+- [ ] Meta description is concise and descriptive
 - [ ] Date is correct format
 - [ ] Read time is estimated appropriately
 - [ ] At least one reference to main calculator
 - [ ] Danish language throughout
-- [ ] Proper HTML formatting
-- [ ] Images have alt text
+- [ ] Proper HTML formatting with `<br><br>` spacing between paragraphs
+- [ ] Images have empty alt text for sponsored content
 - [ ] Index file updated with import and array addition
 - [ ] Content provides genuine value to readers
+- [ ] No calculator prompts at the end of the article
 
 ### 10. Common Danish Finance Terms
 Use these terms appropriately:
@@ -174,4 +198,5 @@ Use these terms appropriately:
 - Never mix languages
 - Always include calculator references
 - Maintain consistent styling
-- Use proper TypeScript types 
+- Use proper TypeScript types
+- Never include calculator prompts at the end of articles 

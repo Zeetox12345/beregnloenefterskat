@@ -131,23 +131,7 @@ const BlogPost = () => {
                 </div>
               ))}
               </div>
-              
-            {/* Call-to-action */}
-            <div className="mt-12 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Klar til at beregne din løn efter skat?
-              </h3>
-              <p className="text-gray-700 mb-4">
-                Brug vores gratis beregner til at finde ud af, hvor meget du får udbetalt efter skat.
-              </p>
-              <Link
-                to="/"
-                className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors"
-              >
-                Beregn din løn efter skat →
-              </Link>
               </div>
-            </div>
           </article>
 
         {/* Related posts */}

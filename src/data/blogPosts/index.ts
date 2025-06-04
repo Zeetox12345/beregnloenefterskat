@@ -4,6 +4,7 @@ export { avoidRestskattBlogPost } from './sadan-undgar-du-restskat';
 export { optimizeDailyFinancesBlogPost } from './sadan-optimerer-du-din-hverdagsokonomi-efter-skat';
 export { understandPayslipBlogPost } from './guide-til-at-forstaa-din-lonseddel';
 export { feriebudgetBlogPost } from './feriebudget-loen-efter-skat-kuffert-guide';
+export { investmentBlogPost } from './sadan-far-du-mere-ud-af-din-loen-gennem-investering';
 
 import type { BlogPost } from './types';
 import { optimizeSalaryBlogPost } from './sadan-far-du-mest-muligt-ud-af-din-loen-efter-skat';
@@ -11,6 +12,7 @@ import { avoidRestskattBlogPost } from './sadan-undgar-du-restskat';
 import { optimizeDailyFinancesBlogPost } from './sadan-optimerer-du-din-hverdagsokonomi-efter-skat';
 import { understandPayslipBlogPost } from './guide-til-at-forstaa-din-lonseddel';
 import { feriebudgetBlogPost } from './feriebudget-loen-efter-skat-kuffert-guide';
+import { investmentBlogPost } from './sadan-far-du-mere-ud-af-din-loen-gennem-investering';
 
 // Array of all blog posts for easy iteration
 export const allBlogPosts: BlogPost[] = [
@@ -18,7 +20,8 @@ export const allBlogPosts: BlogPost[] = [
   avoidRestskattBlogPost,      // ID: 2
   optimizeDailyFinancesBlogPost, // ID: 3
   understandPayslipBlogPost,   // ID: 4
-  feriebudgetBlogPost         // ID: 5
+  feriebudgetBlogPost,         // ID: 5
+  investmentBlogPost           // ID: 6
 ];
 
 // Get blog post by ID
