@@ -11,7 +11,7 @@ const BlogPost = () => {
   const navigate = useNavigate();
   const [blogPost, setBlogPost] = useState<BlogPostType | null>(null);
   const [relatedPosts, setRelatedPosts] = useState<BlogPostType[]>([]);
-
+  
   useEffect(() => {
     if (slug) {
       const post = getBlogPostBySlug(slug);
@@ -41,7 +41,7 @@ const BlogPost = () => {
   };
 
   if (!blogPost) {
-    return (
+  return (
       <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white">
         <Header />
         <main className="container mx-auto px-4 py-8">
@@ -66,18 +66,18 @@ const BlogPost = () => {
       
       <main className="container mx-auto px-4 py-8 max-w-4xl">
         {/* Back to blog button */}
-        <div className="mb-6">
-          <Link 
-            to="/blog" 
+          <div className="mb-6">
+            <Link 
+              to="/blog"
             className="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors"
-          >
+            >
             <ArrowLeft className="h-4 w-4 mr-2" />
             Tilbage til blog
-          </Link>
-        </div>
-
+            </Link>
+          </div>
+          
         {/* Article header */}
-        <article className="bg-white rounded-xl shadow-lg overflow-hidden">
+          <article className="bg-white rounded-xl shadow-lg overflow-hidden">
           <div className="p-8">
             <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-tight">
               {blogPost.title}
@@ -87,19 +87,19 @@ const BlogPost = () => {
               <div className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
                 <span>{formatDate(blogPost.date)}</span>
-              </div>
+                </div>
               <div className="flex items-center gap-2">
                 <Clock className="h-4 w-4" />
                 <span>{blogPost.readTime}</span>
-              </div>
+                </div>
               <div className="flex items-center gap-2">
                 <User className="h-4 w-4" />
                 <span>Af {blogPost.author}</span>
+                </div>
               </div>
-            </div>
-
+              
             {/* Article content */}
-            <div className="prose prose-lg max-w-none">
+              <div className="prose prose-lg max-w-none">
               {blogPost.sections.map((section, index) => (
                 <div key={index} className="mb-6">
                   {section.type === 'heading' && (
@@ -110,28 +110,28 @@ const BlogPost = () => {
                   {section.type === 'text' && (
                     <div 
                       className="text-gray-700 leading-relaxed mb-4"
-                      dangerouslySetInnerHTML={renderHTML(section.content)}
+                        dangerouslySetInnerHTML={renderHTML(section.content)}
                     />
                   )}
                   {section.type === 'image' && section.imageUrl && (
                     <div className="my-8">
-                      <img
-                        src={section.imageUrl}
+                        <img
+                          src={section.imageUrl}
                         alt={section.imageAlt || ""}
                         className="w-full h-auto rounded-lg shadow-md"
                         loading="lazy"
-                      />
-                      {section.imageAlt && (
+                        />
+                        {section.imageAlt && (
                         <p className="text-sm text-gray-600 mt-2 text-center italic">
-                          {section.imageAlt}
-                        </p>
-                      )}
-                    </div>
+                            {section.imageAlt}
+                          </p>
+                        )}
+                      </div>
                   )}
                 </div>
               ))}
-            </div>
-
+              </div>
+              
             {/* Call-to-action */}
             <div className="mt-12 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-200">
               <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -146,9 +146,9 @@ const BlogPost = () => {
               >
                 Beregn din løn efter skat →
               </Link>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
 
         {/* Related posts */}
         {relatedPosts.length > 0 && (
@@ -172,7 +172,7 @@ const BlogPost = () => {
                         <Clock className="h-3 w-3" />
                         {post.readTime}
                       </span>
-                    </div>
+        </div>
                     <Link
                       to={`/blog/${post.slug}`}
                       className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
@@ -186,7 +186,7 @@ const BlogPost = () => {
           </section>
         )}
       </main>
-
+      
       <Footer />
     </div>
   );
