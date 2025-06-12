@@ -136,6 +136,7 @@ import FitnessinstruktørLoenPage from "./pages/FitnessinstruktørLoenPage";
 import BartenderLoenPage from "./pages/BartenderLoenPage";
 import DJLoenPage from "./pages/DJLoenPage";
 import FotografLoenPage from "./pages/FotografLoenPage";
+import BrandmandLoenPage from "./pages/BrandmandLoenPage";
 // Job pages will be imported once they are created
 
 const queryClient = new QueryClient();
@@ -280,6 +281,7 @@ const App = () => (
             <Route path="/jobs/bartender" element={<BartenderLoenPage />} />
             <Route path="/jobs/dj" element={<DJLoenPage />} />
             <Route path="/jobs/fotograf" element={<FotografLoenPage />} />
+            <Route path="/jobs/brandmand" element={<BrandmandLoenPage />} />
             
             {/* Redirect unwanted pages to the home page */}
             <Route path="/sample-page" element={<Navigate replace to="/" />} />
