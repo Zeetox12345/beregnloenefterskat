@@ -162,7 +162,7 @@ const DJLoenPage = () => {
             </div>
             
             <p>
-              Indtast dine egne tal – inkl. drikkepenge og nat­tillæg – i <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> og se nettobeløbet for netop dit setup.
+              Indtast dine egne tal i <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> og se nettobeløbet for netop dit setup.
             </p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Fire måder at skrue nettolønnen op</h2>
