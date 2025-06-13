@@ -64,6 +64,7 @@ export const Header = () => {
       { name: "Sundhedsplejerske", path: "/jobs/sundhedsplejerske-loen-efter-skat" },
       { name: "Veterinærsygeplejerske", path: "/jobs/veterinaersygeplejerske" },
       { name: "Dagplejer", path: "/jobs/dagplejer" },
+      { name: "Plejefamilie", path: "/jobs/plejefamilie" },
       { name: "Tandklinikassistent", path: "/jobs/tandklinikassistent-loen-efter-skat" },
       { name: "Tandlæge", path: "/jobs/tandlaege-loen-efter-skat" },
       { name: "Tandplejer", path: "/jobs/tandplejer-loen-efter-skat" },
