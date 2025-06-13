@@ -181,6 +181,8 @@ Note: The previous convention of appending "-loen-efter-skat" to URLs is depreca
 
 ## Content Guidelines
 
+⚠️ **BEFORE STARTING: Always ask the user for the current date before creating any job page!**
+
 1. **Research accurate salary data** for different cities and experience levels
 2. Include an **interactive table** for cities and experience levels
 3. Write **informative sections** covering:
@@ -193,7 +195,7 @@ Note: The previous convention of appending "-loen-efter-skat" to URLs is depreca
 5. Include **external sources** for authority
 6. **IMPORTANT:** All internal links should use the exact anchor text "beregn løn efter skat" for consistency and SEO benefits
 7. **LØNTABELLER:** Do NOT include "Kilde" columns in salary tables (løntabeller). Sources should be referenced in separate sections or footnotes, not in table columns.
-8. **DATE CHECKING:** Always verify the current date when creating new job pages. Update the "Opdateret" date to match the current month and year, and ensure sitemap dates use the correct YYYY-MM-DD format.
+8. **🚨 CRITICAL - DATE VERIFICATION:** ALWAYS ask the user for the current date at the start of creating any new job page. NEVER assume the current date. Use the exact date provided by the user in YYYY-MM-DD format for sitemaps and the corresponding Danish month name for the "Opdateret" field (e.g., "juni 2025" for June 2025). This is critical for SEO and content accuracy.
 
 ## Recent Examples
 
