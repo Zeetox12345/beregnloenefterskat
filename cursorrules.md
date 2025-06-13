@@ -100,7 +100,7 @@ const [JobTitle]LoenPage = () => {
             <!-- Additional sections -->
 
             <p className="text-sm text-gray-600 italic mt-8">
-              Opdateret: [month] 2025.
+              Opdateret: [current month] 2025.
             </p>
           </div>
         </div>
@@ -192,6 +192,8 @@ Note: The previous convention of appending "-loen-efter-skat" to URLs is depreca
 4. Use **Danish language** throughout
 5. Include **external sources** for authority
 6. **IMPORTANT:** All internal links should use the exact anchor text "beregn løn efter skat" for consistency and SEO benefits
+7. **LØNTABELLER:** Do NOT include "Kilde" columns in salary tables (løntabeller). Sources should be referenced in separate sections or footnotes, not in table columns.
+8. **DATE CHECKING:** Always verify the current date when creating new job pages. Update the "Opdateret" date to match the current month and year, and ensure sitemap dates use the correct YYYY-MM-DD format.
 
 ## Recent Examples
 
