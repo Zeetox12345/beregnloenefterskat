@@ -75,6 +75,7 @@ import ProcesoperatoerLoenPage from "./pages/ProcesoperatoerLoenPage";
 import LaegesekretaerLoenPage from "./pages/LaegesekretaerLoenPage";
 import VoksenlaerlingLoenPage from "./pages/VoksenlaerlingLoenPage";
 import ForsikringsmatematikLoenPage from "./pages/ForsikringsmatematikLoenPage";
+import ForsikringsraadgiverLoenPage from "./pages/ForsikringsraadgiverLoenPage";
 import SundhedsadministrativKoordinatorLoenPage from "./pages/SundhedsadministrativKoordinatorLoenPage";
 import LaerervikarLoenPage from "./pages/LaerervikarLoenPage";
 import MarkedsføringsøkonomLoenPage from "./pages/MarkedsføringsøkonomLoenPage";
@@ -226,6 +227,7 @@ const App = () => (
             <Route path="/jobs/laegesekretaer-loen-efter-skat" element={<LaegesekretaerLoenPage />} />
             <Route path="/jobs/voksenlaerling-loen-efter-skat" element={<VoksenlaerlingLoenPage />} />
             <Route path="/jobs/forsikringsmatematik-loen-efter-skat" element={<ForsikringsmatematikLoenPage />} />
+            <Route path="/jobs/forsikringsraadgiver" element={<ForsikringsraadgiverLoenPage />} />
             <Route path="/jobs/sundhedsadministrativ-koordinator-loen-efter-skat" element={<SundhedsadministrativKoordinatorLoenPage />} />
             <Route path="/jobs/laerervikar-loen-efter-skat" element={<LaerervikarLoenPage />} />
             <Route path="/jobs/markedsfoeringsoekonom-loen-efter-skat" element={<MarkedsføringsøkonomLoenPage />} />
