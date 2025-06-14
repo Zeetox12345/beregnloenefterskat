@@ -127,6 +127,7 @@ export const Header = () => {
       { name: "Forsikringsrådgiver", path: "/jobs/forsikringsraadgiver" },
       { name: "Fotograf", path: "/jobs/fotograf" },
       { name: "Frisør", path: "/jobs/frisoer-loen-efter-skat" },
+      { name: "HR", path: "/jobs/hr" },
       { name: "Industritekniker", path: "/jobs/industritekniker" },
       { name: "Indkøber", path: "/jobs/indkoeber" },
       { name: "Ingeniør", path: "/jobs/ingenioer-loen-efter-skat" },
