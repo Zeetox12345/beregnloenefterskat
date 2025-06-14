@@ -115,6 +115,7 @@ export const Header = () => {
       { name: "Croupier", path: "/jobs/croupier" },
       { name: "Dataanalytiker", path: "/jobs/dataanalytiker" },
       { name: "Datamatiker", path: "/jobs/datamatiker-loen-efter-skat" },
+      { name: "Diplomingeniør", path: "/jobs/diplomingeniør" },
       { name: "DJ", path: "/jobs/dj" },
       { name: "Ejendomsadministrator", path: "/jobs/ejendomsadministrator" },
       { name: "Ejendomsmægler", path: "/jobs/ejendomsmaegler-loen-efter-skat" },
