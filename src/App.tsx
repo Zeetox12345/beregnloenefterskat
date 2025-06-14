@@ -305,7 +305,7 @@ const App = () => (
             <Route path="/jobs/it-konsulent" element={<ITKonsulentLoenPage />} />
             <Route path="/jobs/hr" element={<HRLoenPage />} />
             <Route path="/jobs/landinspektoer" element={<LandinspektoerLoenPage />} />
-            <Route path="/jobs/diplomingeniør" element={<DiplomingeniørLoenPage />} />
+            <Route path="/jobs/diplomingenioer" element={<DiplomingeniørLoenPage />} />
             
             {/* Redirect unwanted pages to the home page */}
             <Route path="/sample-page" element={<Navigate replace to="/" />} />
