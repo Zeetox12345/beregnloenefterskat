@@ -36,6 +36,7 @@ import AdvokatLoenPage from "./pages/AdvokatLoenPage";
 import FarmakonomerLoenPage from "./pages/FarmakonomerLoenPage";
 import ToemrerLoenPage from "./pages/ToemrerLoenPage";
 import FysioterapeutLoenPage from "./pages/FysioterapeutLoenPage";
+import KiropraktorLoenPage from "./pages/KiropraktorLoenPage";
 import StewardesseLoenPage from "./pages/StewardesseLoenPage";
 import PhDLoenPage from "./pages/PhDLoenPage";
 import BioanalytikerLoenPage from "./pages/BioanalytikerLoenPage";
@@ -119,7 +120,7 @@ import MultimediedesignerLoenPage from "./pages/MultimediedesignerLoenPage";
 import LoenUnderBarselPage from "./pages/LoenUnderBarselPage";
 import BogholderLoenPage from "./pages/BogholderLoenPage";
 import BorgmesterLoenPage from "./pages/BorgmesterLoenPage";
-import MaskingenioerLoenPage from "./pages/MaskiningenioerLoenPage";
+import MaskiningenioerLoenPage from "./pages/MaskiningenioerLoenPage";
 import RengoeringsassistentLoenPage from "./pages/RengoeringsassistentLoenPage";
 import McdonaldsLoenPage from "./pages/McdonaldsLoenPage";
 import CroupierLoenPage from "./pages/CroupierLoenPage";
@@ -279,7 +280,7 @@ const App = () => (
             <Route path="/jobs/loen-under-barsel" element={<LoenUnderBarselPage />} />
             <Route path="/jobs/bogholder" element={<BogholderLoenPage />} />
             <Route path="/jobs/borgmester" element={<BorgmesterLoenPage />} />
-            <Route path="/jobs/maskiningenioer" element={<MaskingenioerLoenPage />} />
+            <Route path="/jobs/maskiningenioer" element={<MaskiningenioerLoenPage />} />
             <Route path="/jobs/rengoeringsassistent" element={<RengoeringsassistentLoenPage />} />
             <Route path="/jobs/mcdonalds" element={<McdonaldsLoenPage />} />
             <Route path="/jobs/croupier" element={<CroupierLoenPage />} />
@@ -310,6 +311,7 @@ const App = () => (
             <Route path="/jobs/diplomingenioer" element={<DiplomingeniørLoenPage />} />
             <Route path="/jobs/automationsteknolog" element={<AutomationsteknologLoenPage />} />
             <Route path="/jobs/produktionsteknolog" element={<ProduktionsteknologLoenPage />} />
+            <Route path="/jobs/kiropraktor" element={<KiropraktorLoenPage />} />
             
             {/* Redirect unwanted pages to the home page */}
             <Route path="/sample-page" element={<Navigate replace to="/" />} />
