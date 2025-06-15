@@ -159,6 +159,7 @@ export const Header = () => {
       { name: "Multimediedesigner", path: "/jobs/multimediedesigner" },
       { name: "Pilot", path: "/jobs/pilot-loen-efter-skat" },
       { name: "Procesoperatør", path: "/jobs/procesoperatoer-loen-efter-skat" },
+      { name: "Produktionsteknolog", path: "/jobs/produktionsteknolog" },
       { name: "Projektleder", path: "/jobs/projektleder-loen-efter-skat" },
       { name: "Receptionist", path: "/jobs/receptionist" },
       { name: "Rejseguide", path: "/jobs/rejseguide" },
