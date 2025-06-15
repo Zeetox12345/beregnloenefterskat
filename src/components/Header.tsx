@@ -104,6 +104,7 @@ export const Header = () => {
       { name: "Bankrådgiver", path: "/jobs/bankraadgiver-loen-efter-skat" },
       { name: "Bartender", path: "/jobs/bartender" },
       { name: "Bedemand", path: "/jobs/bedemand" },
+      { name: "Bilsælger", path: "/jobs/bilsaelger" },
       { name: "Blomsterbinder", path: "/jobs/blomsterbinder" },
       { name: "Bogholder", path: "/jobs/bogholder" },
       { name: "Butiksassistent", path: "/jobs/butiksassistent" },
