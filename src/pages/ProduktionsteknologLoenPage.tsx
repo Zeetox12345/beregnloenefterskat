@@ -165,7 +165,7 @@ const ProduktionsteknologLoenPage = () => {
               </ul>
             </div>
             <p className="text-sm text-gray-600 italic mt-2">
-              Vil du se, hvad en projektbonus eller lavere kommunesats betyder? Indtast tallet i <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> og få svaret straks.
+             Indtast tallet i <a href="https://www.beregnloenefterskat.dk/" className="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">beregn løn efter skat</a> og få svaret straks.
             </p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Fire hurtige måder at hæve nettolønnen</h2>
