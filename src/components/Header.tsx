@@ -172,6 +172,7 @@ export const Header = () => {
       { name: "Receptionist", path: "/jobs/receptionist" },
       { name: "Rejseguide", path: "/jobs/rejseguide" },
       { name: "Rengøringsassistent", path: "/jobs/rengoeringsassistent" },
+      { name: "Renovationsarbejder", path: "/jobs/renovationsarbejder" },
       { name: "Revisor", path: "/jobs/revisor-loen-efter-skat" },
       { name: "Salgsassistent", path: "/jobs/salgsassistent" },
       { name: "Skraldemand", path: "/jobs/skraldemand-loen-efter-skat" },
