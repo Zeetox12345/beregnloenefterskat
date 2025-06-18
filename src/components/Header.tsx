@@ -180,6 +180,7 @@ export const Header = () => {
       { name: "Taxachauffør", path: "/jobs/taxachauffoer-loen-efter-skat" },
       { name: "Tjener", path: "/jobs/tjener" },
       { name: "Togfører", path: "/jobs/togfoerer" },
+      { name: "Trafikleder", path: "/jobs/trafikleder" },
       { name: "Tømrer", path: "/jobs/toemrer-loen-efter-skat" },
       { name: "Ungarbejder", path: "/jobs/ungarbejder" },
       { name: "Vikar", path: "/jobs/vikar" },
