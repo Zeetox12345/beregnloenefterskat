@@ -73,6 +73,7 @@ export const Header = () => {
       { name: "Farmakonom", path: "/jobs/farmakonom-loen-efter-skat" },
       { name: "Fysioterapeut", path: "/jobs/fysioterapeut-loen-efter-skat" },
       { name: "Kiropraktor", path: "/jobs/kiropraktor" },
+      { name: "Optiker", path: "/jobs/optiker" },
       { name: "Radiograf", path: "/jobs/radiograf-loen-efter-skat" },
       { name: "Sundhedsadministrativ Koordinator", path: "/jobs/sundhedsadministrativ-koordinator-loen-efter-skat" },
       { name: "Ambulancebehandler", path: "/jobs/ambulancebehandler" },
