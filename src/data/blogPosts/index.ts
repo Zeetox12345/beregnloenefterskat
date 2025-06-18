@@ -6,6 +6,7 @@ export { understandPayslipBlogPost } from './guide-til-at-forstaa-din-lonseddel'
 export { feriebudgetBlogPost } from './feriebudget-loen-efter-skat-kuffert-guide';
 export { investmentBlogPost } from './sadan-far-du-mere-ud-af-din-loen-gennem-investering';
 export { gamblingSkatteBlogPost } from './skal-man-betale-skat-af-gevinster-gambling';
+export { firmabilDomBlogPost } from './firmabil-dom-2025';
 
 import type { BlogPost } from './types';
 import { optimizeSalaryBlogPost } from './sadan-far-du-mest-muligt-ud-af-din-loen-efter-skat';
@@ -15,6 +16,7 @@ import { understandPayslipBlogPost } from './guide-til-at-forstaa-din-lonseddel'
 import { feriebudgetBlogPost } from './feriebudget-loen-efter-skat-kuffert-guide';
 import { investmentBlogPost } from './sadan-far-du-mere-ud-af-din-loen-gennem-investering';
 import { gamblingSkatteBlogPost } from './skal-man-betale-skat-af-gevinster-gambling';
+import { firmabilDomBlogPost } from './firmabil-dom-2025';
 
 // Array of all blog posts for easy iteration
 export const allBlogPosts: BlogPost[] = [
@@ -24,7 +26,8 @@ export const allBlogPosts: BlogPost[] = [
   understandPayslipBlogPost,   // ID: 4
   feriebudgetBlogPost,         // ID: 5
   investmentBlogPost,          // ID: 6
-  gamblingSkatteBlogPost       // ID: 7
+  gamblingSkatteBlogPost,       // ID: 7
+  firmabilDomBlogPost           // ID: 8
 ];
 
 // Get blog post by ID

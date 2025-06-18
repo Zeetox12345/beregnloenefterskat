@@ -31,7 +31,8 @@ const Blog = () => {
     const meaningfulTextSection = post.sections.find(section => 
       section.type === 'text' && 
       section.content.trim() !== '' && 
-      !section.content.includes('Sponsoreret indhold')
+      !section.content.includes('Sponsoreret indhold') &&
+      !section.content.toLowerCase().includes('billedet er genereret af ai')
     );
     
     let excerpt = '';
