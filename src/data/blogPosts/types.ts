@@ -15,5 +15,6 @@ export interface BlogPost {
   date: string;
   readTime: string;
   author: string;
+  imageUrl?: string;
   sections: BlogPostSection[];
 } 
