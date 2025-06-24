@@ -39,6 +39,52 @@ const SUUdeboendePage = () => {
               hvis du har studiejob, og hvordan du kan optimere din økonomi med fribeløb, boligstøtte og andre tiltag.
             </p>
 
+            {/* Affiliate Marketing Section - Top Position */}
+            <div className="my-8 p-6 bg-blue-50 rounded-lg border border-blue-200">
+              <h2 className="text-xl font-semibold mb-3 text-blue-900"> Trænger studiebudgettet til et boost?</h2>
+              <p className="text-blue-800 mb-4 text-sm">
+                SU rækker ikke altid til alt. Få et gratis lånetilbud og sammenlign de bedste studielån:
+              </p>
+              
+              <div className="max-w-md mx-auto">
+                <div className="bg-white p-6 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
+                  <div className="flex items-center justify-center mb-3">
+                    <span className="text-2xl mr-2"></span>
+                    <h3 className="font-semibold text-gray-900 text-lg">Gratis lånetilbud for studerende</h3>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-4 text-center">
+                    Sammenlign studielån fra flere banker og find den bedste løsning til dit budget - helt gratis og uforpligtende.
+                  </p>
+                  <a 
+                    href="https://go.adt256.com/t/t?a=1759160178&as=1982389276&t=2&tk=1" 
+                    target="_blank" 
+                    rel="sponsored noopener noreferrer"
+                    className="inline-flex items-center justify-center w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-200 hover:shadow-lg hover:scale-105"
+                    onClick={() => {
+                      // Track affiliate click
+                      if (typeof (window as any).gtag !== 'undefined') {
+                        (window as any).gtag('event', 'affiliate_click', {
+                          affiliate_name: 'Lånio DK',
+                          page_location: window.location.href,
+                          position: 'top',
+                          page_type: 'su_udeboende'
+                        });
+                      }
+                    }}
+                  >
+                    <span className="mr-2"></span>
+                    Få gratis lånetilbud hos Lånio
+                    <span className="ml-2">→</span>
+                  </a>
+                  <p className="text-xs text-gray-500 mt-3 text-center">(reklamelink)</p>
+                </div>
+              </div>
+              
+              <p className="text-xs text-blue-600 mt-4 text-center">
+                Vi modtager provision fra partnere, hvilket ikke påvirker prisen for dig.
+              </p>
+            </div>
+
             <div className="bg-gray-50 p-4 rounded-lg my-6">
               <h2 className="text-2xl font-semibold mb-4">SU for Udeboende i 2025</h2>
               <p><strong>Sats for udeboende (videregående uddannelse):</strong> 7.086 kr./md. før skat</p>
