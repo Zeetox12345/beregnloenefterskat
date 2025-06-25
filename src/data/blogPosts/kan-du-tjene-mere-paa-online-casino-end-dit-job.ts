@@ -23,6 +23,10 @@ export const casinoVsJobBlogPost: BlogPost = {
       imageAlt: ''
     },
     {
+      type: 'text',
+      content: 'Foto: https://unsplash.com/photos/macbook-pro-white-ceramic-mugand-black-smartphone-on-table-cckf4TsHAuw'
+    },
+    {
       type: 'heading',
       content: 'Kan du tjene mere på online casino end dit job? En realistisk gennemgang'
     },

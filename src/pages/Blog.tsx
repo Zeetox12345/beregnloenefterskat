@@ -24,29 +24,35 @@ const Blog = () => {
     });
   };
 
-  // Get blog posts and create excerpts from first text section
+  // Get blog posts and create excerpts from first text section after first heading (H1)
   const blogPosts = getBlogPostsSortedByDate().map(post => {
-    // Find the first meaningful text section to create an excerpt
-    // Skip sponsored content indicators to avoid showing "Sponsoreret indhold" in previews
-    const meaningfulTextSection = post.sections.find(section => 
-      section.type === 'text' && 
-      section.content.trim() !== '' && 
-      !section.content.includes('Sponsoreret indhold') &&
-      !section.content.toLowerCase().includes('billedet er genereret af ai')
-    );
-    
+    // Find the index of the first heading (H1)
+    const firstHeadingIndex = post.sections.findIndex(section => section.type === 'heading');
     let excerpt = '';
-    
-    if (meaningfulTextSection) {
-      // Strip HTML tags and get first ~150 characters
-      const textContent = meaningfulTextSection.content.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
-      excerpt = textContent.length > 150 ? textContent.substring(0, 150) + '...' : textContent;
+    if (firstHeadingIndex !== -1) {
+      // Find the first text section after the first heading
+      const textAfterHeading = post.sections.slice(firstHeadingIndex + 1).find(section => section.type === 'text' && section.content.trim() !== '' && !section.content.includes('Sponsoreret indhold') && !section.content.toLowerCase().includes('billedet er genereret af ai'));
+      if (textAfterHeading) {
+        const textContent = textAfterHeading.content.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+        excerpt = textContent.length > 150 ? textContent.substring(0, 150) + '...' : textContent;
+      }
     }
-
+    // Fallback to previous logic if no heading or text found
+    if (!excerpt) {
+      const meaningfulTextSection = post.sections.find(section => 
+        section.type === 'text' && 
+        section.content.trim() !== '' && 
+        !section.content.includes('Sponsoreret indhold') &&
+        !section.content.toLowerCase().includes('billedet er genereret af ai')
+      );
+      if (meaningfulTextSection) {
+        const textContent = meaningfulTextSection.content.replace(/<[^>]*>/g, '').replace(/\s+/g, ' ').trim();
+        excerpt = textContent.length > 150 ? textContent.substring(0, 150) + '...' : textContent;
+      }
+    }
     // Get featured image from first image section
     const firstImageSection = post.sections.find(section => section.type === 'image' && section.imageUrl);
     const featuredImage = firstImageSection?.imageUrl || "https://images.unsplash.com/photo-1554224155-6726b3ff858f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2340&q=80";
-
     return {
       ...post,
       excerpt,
