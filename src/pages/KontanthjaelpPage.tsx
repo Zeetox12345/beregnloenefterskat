@@ -77,14 +77,14 @@ const KontanthjaelpPage = () => {
                 Kontanthjælp dækker måske ikke alle dine behov. Få et gratis lånetilbud og de bedste sammenligninger af lån:
               </p>
               
-              <div className="max-w-md mx-auto">
+              <div className="grid md:grid-cols-2 gap-4">
                 <div className="bg-white p-6 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
                   <div className="flex items-center justify-center mb-3">
-                    <span className="text-2xl mr-2"></span>
-                    <h3 className="font-semibold text-gray-900 text-lg">Gratis lånetilbud</h3>
+                    <span className="text-2xl mr-2">💰</span>
+                    <h3 className="font-semibold text-gray-900 text-lg">Lånio - Sammenlign lån</h3>
                   </div>
                   <p className="text-sm text-gray-600 mb-4 text-center">
-                    Få de bedste sammenligninger af lån fra flere banker på én gang - helt gratis og uforpligtende.
+                    Sammenlign lånetilbud fra flere danske banker. Gratis og uforpligtende lånetilbud på få minutter.
                   </p>
                   <a 
                     href="https://go.adt256.com/t/t?a=1759160178&as=1982389276&t=2&tk=1" 
@@ -102,8 +102,39 @@ const KontanthjaelpPage = () => {
                       }
                     }}
                   >
-                    <span className="mr-2"></span>
-                    Få gratis lånetilbud hos Lånio
+                    <span className="mr-2">💰</span>
+                    Få tilbud hos Lånio
+                    <span className="ml-2">→</span>
+                  </a>
+                  <p className="text-xs text-gray-500 mt-3 text-center">(reklamelink)</p>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
+                  <div className="flex items-center justify-center mb-3">
+                    <span className="text-2xl mr-2">🏦</span>
+                    <h3 className="font-semibold text-gray-900 text-lg">Weblånet - Sammenlign lån</h3>
+                  </div>
+                  <p className="text-sm text-gray-600 mb-4 text-center">
+                    Sammenlign forbrugslån op til 500.000 kr. Gratis og uforpligtende tilbud fra danske banker.
+                  </p>
+                  <a 
+                    href="https://go.adt228.com/t/t?a=1537001564&as=1982389276&t=2&tk=1" 
+                    target="_blank" 
+                    rel="sponsored noopener noreferrer"
+                    className="inline-flex items-center justify-center w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-200 hover:shadow-lg hover:scale-105"
+                    onClick={() => {
+                      // Track affiliate click
+                      if (typeof (window as any).gtag !== 'undefined') {
+                        (window as any).gtag('event', 'affiliate_click', {
+                          affiliate_name: 'Weblånet DK',
+                          page_location: window.location.href,
+                          position: 'top'
+                        });
+                      }
+                    }}
+                  >
+                    <span className="mr-2">🏦</span>
+                    Se tilbud hos Weblånet
                     <span className="ml-2">→</span>
                   </a>
                   <p className="text-xs text-gray-500 mt-3 text-center">(reklamelink)</p>
