@@ -133,6 +133,7 @@ export const Header = () => {
       { name: "Financial Controller", path: "/jobs/financial-controller" },
       { name: "Finansøkonom", path: "/jobs/finansoekonom-loen-efter-skat" },
       { name: "Fitnessinstruktør", path: "/jobs/fitnessinstruktoer" },
+      { name: "Personlig Træner", path: "/jobs/personlig-traener" },
       { name: "Flyveleder", path: "/jobs/flyveleder" },
       { name: "Forsikringsmatematik", path: "/jobs/forsikringsmatematik-loen-efter-skat" },
       { name: "Forsikringsrådgiver", path: "/jobs/forsikringsraadgiver" },
