@@ -142,6 +142,7 @@ import DJLoenPage from "./pages/DJLoenPage";
 import DyrepasserLoenPage from "./pages/DyrepasserLoenPage";
 import FotografLoenPage from "./pages/FotografLoenPage";
 import GrafiskDesignerLoenPage from "./pages/GrafiskDesignerLoenPage";
+import HandelsokonomLoenPage from "./pages/HandelsokonomLoenPage";
 import BrandmandLoenPage from "./pages/BrandmandLoenPage";
 import MurerLoenPage from "./pages/MurerLoenPage";
 import AmbulancebehandlerLoenPage from "./pages/AmbulancebehandlerLoenPage";
@@ -326,6 +327,7 @@ const App = () => (
             <Route path="/jobs/dyrepasser" element={<DyrepasserLoenPage />} />
             <Route path="/jobs/fotograf" element={<FotografLoenPage />} />
             <Route path="/jobs/grafisk-designer" element={<GrafiskDesignerLoenPage />} />
+            <Route path="/jobs/handelsokonom" element={<HandelsokonomLoenPage />} />
             <Route path="/jobs/brandmand" element={<BrandmandLoenPage />} />
             <Route path="/jobs/murer" element={<MurerLoenPage />} />
             <Route path="/jobs/ambulancebehandler" element={<AmbulancebehandlerLoenPage />} />
