@@ -154,6 +154,7 @@ import ButiksassistentUfaglaertLoenPage from "./pages/ButiksassistentUfaglaertLo
 import LandinspektoerLoenPage from "./pages/LandinspektoerLoenPage";
 import DiplomingeniørLoenPage from "./pages/DiplomingeniørLoenPage";
 import AutomationsteknologLoenPage from "./pages/AutomationsteknologLoenPage";
+import AuPairLoenPage from "./pages/AuPairLoenPage";
 import ProduktionsteknologLoenPage from "./pages/ProduktionsteknologLoenPage";
 import SouschefLoenPage from "./pages/SouschefLoenPage";
 import BilsaelgerLoenPage from "./pages/BilsaelgerLoenPage";
@@ -332,6 +333,7 @@ const App = () => (
             <Route path="/jobs/landinspektoer" element={<LandinspektoerLoenPage />} />
             <Route path="/jobs/diplomingenioer" element={<DiplomingeniørLoenPage />} />
             <Route path="/jobs/automationsteknolog" element={<AutomationsteknologLoenPage />} />
+            <Route path="/jobs/au-pair" element={<AuPairLoenPage />} />
             <Route path="/jobs/produktionsteknolog" element={<ProduktionsteknologLoenPage />} />
             <Route path="/jobs/kiropraktor" element={<KiropraktorLoenPage />} />
             <Route path="/jobs/souschef" element={<SouschefLoenPage />} />
