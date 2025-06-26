@@ -90,6 +90,7 @@ export const Header = () => {
       { name: "Folkeskolelærer", path: "/jobs/folkeskolelaerer-loen-efter-skat" },
       { name: "Gymnasielærer", path: "/jobs/gymnasielaerer-loen-efter-skat" },
       { name: "Lærervikar", path: "/jobs/laerervikar-loen-efter-skat" },
+      { name: "Skoleleder", path: "/jobs/skoleleder" },
     ],
     "Sikkerhed & Forsvar": [
       { name: "Konstabel", path: "/jobs/konstabel-loen-efter-skat" },
