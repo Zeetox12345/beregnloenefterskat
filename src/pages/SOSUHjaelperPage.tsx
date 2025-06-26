@@ -67,11 +67,29 @@ const SOSUHjaelperPage = () => {
             {/* Min A-kasse Affiliate Section */}
             <section className="mx-auto my-8 max-w-lg rounded-2xl bg-blue-50 p-6 shadow-lg">
               <div className="text-center mb-4">
-                <div className="mx-auto w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-3">
-                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm1 2a1 1 0 000 2h6a1 1 0 100-2H7zm6 7a1 1 0 11-2 0 1 1 0 012 0zm-3 3a1 1 0 11-2 0 1 1 0 012 0z" clipRule="evenodd" />
-                  </svg>
-                </div>
+                <a 
+                  href="https://go.min-a-kasse.dk/t/t?a=1667704485&as=1982389276&t=2&tk=1" 
+                  target="_blank"
+                  rel="sponsored noopener noreferrer"
+                  className="mx-auto w-48 h-36 mb-4 flex items-center justify-center cursor-pointer hover:opacity-80 transition-opacity"
+                  onClick={() => {
+                    // Track affiliate click
+                    if (typeof (window as any).gtag !== 'undefined') {
+                      (window as any).gtag('event', 'affiliate_click', {
+                        affiliate_name: 'Min A-kasse DK',
+                        page_location: window.location.href,
+                        position: 'logo',
+                        page_type: 'sosu_hjaelper'
+                      });
+                    }
+                  }}
+                >
+                  <img 
+                    src="/Minakasse.png" 
+                    alt="Min A-kasse logo" 
+                    className="w-full h-full object-contain"
+                  />
+                </a>
                 <h2 className="text-xl font-bold text-blue-900">
                   Lønmodtager, selvstændig eller ledig
                 </h2>

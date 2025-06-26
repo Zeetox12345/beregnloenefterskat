@@ -57,6 +57,135 @@ const TandklinikassistentLoenPage = () => {
               </p>
             </div>
 
+            {/* Min A-kasse Affiliate Section */}
+            <section className="mx-auto my-8 max-w-lg rounded-2xl bg-blue-50 p-6 shadow-lg">
+              <div className="text-center mb-4">
+                <a 
+                  href="https://go.min-a-kasse.dk/t/t?a=1667704485&as=1982389276&t=2&tk=1" 
+                  target="_blank"
+                  rel="sponsored noopener noreferrer"
+                  className="mx-auto w-48 h-36 mb-4 flex items-center justify-center cursor-pointer hover:opacity-80 transition-opacity"
+                  onClick={() => {
+                    // Track affiliate click
+                    if (typeof (window as any).gtag !== 'undefined') {
+                      (window as any).gtag('event', 'affiliate_click', {
+                        affiliate_name: 'Min A-kasse DK',
+                        page_location: window.location.href,
+                        position: 'logo',
+                        page_type: 'tandklinikassistent'
+                      });
+                    }
+                  }}
+                >
+                  <img 
+                    src="/Minakasse.png" 
+                    alt="Min A-kasse logo" 
+                    className="w-full h-full object-contain"
+                  />
+                </a>
+                <h2 className="text-xl font-bold text-blue-900">
+                  Lønmodtager, selvstændig eller ledig
+                </h2>
+                <p className="text-2xl font-bold text-red-600 mt-1">
+                  524 kr./md
+                </p>
+              </div>
+
+              <p className="mt-4 text-lg leading-7 text-blue-900 text-center">
+                Som <strong>tandklinikassistent</strong> kan du miste timer fra den ene uge til den anden.
+                Bliv medlem af <strong>Min A-kasse</strong> i dag og få op til
+                <strong> 21.092 kr./md (2025)</strong> i dagpenge, hvis du står uden arbejde.
+              </p>
+
+              <ul className="mt-6 space-y-3">
+                <li className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Dagpenge
+                </li>
+                <li className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Rådgivning og dagpenge ved opstart af virksomhed
+                </li>
+                <li className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Personlig job- og karriererådgiver
+                </li>
+                <li className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Hjælp til jobsøgning
+                </li>
+                <li className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Feedback til ansøgning og CV
+                </li>
+                <li className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Sparring inden jobsamtale
+                </li>
+                <li className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Online kurser til udvikling af kompetencer
+                </li>
+                <li className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Workshops og foredrag
+                </li>
+                <li className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Ekspertviden på tværs af brancher
+                </li>
+              </ul>
+
+              <div className="mt-6 p-4 bg-blue-100 rounded-lg">
+                <h3 className="text-lg font-semibold text-blue-900 mb-2">Tilvalg</h3>
+                <div className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Lønsikring
+                </div>
+              </div>
+
+              <a 
+                href="https://go.min-a-kasse.dk/t/t?a=1667704485&as=1982389276&t=2&tk=1" 
+                target="_blank"
+                rel="sponsored noopener noreferrer"
+                className="mt-6 inline-block w-full rounded-xl bg-blue-600 py-4 text-center text-base font-bold text-white transition hover:bg-blue-700 hover:shadow-lg transform hover:scale-105"
+                onClick={() => {
+                  // Track affiliate click
+                  if (typeof (window as any).gtag !== 'undefined') {
+                    (window as any).gtag('event', 'affiliate_click', {
+                      affiliate_name: 'Min A-kasse DK',
+                      page_location: window.location.href,
+                      position: 'top',
+                      page_type: 'tandklinikassistent'
+                    });
+                  }
+                }}
+              >
+                Bliv medlem af Min A-kasse ↗
+              </a>
+               
+            </section>
+
             <h2 className="text-2xl font-semibold mt-8 mb-4">Hvad laver en tandklinikassistent?</h2>
             <p>
               Tandklinikassistenter assisterer tandlæger og tandplejere ved behandling, steriliserer instrumenter, tager røntgenbilleder, håndterer journaler og giver patientinformation. Stillingen er omfattet af HK Privat–Tandlægeforeningen-overenskomsten (seneste OK24), som fastsætter løntrin, pension og tillæg.
