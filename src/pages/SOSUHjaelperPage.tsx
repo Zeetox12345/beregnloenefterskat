@@ -64,6 +64,117 @@ const SOSUHjaelperPage = () => {
               hvor du nemt kan indtaste dine oplysninger og se din forventede udbetaling.
             </p>
 
+            {/* Min A-kasse Affiliate Section */}
+            <section className="mx-auto my-8 max-w-lg rounded-2xl bg-blue-50 p-6 shadow-lg">
+              <div className="text-center mb-4">
+                <div className="mx-auto w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-3">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm1 2a1 1 0 000 2h6a1 1 0 100-2H7zm6 7a1 1 0 11-2 0 1 1 0 012 0zm-3 3a1 1 0 11-2 0 1 1 0 012 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <h2 className="text-xl font-bold text-blue-900">
+                  Lønmodtager, selvstændig eller ledig
+                </h2>
+                <p className="text-2xl font-bold text-red-600 mt-1">
+                  524 kr./md
+                </p>
+              </div>
+
+              <p className="mt-4 text-lg leading-7 text-blue-900 text-center">
+                Som <strong>SOSU-hjælper</strong> kan du miste timer fra den ene uge til den anden.
+                Bliv medlem af <strong>Min A-kasse</strong> i dag og få op til
+                <strong> 21.092 kr./md (2025)</strong> i dagpenge, hvis du står uden arbejde.
+              </p>
+
+              <ul className="mt-6 space-y-3">
+                <li className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Dagpenge
+                </li>
+                <li className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Rådgivning og dagpenge ved opstart af virksomhed
+                </li>
+                <li className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Personlig job- og karriererådgiver
+                </li>
+                <li className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Hjælp til jobsøgning
+                </li>
+                <li className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Feedback til ansøgning og CV
+                </li>
+                <li className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Sparring inden jobsamtale
+                </li>
+                <li className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Online kurser til udvikling af kompetencer
+                </li>
+                <li className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Workshops og foredrag
+                </li>
+                <li className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Ekspertviden på tværs af brancher
+                </li>
+              </ul>
+
+              <div className="mt-6 p-4 bg-blue-100 rounded-lg">
+                <h3 className="text-lg font-semibold text-blue-900 mb-2">Tilvalg</h3>
+                <div className="flex items-center text-base text-blue-900">
+                  <svg className="w-5 h-5 text-blue-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Lønsikring
+                </div>
+              </div>
+
+              <a 
+                href="https://go.min-a-kasse.dk/t/t?a=1667704485&as=1982389276&t=2&tk=1" 
+                target="_blank"
+                rel="sponsored noopener noreferrer"
+                className="mt-6 inline-block w-full rounded-xl bg-blue-600 py-4 text-center text-base font-bold text-white transition hover:bg-blue-700 hover:shadow-lg transform hover:scale-105"
+                onClick={() => {
+                  // Track affiliate click
+                  if (typeof (window as any).gtag !== 'undefined') {
+                    (window as any).gtag('event', 'affiliate_click', {
+                      affiliate_name: 'Min A-kasse DK',
+                      page_location: window.location.href,
+                      position: 'top',
+                      page_type: 'sosu_hjaelper'
+                    });
+                  }
+                }}
+              >
+                Bliv medlem af Min A-kasse ↗
+              </a>
+               
+            </section>
+
             <h2 className="text-2xl font-semibold mt-8 mb-4">Hvad Laver en SOSU Hjælper?</h2>
             <ul className="list-disc pl-6 space-y-2 mt-2">
               <li><strong>Personlig pleje:</strong> Hjælpe borgere med personlig hygiejne, bad og påklædning.</li>
