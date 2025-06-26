@@ -39,83 +39,81 @@ const SUUdeboendePage = () => {
               hvis du har studiejob, og hvordan du kan optimere din økonomi med fribeløb, boligstøtte og andre tiltag.
             </p>
 
-            {/* Affiliate Marketing Section - Top Position */}
-            <div className="my-8 p-6 bg-blue-50 rounded-lg border border-blue-200">
-              <h2 className="text-xl font-semibold mb-3 text-blue-900"> Trænger studiebudgettet til et boost?</h2>
-              <p className="text-blue-800 mb-4 text-sm">
-                SU rækker ikke altid til alt. Få et gratis lånetilbud og sammenlign de bedste studielån:
-              </p>
-              
-              <div className="grid md:grid-cols-2 gap-4">
-                <div className="bg-white p-6 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
-                  <div className="flex items-center justify-center mb-3">
-                    <span className="text-2xl mr-2">📚</span>
-                    <h3 className="font-semibold text-gray-900 text-lg">Lånio - Sammenlign studielån</h3>
-                  </div>
-                  <p className="text-sm text-gray-600 mb-4 text-center">
-                    Sammenlign studielån fra flere banker. Gratis og uforpligtende lånetilbud på få minutter.
-                  </p>
-                  <a 
-                    href="https://go.adt256.com/t/t?a=1759160178&as=1982389276&t=2&tk=1" 
-                    target="_blank" 
-                    rel="sponsored noopener noreferrer"
-                    className="inline-flex items-center justify-center w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-200 hover:shadow-lg hover:scale-105"
-                    onClick={() => {
-                      // Track affiliate click
-                      if (typeof (window as any).gtag !== 'undefined') {
-                        (window as any).gtag('event', 'affiliate_click', {
-                          affiliate_name: 'Lånio DK',
-                          page_location: window.location.href,
-                          position: 'top',
-                          page_type: 'su_udeboende'
-                        });
-                      }
-                    }}
-                  >
-                    <span className="mr-2">📚</span>
-                    Få tilbud hos Lånio
-                    <span className="ml-2">→</span>
-                  </a>
-                  <p className="text-xs text-gray-500 mt-3 text-center">(reklamelink)</p>
+                        {/* Min A-kasse Affiliate Section */}
+            <section className="mx-auto my-8 max-w-lg rounded-2xl bg-emerald-50 p-6 shadow-lg">
+              <div className="text-center mb-4">
+                <div className="mx-auto w-12 h-12 bg-emerald-600 rounded-lg flex items-center justify-center mb-3">
+                  <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm1 2a1 1 0 000 2h6a1 1 0 100-2H7zm6 7a1 1 0 11-2 0 1 1 0 012 0zm-3 3a1 1 0 11-2 0 1 1 0 012 0z" clipRule="evenodd" />
+                  </svg>
                 </div>
-
-                <div className="bg-white p-6 rounded-lg border border-blue-100 hover:shadow-md transition-shadow">
-                  <div className="flex items-center justify-center mb-3">
-                    <span className="text-2xl mr-2">🎓</span>
-                    <h3 className="font-semibold text-gray-900 text-lg">Weblånet - Sammenlign studielån</h3>
-                  </div>
-                  <p className="text-sm text-gray-600 mb-4 text-center">
-                    Sammenlign lån op til 500.000 kr. for studerende. Gratis og uforpligtende lånetilbud.
-                  </p>
-                  <a 
-                    href="https://go.adt228.com/t/t?a=1537001564&as=1982389276&t=2&tk=1" 
-                    target="_blank" 
-                    rel="sponsored noopener noreferrer"
-                    className="inline-flex items-center justify-center w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-200 hover:shadow-lg hover:scale-105"
-                    onClick={() => {
-                      // Track affiliate click
-                      if (typeof (window as any).gtag !== 'undefined') {
-                        (window as any).gtag('event', 'affiliate_click', {
-                          affiliate_name: 'Weblånet DK',
-                          page_location: window.location.href,
-                          position: 'top',
-                          page_type: 'su_udeboende'
-                        });
-                      }
-                    }}
-                  >
-                    <span className="mr-2">🎓</span>
-                    Se tilbud hos Weblånet
-                    <span className="ml-2">→</span>
-                  </a>
-                  <p className="text-xs text-gray-500 mt-3 text-center">(reklamelink)</p>
-                </div>
+                <h2 className="text-xl font-bold text-emerald-900">
+                  Under uddannelse
+                </h2>
+                <p className="text-2xl font-bold text-red-600 mt-1">
+                  0 kr./md
+                </p>
               </div>
               
-              <p className="text-xs text-blue-600 mt-4 text-center">
-                Vi modtager provision fra partnere, hvilket ikke påvirker prisen for dig.
+              <p className="mt-4 text-base leading-6 text-emerald-900 text-center">
+                Meld dig ind i <strong>Min A-kasse</strong> helt gratis, mens du studerer.  
+                Som nyuddannet får du <strong>dagpenge som nyuddannet</strong> og kan springe karensmåneden over!
               </p>
-            </div>
+              
+              <ul className="mt-6 space-y-3">
+                <li className="flex items-center text-base text-emerald-900">
+                  <svg className="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Gratis medlemskab
+                </li>
+                <li className="flex items-center text-base text-emerald-900">
+                  <svg className="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Dagpenge som nyuddannet
+                </li>
+                <li className="flex items-center text-base text-emerald-900">
+                  <svg className="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Personlig job- og karriererådgiver
+                </li>
+                <li className="flex items-center text-base text-emerald-900">
+                  <svg className="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Hjælp til jobsøgning og praktik
+                </li>
+                <li className="flex items-center text-base text-emerald-900">
+                  <svg className="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                  Online kurser og workshops
+                </li>
+              </ul>
+
+              <a 
+                href="https://go.min-a-kasse.dk/t/t?a=1667704485&as=1982389276&t=2&tk=1" 
+                target="_blank"
+                rel="sponsored noopener noreferrer"
+                className="mt-6 inline-block w-full rounded-xl bg-red-600 py-4 text-center text-base font-bold text-white transition hover:bg-red-700 hover:shadow-md"
+                onClick={() => {
+                  // Track affiliate click
+                  if (typeof (window as any).gtag !== 'undefined') {
+                    (window as any).gtag('event', 'affiliate_click', {
+                      affiliate_name: 'Min A-kasse DK',
+                      page_location: window.location.href,
+                      position: 'top',
+                      page_type: 'su_udeboende'
+                    });
+                  }
+                }}
+              >
+                Bliv gratis studiemedlem
+              </a>
+               
+            </section>
 
             <div className="bg-gray-50 p-4 rounded-lg my-6">
               <h2 className="text-2xl font-semibold mb-4">SU for Udeboende i 2025</h2>
