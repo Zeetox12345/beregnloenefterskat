@@ -200,6 +200,7 @@ export const Header = () => {
       { name: "VVS-montør", path: "/jobs/vvs" },
       { name: "Wolt Kurér", path: "/jobs/wolt" },
       { name: "Kørelærer", path: "/jobs/koerelaerer" },
+      { name: "Kranfører", path: "/jobs/kranfoerer" },
     ]
   };
 
