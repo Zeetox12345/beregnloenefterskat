@@ -176,6 +176,7 @@ import OmdelerLoenPage from "./pages/OmdelerLoenPage";
 import KranfoererLoenPage from "./pages/KranfoererLoenPage";
 import IndustrioperatoerLoenPage from "./pages/IndustrioperatoerLoenPage";
 import FlymekanikerLoenPage from "./pages/FlymekanikerLoenPage";
+import AdvokatfuldmaegtigLoenPage from "./pages/AdvokatfuldmaegtigLoenPage";
 // Job pages will be imported once they are created
 
 const queryClient = new QueryClient();
@@ -360,6 +361,7 @@ const App = () => (
             <Route path="/jobs/koerelaerer" element={<KoerelaererLoenPage />} />
             <Route path="/jobs/teknisk-designer" element={<TekniskDesignerLoenPage />} />
             <Route path="/jobs/skoleleder" element={<SkolelederLoenPage />} />
+            <Route path="/jobs/advokatfuldmaegtig" element={<AdvokatfuldmaegtigLoenPage />} />
             
             {/* Redirect unwanted pages to the home page */}
             <Route path="/sample-page" element={<Navigate replace to="/" />} />
