@@ -131,11 +131,18 @@ const VelkommenAffiliateLandingPage = () => {
               </ul>
             </div>
             <div className="flex justify-center">
-              <img
-                src="/affiliatefacebookads/velkommenaffiliatepic.png"
-                alt="Velkommen kampagne billede"
-                className="rounded-xl shadow-md max-w-full"
-              />
+              <a
+                href={affiliateUrl}
+                target="_blank"
+                rel="sponsored noopener"
+                onClick={() => trackAffiliateClick("image")}
+              >
+                <img
+                  src="/affiliatefacebookads/velkommenaffiliatepic.png"
+                  alt="Velkommen kampagne billede – klik for at skifte og få JBL EarPods"
+                  className="rounded-xl shadow-md max-w-full hover:opacity-90 transition"
+                />
+              </a>
             </div>
           </div>
         </section>
