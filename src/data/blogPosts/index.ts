@@ -6,7 +6,6 @@ export { understandPayslipBlogPost } from './guide-til-at-forstaa-din-lonseddel'
 export { feriebudgetBlogPost } from './feriebudget-loen-efter-skat-kuffert-guide';
 export { investmentBlogPost } from './sadan-far-du-mere-ud-af-din-loen-gennem-investering';
 export { gamblingSkatteBlogPost } from './skal-man-betale-skat-af-gevinster-gambling';
-export { firmabilDomBlogPost } from './firmabil-dom-2025';
 export { bettingOddsBlogPost } from './kan-man-tjene-penge-paa-odds-betting-oekonomi';
 export { casinoVsJobBlogPost } from './kan-du-tjene-mere-paa-online-casino-end-dit-job';
 export { mybankerBoliglaanBlogPost } from './boliglaanstilbud-mybanker';
@@ -19,7 +18,6 @@ import { understandPayslipBlogPost } from './guide-til-at-forstaa-din-lonseddel'
 import { feriebudgetBlogPost } from './feriebudget-loen-efter-skat-kuffert-guide';
 import { investmentBlogPost } from './sadan-far-du-mere-ud-af-din-loen-gennem-investering';
 import { gamblingSkatteBlogPost } from './skal-man-betale-skat-af-gevinster-gambling';
-import { firmabilDomBlogPost } from './firmabil-dom-2025';
 import { bettingOddsBlogPost } from './kan-man-tjene-penge-paa-odds-betting-oekonomi';
 import { casinoVsJobBlogPost } from './kan-du-tjene-mere-paa-online-casino-end-dit-job';
 import { mybankerBoliglaanBlogPost } from './boliglaanstilbud-mybanker';
@@ -33,7 +31,6 @@ export const allBlogPosts: BlogPost[] = [
   feriebudgetBlogPost,         // ID: 5
   investmentBlogPost,          // ID: 6
   gamblingSkatteBlogPost,       // ID: 7
-  firmabilDomBlogPost,          // ID: 8
   bettingOddsBlogPost,          // ID: 9
   casinoVsJobBlogPost,          // ID: 10
   mybankerBoliglaanBlogPost       // ID: 11
