@@ -9,6 +9,7 @@ export { gamblingSkatteBlogPost } from './skal-man-betale-skat-af-gevinster-gamb
 export { firmabilDomBlogPost } from './firmabil-dom-2025';
 export { bettingOddsBlogPost } from './kan-man-tjene-penge-paa-odds-betting-oekonomi';
 export { casinoVsJobBlogPost } from './kan-du-tjene-mere-paa-online-casino-end-dit-job';
+export { mybankerBoliglaanBlogPost } from './boliglaanstilbud-mybanker';
 
 import type { BlogPost } from './types';
 import { optimizeSalaryBlogPost } from './sadan-far-du-mest-muligt-ud-af-din-loen-efter-skat';
@@ -21,6 +22,7 @@ import { gamblingSkatteBlogPost } from './skal-man-betale-skat-af-gevinster-gamb
 import { firmabilDomBlogPost } from './firmabil-dom-2025';
 import { bettingOddsBlogPost } from './kan-man-tjene-penge-paa-odds-betting-oekonomi';
 import { casinoVsJobBlogPost } from './kan-du-tjene-mere-paa-online-casino-end-dit-job';
+import { mybankerBoliglaanBlogPost } from './boliglaanstilbud-mybanker';
 
 // Array of all blog posts for easy iteration
 export const allBlogPosts: BlogPost[] = [
@@ -33,7 +35,8 @@ export const allBlogPosts: BlogPost[] = [
   gamblingSkatteBlogPost,       // ID: 7
   firmabilDomBlogPost,          // ID: 8
   bettingOddsBlogPost,          // ID: 9
-  casinoVsJobBlogPost           // ID: 10
+  casinoVsJobBlogPost,          // ID: 10
+  mybankerBoliglaanBlogPost       // ID: 11
 ];
 
 // Get blog post by ID
