@@ -39,113 +39,17 @@ const SUUdeboendePage = () => {
               hvis du har studiejob, og hvordan du kan optimere din økonomi med fribeløb, boligstøtte og andre tiltag.
             </p>
 
-                        {/* Min A-kasse Affiliate Section */}
-            <section className="mx-auto my-8 max-w-lg rounded-2xl bg-emerald-50 p-6 shadow-lg">
-              <div className="text-center mb-4">
-                <a 
-                  href="https://go.min-a-kasse.dk/t/t?a=1667704485&as=1982389276&t=2&tk=1" 
-                  target="_blank"
-                  rel="sponsored noopener noreferrer"
-                  className="mx-auto w-48 h-36 mb-4 flex items-center justify-center cursor-pointer hover:opacity-80 transition-opacity"
-                  onClick={() => {
-                    // Track affiliate click
-                    if (typeof (window as any).gtag !== 'undefined') {
-                      (window as any).gtag('event', 'affiliate_click', {
-                        affiliate_name: 'Min A-kasse DK',
-                        page_location: window.location.href,
-                        position: 'logo',
-                        page_type: 'su_udeboende'
-                      });
-                    }
-                  }}
-                >
-                  <img 
-                    src="/Minakasse.png" 
-                    alt="Min A-kasse logo" 
-                    className="w-full h-full object-contain"
-                  />
-                </a>
-                <h2 className="text-xl font-bold text-emerald-900">
-                  Under uddannelse
-                </h2>
-                <p className="text-2xl font-bold text-red-600 mt-1">
-                  0 kr./md
-                </p>
-              </div>
-              
-              <p className="mt-4 text-base leading-6 text-emerald-900 text-center">
-                Meld dig ind i <strong>Min A-kasse</strong> helt gratis, mens du studerer.  
-                Som nyuddannet får du <strong>dagpenge som nyuddannet</strong> og kan springe karensmåneden over!
-              </p>
-              
-              <ul className="mt-6 space-y-3">
-                <li className="flex items-center text-base text-emerald-900">
-                  <svg className="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Gratis medlemskab
-                </li>
-                <li className="flex items-center text-base text-emerald-900">
-                  <svg className="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Dagpenge som nyuddannet
-                </li>
-                <li className="flex items-center text-base text-emerald-900">
-                  <svg className="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Personlig job- og karriererådgiver
-                </li>
-                <li className="flex items-center text-base text-emerald-900">
-                  <svg className="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Hjælp til jobsøgning og praktik
-                </li>
-                <li className="flex items-center text-base text-emerald-900">
-                  <svg className="w-5 h-5 text-emerald-600 mr-3 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                  </svg>
-                  Online kurser og workshops
-                </li>
-              </ul>
-
-              <a 
-                href="https://go.min-a-kasse.dk/t/t?a=1667704485&as=1982389276&t=2&tk=1" 
-                target="_blank"
-                rel="sponsored noopener noreferrer"
-                className="mt-6 inline-block w-full rounded-xl bg-red-600 py-4 text-center text-base font-bold text-white transition hover:bg-red-700 hover:shadow-md"
-                onClick={() => {
-                  // Track affiliate click
-                  if (typeof (window as any).gtag !== 'undefined') {
-                    (window as any).gtag('event', 'affiliate_click', {
-                      affiliate_name: 'Min A-kasse DK',
-                      page_location: window.location.href,
-                      position: 'top',
-                      page_type: 'su_udeboende'
-                    });
-                  }
-                }}
-              >
-                Bliv gratis studiemedlem
-              </a>
-               
-            </section>
-
-            <div className="bg-gray-50 p-4 rounded-lg my-6">
-              <h2 className="text-2xl font-semibold mb-4">SU for Udeboende i 2025</h2>
-              <p><strong>Sats for udeboende (videregående uddannelse):</strong> 7.086 kr./md. før skat</p>
-              <p>
-                Beløbet justeres årligt og kan være højere eller lavere for andre typer uddannelser 
-                eller aldersgrupper (fx under 20 år).
-              </p>
-              <p>
-                Når du er udeboende, går støtten primært til at dække husleje, mad og øvrige leveomkostninger. 
-                Det er dog vigtigt at huske, at SU er skattepligtig, og du vil typisk betale både 
-                arbejdsmarkedsbidrag (8 %) og kommuneskat + evt. kirkeskat af beløbet, dog påvirket af dit personfradrag.
-              </p>
-            </div>
+            <h2 className="text-2xl font-semibold mt-8 mb-4">SU Udeboende Satser 2025</h2>
+            <p><strong>Sats for udeboende (videregående uddannelse):</strong> 7.086 kr./md. før skat</p>
+            <p>
+              Beløbet justeres årligt og kan være højere eller lavere for andre typer uddannelser 
+              eller aldersgrupper (fx under 20 år).
+            </p>
+            <p>
+              Når du er udeboende, går støtten primært til at dække husleje, mad og øvrige leveomkostninger. 
+              Det er dog vigtigt at huske, at SU er skattepligtig, og du vil typisk betale både 
+              arbejdsmarkedsbidrag (8 %) og kommuneskat + evt. kirkeskat af beløbet, dog påvirket af dit personfradrag.
+            </p>
 
             <h2 className="text-2xl font-semibold mt-8 mb-4">Hvor Meget Får Du Udbetalt Efter Skat?</h2>
             <p>
