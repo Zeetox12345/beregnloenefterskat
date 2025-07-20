@@ -2,7 +2,7 @@ import { BlogPost } from './types';
 
 export const loanPengeTankpengeBlogPost: BlogPost = {
   id: 12,
-  slug: "laan-penge-hurtigt-tankpenge",
+  slug: "laan-penge-efter-skat",
   title: "Sådan kan du låne penge nemt og hurtigt når du mangler penge efter skat",
   metaTitle: "Lån penge hurtigt og nemt - få finansiering efter løn og skat er trukket",
   metaDescription: "Har du brug for penge hurtigt efter din løn er udbetalt? Lær hvordan du nemt låner penge online til uventede regninger og udgifter.",
