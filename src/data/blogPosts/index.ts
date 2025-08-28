@@ -11,6 +11,7 @@ export { casinoVsJobBlogPost } from './kan-du-tjene-mere-paa-online-casino-end-d
 export { mybankerBoliglaanBlogPost } from './boliglaanstilbud-mybanker';
 export { loanPengeTankpengeBlogPost } from './laan-penge-hurtigt-tankpenge';
 export { loanCostAaopBlogPost } from './hvad-koster-et-laan-aaop-gebyrer';
+export { skatForstaelseBlogPost } from './kan-du-ikke-helt-finde-ud-af-det-der-med-skat';
 
 import type { BlogPost } from './types';
 import { optimizeSalaryBlogPost } from './sadan-far-du-mest-muligt-ud-af-din-loen-efter-skat';
@@ -25,6 +26,7 @@ import { casinoVsJobBlogPost } from './kan-du-tjene-mere-paa-online-casino-end-d
 import { mybankerBoliglaanBlogPost } from './boliglaanstilbud-mybanker';
 import { loanPengeTankpengeBlogPost } from './laan-penge-hurtigt-tankpenge';
 import { loanCostAaopBlogPost } from './hvad-koster-et-laan-aaop-gebyrer';
+import { skatForstaelseBlogPost } from './kan-du-ikke-helt-finde-ud-af-det-der-med-skat';
 
 // Array of all blog posts for easy iteration
 export const allBlogPosts: BlogPost[] = [
@@ -39,7 +41,8 @@ export const allBlogPosts: BlogPost[] = [
   casinoVsJobBlogPost,          // ID: 10
   mybankerBoliglaanBlogPost,      // ID: 11
   loanPengeTankpengeBlogPost,     // ID: 12
-  loanCostAaopBlogPost            // ID: 13
+  loanCostAaopBlogPost,           // ID: 13
+  skatForstaelseBlogPost          // ID: 14
 ];
 
 // Get blog post by ID
